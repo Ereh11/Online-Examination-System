@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exam Instruction</title>
+    <style>
+      .container {
+        width: 50%;
+        margin: 0 auto;
+        text-align: center;
+      }
+      button {
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+        .btn-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Exam Instruction</h1>
+      <p>1. You have 5 minutes to complete the exam</p>
+      <p>2. The exam contains 5 questions</p>
+      <p>3. Each question contains 4 options</p>
+      <p>
+        4. Choose the correct answer and click on the next button to go to the
+        next question
+      </p>
+      <p>5. You can skip the question and come back to it later</p>
+      <p>6. You can review your answers before submitting the exam</p>
+      <p>
+        7. Once you submit the exam, you will not be able to change the answers
+      </p>
+      <p>8. Click on the start button to start the exam</p>
+      <div class="btn-container">
+        <button id="startBtn">Start Exam</button>
+        <button id="CancelBtn">Cancel</button>
+      </div>
+    </div>
+    <script src="../scripts/examInstruction.js"></script>
+  </body>
+</html>
