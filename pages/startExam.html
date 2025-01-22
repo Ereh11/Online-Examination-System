@@ -1,66 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome to Exam</title>
+    <link rel="stylesheet" href="../css/variables.css">
+    <link rel="stylesheet" href="../css/mainsubjects.css">
 </head>
-<style>
-    .container-examTopic, .container-examDifficulty{
-        width: 50%;
-        margin: 0 auto;
-        text-align: center;
-    }
-    input{
-        margin: 10px;
-    }
-    p{
-        font-size: 20px;
-    }
-    .examTopic{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-    }
-    .examDifficulty{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-    }
-    /* .hidden{
-        display: none;
-    } */
-    .hidden-nextBtn{
-        padding: 10px 20px;
-        border: none;
-        border-radius: 5px;
-        cursor: not-allowed; /* Optional: show disabled cursor */
-    }
-    .hidden{
-        display: none;
-    }
-</style>
+
 <body>
-    <div class="container-examTopic">
-        <p>Choose Exam Topic</p>
-        <div class="examTopic">
-               <span><input type="radio" value="1" name="examTopic">Java Script</input></span> 
-               <span><input type="radio" value="2" name="examTopic">Type Script</input></span> 
-               <span><input type="radio" value="3" name="examTopic">C#</input></span> 
-               
+    <div class="container">
+        <div class="side-background">
+            <img src="../imgs/subjectChoose.jpg" alt="subjectChoose">
         </div>
-        <span><button class="hidden-nextBtn ExamTopicnextBtn">Next</button></span> 
-    </div>
-    <div class="container-examDifficulty hidden">
-        <div class="examDifficulty">
-            <p>Choose Exam Difficulty</p>
-            <span><input type="radio" value="1" name="examDifficulty">Easy</input></span> 
-            <span><input type="radio" value="2" name="examDifficulty">Medium</input></span> 
-            <span><input type="radio" value="3" name="examDifficulty">Hard</input></span> 
+        <div class="main-container">
+            <div class="container-examTopic">
+                <p>Choose Exam Topic</p>
+                <div class="examTopic">
+                    <span><input type="radio" value="1" name="examTopic">Java Script</input></span>
+                    <span><input type="radio" value="2" name="examTopic">Type Script</input></span>
+                    <span><input type="radio" value="3" name="examTopic">C#</input></span>
+
+                </div>
+                <span class="cursor-point"><button class="display-nextBtn ExamTopicnextBtn">Next</button></span>
+            </div>
+            
+            <div class="container-examDifficulty hidden">
+                <p>Choose Exam Difficulty</p>
+                <div class="examDifficulty">
+                    <span><input type="radio" value="1" name="examDifficulty">Easy</input></span>
+                    <span><input type="radio" value="2" name="examDifficulty">Medium</input></span>
+                    <span><input type="radio" value="3" name="examDifficulty">Hard</input></span>
+                </div>
+                <span class="cursor-point"><button class="display-nextBtn ExamDifficultynextBtn">Next</button></span>
+            </div>
         </div>
-        <span><button class="hidden-nextBtn ExamDifficultynextBtn">Next</button></span>
     </div>
     <script src="../scripts/startExam.js"></script>
 </body>

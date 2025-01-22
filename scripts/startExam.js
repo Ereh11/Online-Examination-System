@@ -29,7 +29,12 @@ ExamDifficultyBtn.addEventListener("click", function() {
 function Event(event, button){
     event.addEventListener("click", function(e) {
         if(e.target){
-            button.classList.toggle("hidden-nextBtn");
+            button.classList.remove("display-nextBtn");
+            button.parentElement.classList.remove("cursor-point");
+        }
+        else{
+            button.classList.add("display-nextBtn");
+            button.parentElement.classList.add("cursor-point");
         }
     });
 }

@@ -1,0 +1,10 @@
+@font-face {
+    font-family: 'karla';
+    src: url('../resources/font/Karla/Karla-VariableFont_wght.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+:root {
+    --main-font: 'karla', sans-serif;
+    --main-color: #0333ff;
+}
