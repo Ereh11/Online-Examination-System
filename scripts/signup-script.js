@@ -35,7 +35,6 @@ emailInput.addEventListener("input", function () {
 });
 
 //Functions
-
 /**
  * Validates the password and confirm password inputs.
  */
