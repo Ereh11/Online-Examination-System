@@ -1,44 +1,51 @@
-document
-  .getElementById("signupForm")
-  .addEventListener("submit", function (event) {
+// DOM elements
+const signUP = document.getElementById("signupForm");
+const emailInput = document.getElementById("email");
+const passwordInput = document.getElementById("password");
+const confirmPasswordInput = document.getElementById("confirmPassword");
+
+// Event listeners
+signUP.addEventListener("submit", function (event) {
+  const form = event.target;
+  if (!form.checkValidity()) {
     event.preventDefault();
-    let valid = true;
+    event.stopPropagation();
+  }
+  form.classList.add("was-validated");
+});
 
-    const fullName = document.getElementById("fullName");
-    const email = document.getElementById("email");
-    const password = document.getElementById("password");
-    const confirmPassword = document.getElementById("confirmPassword");
+passwordInput.addEventListener("input", function () {
+  validatePasswords();
+  if (passwordInput.value === confirmPasswordInput.value) {
+    confirmPasswordInput.setCustomValidity("");
+  }
+});
 
-    if (fullName.value.trim() === "") {
-      fullName.classList.add("is-invalid");
-      valid = false;
-    } else {
-      fullName.classList.remove("is-invalid");
-    }
+confirmPasswordInput.addEventListener("input", validatePasswords);
 
-    if (email.value.trim() === "" || !email.value.includes("@")) {
-      email.classList.add("is-invalid");
-      valid = false;
-    } else {
-      email.classList.remove("is-invalid");
-    }
+emailInput.addEventListener("input", function () {
+  const emailValue = emailInput.value;
+  const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
 
-    if (password.value.length < 6) {
-      password.classList.add("is-invalid");
-      valid = false;
-    } else {
-      password.classList.remove("is-invalid");
-    }
+  if (!emailPattern.test(emailValue)) {
+    emailInput.setCustomValidity("Please enter a valid email.");
+  } else {
+    emailInput.setCustomValidity("");
+  }
+});
 
-    if (confirmPassword.value !== password.value) {
-      confirmPassword.classList.add("is-invalid");
-      valid = false;
-    } else {
-      confirmPassword.classList.remove("is-invalid");
-    }
+//Functions
 
-    if (valid) {
-      alert("Signup successful!");
-      window.location.href = "login.html";
-    }
-  });
+/**
+ * Validates the password and confirm password inputs.
+ */
+function validatePasswords() {
+  const passwordValue = passwordInput.value;
+  const confirmPasswordValue = confirmPasswordInput.value;
+
+  if (passwordValue !== confirmPasswordValue) {
+    confirmPasswordInput.setCustomValidity("Passwords do not match.");
+  } else {
+    confirmPasswordInput.setCustomValidity("");
+  }
+}

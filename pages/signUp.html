@@ -7,7 +7,6 @@
   <title>Signup Page</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" />
   <link rel="stylesheet" href="../css/variables.css" />
-  <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
@@ -24,27 +23,31 @@
         <form id="signupForm" novalidate>
           <div class="mb-3">
             <label for="fullName" class="form-label fw-semibold">Full Name</label>
-            <input type="text" id="fullName" class="form-control" placeholder="Enter your full name" required />
+            <input type="text" id="fullName" class="form-control" placeholder="Enter your full name"
+              pattern="^[A-Za-z]+(?: [A-Za-z]+)*$" required />
             <div class="invalid-feedback">Please enter your full name.</div>
           </div>
           <div class="mb-3">
             <label for="email" class="form-label fw-semibold">Email</label>
-            <input type="email" id="email" class="form-control" placeholder="Enter your email" required />
+            <input type="email" id="email" class="form-control" placeholder="Enter your email"
+              pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" required />
             <div class="invalid-feedback">Please enter a valid email.</div>
           </div>
-          <div class="mb-3">
-            <label for="password" class="form-label fw-semibold">Password</label>
-            <input type="password" id="password" class="form-control" placeholder="Create a password" required
-              minlength="6" />
-            <div class="invalid-feedback">
-              Password must be at least 6 characters long.
+          <div class="mb-3 password-container">
+            <div class="mb-3">
+              <label for="password" class="form-label fw-semibold">Password</label>
+              <input type="password" id="password" class="form-control" placeholder="Create a password" required
+                minlength="6" />
+              <div class="invalid-feedback">
+                Password must be at least 6 characters long.
+              </div>
             </div>
-          </div>
-          <div class="mb-3">
-            <label for="confirmPassword" class="form-label fw-semibold">Confirm Password</label>
-            <input type="password" id="confirmPassword" class="form-control" placeholder="Confirm your password"
-              required />
-            <div class="invalid-feedback">Passwords do not match.</div>
+            <div class="mb-3">
+              <label for="confirmPassword" class="form-label fw-semibold">Confirm Password</label>
+              <input type="password" id="confirmPassword" class="form-control" placeholder="Confirm your password"
+                required />
+              <div class="invalid-feedback">Passwords do not match.</div>
+            </div>
           </div>
           <button type="submit" class="btn btn-primary w-100">Sign Up</button>
         </form>
