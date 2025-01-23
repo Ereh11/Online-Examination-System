@@ -6,5 +6,5 @@
 }
 :root {
     --main-font: 'karla', sans-serif;
-    --main-color: #0333ff;
+    --main-background: linear-gradient(to right, #1e3c72, #2c3e50);
 }

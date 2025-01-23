@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 body {
-  background-color: var(--main-color);
+  background: var(--main-background);
   color: #e6e8f5;
   font-family: var(--main-font);
 }

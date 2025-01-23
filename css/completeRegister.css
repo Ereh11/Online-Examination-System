@@ -1,0 +1,36 @@
+body {
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  background: var(--main-background);
+  font-family: var(--main-font);
+  color: white;
+  text-align: center;
+}
+.container {
+  display: flex;
+}
+.img-container {
+  width: 60%;
+}
+.text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+  padding: 20px;
+}
+img {
+  border-top-left-radius: 5%;
+  border-bottom-left-radius: 5%;
+  width: 70%;
+  margin: 2%;
+}
+.text-container h1 {
+  font-weight: 900;
+}
+.text-container a {
+  
+    color: #e6e8f5
+}

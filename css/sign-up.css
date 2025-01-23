@@ -5,10 +5,10 @@
 }
 body {
   font-family: var(--main-font);
-  background: linear-gradient(to right, #2c3e50, #1e3c72);
+  background: var(--main-color);
 }
 .bg-primary {
-  background: linear-gradient(to right, #1e3c72, #2c3e50);
+  background: var(--main-background);
 }
 form .form-label {
   border-radius: 20px;

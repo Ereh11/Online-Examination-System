@@ -44,11 +44,13 @@ export async function recievedData(username, email, password) {
   newUser = creatUser(username, email, password);
   const userExists = await checkUserExistence(newUser.email);
   if (userExists) {
+    window.history.replaceState({}, null, "/");
     window.location.href = "../pages/login.html";
   } else {
     try {
       sendUserToDatabase(newUser);
-      window.location.href = "../pages/login.html";
+      window.history.replaceState({}, null, "/");
+      window.location.href = "../pages/completeRegister.html";
     } catch (error) {
       console.error("Error sending user to database:", error);
     }
