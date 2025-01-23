@@ -1,2061 +1,2070 @@
 {
-    "users": [
+  "users": [
+    {
+      "name": "Yasmin Ayed",
+      "email": "yasminayed@gmail.com",
+      "password": "123456",
+      "id": "c79f"
+    },
+    {
+      "id": "8b24",
+      "username": "hanysaadstd",
+      "email": "hanysaadstd@gmail.com",
+      "password": "hanysaadstd@gmail.com"
+    }
+  ],
+  "subjects": [
+    {
+      "subject": {
+        "id": 1,
+        "name": "JavaScript"
+      },
+      "difficultyLevels": [
         {
-        "name": "Yasmin Ayed",
-        "email": "yasminayed@gmail.com",
-        "password": "123456"
-        }
-    ],
-    "subjects": [
-        {
-            "subject": {
-                "id": 1,
-                "name": "JavaScript"
+          "difficulty": "easy",
+          "questions": [
+            {
+              "id": "1-easy-1",
+              "question": "What is JavaScript?",
+              "options": [
+                "A programming language",
+                "A type of coffee",
+                "A car model",
+                "A country"
+              ],
+              "correctAnswer": "A programming language"
             },
-            "difficultyLevels": [
-                {
-                    "difficulty": "easy",
-                    "questions": [
-                        {
-                            "id": "1-easy-1",
-                            "question": "What is JavaScript?",
-                            "options": [
-                                "A programming language",
-                                "A type of coffee",
-                                "A car model",
-                                "A country"
-                            ],
-                            "correctAnswer": "A programming language"
-                        },
-                        {
-                            "id": "1-easy-2",
-                            "question": "Which company developed JavaScript?",
-                            "options": [
-                                "Microsoft",
-                                "Netscape",
-                                "Google",
-                                "Apple"
-                            ],
-                            "correctAnswer": "Netscape"
-                        },
-                        {
-                            "id": "1-easy-3",
-                            "question": "What is the file extension for JavaScript files?",
-                            "options": [
-                                ".js",
-                                ".java",
-                                ".html",
-                                ".css"
-                            ],
-                            "correctAnswer": ".js"
-                        },
-                        {
-                            "id": "1-easy-4",
-                            "question": "Which keyword is used to declare a variable in JavaScript?",
-                            "options": [
-                                "var",
-                                "let",
-                                "const",
-                                "All of the above"
-                            ],
-                            "correctAnswer": "All of the above"
-                        },
-                        {
-                            "id": "1-easy-5",
-                            "question": "What is the output of `console.log(typeof null)`?",
-                            "options": [
-                                "object",
-                                "null",
-                                "undefined",
-                                "string"
-                            ],
-                            "correctAnswer": "object"
-                        },
-                        {
-                            "id": "1-easy-6",
-                            "question": "Which of the following is NOT a JavaScript data type?",
-                            "options": [
-                                "String",
-                                "Boolean",
-                                "Integer",
-                                "Object"
-                            ],
-                            "correctAnswer": "Integer"
-                        },
-                        {
-                            "id": "1-easy-7",
-                            "question": "What does `NaN` stand for?",
-                            "options": [
-                                "Not a Number",
-                                "Not a Null",
-                                "Not a Node",
-                                "Not a Name"
-                            ],
-                            "correctAnswer": "Not a Number"
-                        },
-                        {
-                            "id": "1-easy-8",
-                            "question": "Which method is used to add an element to the end of an array?",
-                            "options": [
-                                "push()",
-                                "pop()",
-                                "shift()",
-                                "unshift()"
-                            ],
-                            "correctAnswer": "push()"
-                        },
-                        {
-                            "id": "1-easy-9",
-                            "question": "What is the result of `2 + '2'` in JavaScript?",
-                            "options": [
-                                "4",
-                                "22",
-                                "NaN",
-                                "Error"
-                            ],
-                            "correctAnswer": "22"
-                        },
-                        {
-                            "id": "1-easy-10",
-                            "question": "Which of the following is a JavaScript framework?",
-                            "options": [
-                                "React",
-                                "Angular",
-                                "Vue",
-                                "All of the above"
-                            ],
-                            "correctAnswer": "All of the above"
-                        },
-                        {
-                            "id": "1-easy-11",
-                            "question": "What is the purpose of the `this` keyword in JavaScript?",
-                            "options": [
-                                "Refers to the current object",
-                                "Refers to the parent object",
-                                "Refers to the global object",
-                                "Refers to the child object"
-                            ],
-                            "correctAnswer": "Refers to the current object"
-                        },
-                        {
-                            "id": "1-easy-12",
-                            "question": "Which function is used to parse a string to an integer?",
-                            "options": [
-                                "parseInt()",
-                                "parseFloat()",
-                                "Number()",
-                                "String()"
-                            ],
-                            "correctAnswer": "parseInt()"
-                        },
-                        {
-                            "id": "1-easy-13",
-                            "question": "What is the output of `console.log(0 == false)`?",
-                            "options": [
-                                "true",
-                                "false",
-                                "undefined",
-                                "Error"
-                            ],
-                            "correctAnswer": "true"
-                        },
-                        {
-                            "id": "1-easy-14",
-                            "question": "Which event occurs when a user clicks on an HTML element?",
-                            "options": [
-                                "onclick",
-                                "onchange",
-                                "onload",
-                                "onmouseover"
-                            ],
-                            "correctAnswer": "onclick"
-                        },
-                        {
-                            "id": "1-easy-15",
-                            "question": "What is the purpose of the `addEventListener` method?",
-                            "options": [
-                                "To add an event handler",
-                                "To remove an event handler",
-                                "To create an event",
-                                "To delete an event"
-                            ],
-                            "correctAnswer": "To add an event handler"
-                        },
-                        {
-                            "id": "1-easy-16",
-                            "question": "What is the output of `console.log([] + [])`?",
-                            "options": [
-                                "[]",
-                                "[object Object]",
-                                "''",
-                                "Error"
-                            ],
-                            "correctAnswer": "''"
-                        },
-                        {
-                            "id": "1-easy-17",
-                            "question": "Which operator is used for strict equality in JavaScript?",
-                            "options": [
-                                "==",
-                                "===",
-                                "=",
-                                "!=="
-                            ],
-                            "correctAnswer": "==="
-                        },
-                        {
-                            "id": "1-easy-18",
-                            "question": "What is the purpose of the `return` statement in a function?",
-                            "options": [
-                                "To stop the function execution",
-                                "To return a value",
-                                "To define a function",
-                                "To call another function"
-                            ],
-                            "correctAnswer": "To return a value"
-                        },
-                        {
-                            "id": "1-easy-19",
-                            "question": "What is the output of `console.log(typeof [])`?",
-                            "options": [
-                                "object",
-                                "array",
-                                "undefined",
-                                "string"
-                            ],
-                            "correctAnswer": "object"
-                        },
-                        {
-                            "id": "1-easy-20",
-                            "question": "Which method is used to convert an object to a JSON string?",
-                            "options": [
-                                "JSON.stringify()",
-                                "JSON.parse()",
-                                "toString()",
-                                "toJSON()"
-                            ],
-                            "correctAnswer": "JSON.stringify()"
-                        }
-                    ]
-                },
-                {
-                    "difficulty": "medium",
-                    "questions": [
-                        {
-                            "id": "1-medium-1",
-                            "question": "What is a closure in JavaScript?",
-                            "options": [
-                                "A function",
-                                "A scope",
-                                "A loop",
-                                "A variable"
-                            ],
-                            "correctAnswer": "A function"
-                        },
-                        {
-                            "id": "1-medium-2",
-                            "question": "What is the purpose of the `bind` method?",
-                            "options": [
-                                "To bind a function to an object",
-                                "To create a new function",
-                                "To call a function",
-                                "To delete a function"
-                            ],
-                            "correctAnswer": "To bind a function to an object"
-                        },
-                        {
-                            "id": "1-medium-3",
-                            "question": "What is the output of `console.log(1 + '1' - 1)`?",
-                            "options": [
-                                "10",
-                                "11",
-                                "0",
-                                "NaN"
-                            ],
-                            "correctAnswer": "10"
-                        },
-                        {
-                            "id": "1-medium-4",
-                            "question": "What is the purpose of the `Promise` object in JavaScript?",
-                            "options": [
-                                "To handle asynchronous operations",
-                                "To handle synchronous operations",
-                                "To create loops",
-                                "To define variables"
-                            ],
-                            "correctAnswer": "To handle asynchronous operations"
-                        },
-                        {
-                            "id": "1-medium-5",
-                            "question": "What is the output of `console.log(typeof NaN)`?",
-                            "options": [
-                                "number",
-                                "NaN",
-                                "undefined",
-                                "string"
-                            ],
-                            "correctAnswer": "number"
-                        },
-                        {
-                            "id": "1-medium-6",
-                            "question": "What is the purpose of the `map` method in JavaScript?",
-                            "options": [
-                                "To transform elements of an array",
-                                "To filter elements of an array",
-                                "To reduce elements of an array",
-                                "To sort elements of an array"
-                            ],
-                            "correctAnswer": "To transform elements of an array"
-                        },
-                        {
-                            "id": "1-medium-7",
-                            "question": "What is the output of `console.log([] == ![])`?",
-                            "options": [
-                                "true",
-                                "false",
-                                "undefined",
-                                "Error"
-                            ],
-                            "correctAnswer": "true"
-                        },
-                        {
-                            "id": "1-medium-8",
-                            "question": "What is the purpose of the `async` keyword in JavaScript?",
-                            "options": [
-                                "To define an asynchronous function",
-                                "To define a synchronous function",
-                                "To define a generator function",
-                                "To define a callback function"
-                            ],
-                            "correctAnswer": "To define an asynchronous function"
-                        },
-                        {
-                            "id": "1-medium-9",
-                            "question": "What is the output of `console.log(typeof undefined)`?",
-                            "options": [
-                                "undefined",
-                                "null",
-                                "object",
-                                "string"
-                            ],
-                            "correctAnswer": "undefined"
-                        },
-                        {
-                            "id": "1-medium-10",
-                            "question": "What is the purpose of the `fetch` API in JavaScript?",
-                            "options": [
-                                "To make HTTP requests",
-                                "To manipulate the DOM",
-                                "To handle events",
-                                "To create animations"
-                            ],
-                            "correctAnswer": "To make HTTP requests"
-                        },
-                        {
-                            "id": "1-medium-11",
-                            "question": "What is the output of `console.log(0.1 + 0.2 === 0.3)`?",
-                            "options": [
-                                "true",
-                                "false",
-                                "undefined",
-                                "Error"
-                            ],
-                            "correctAnswer": "false"
-                        },
-                        {
-                            "id": "1-medium-12",
-                            "question": "What is the purpose of the `reduce` method in JavaScript?",
-                            "options": [
-                                "To reduce an array to a single value",
-                                "To filter elements of an array",
-                                "To transform elements of an array",
-                                "To sort elements of an array"
-                            ],
-                            "correctAnswer": "To reduce an array to a single value"
-                        },
-                        {
-                            "id": "1-medium-13",
-                            "question": "What is the output of `console.log(typeof null)`?",
-                            "options": [
-                                "object",
-                                "null",
-                                "undefined",
-                                "string"
-                            ],
-                            "correctAnswer": "object"
-                        },
-                        {
-                            "id": "1-medium-14",
-                            "question": "What is the purpose of the `class` keyword in JavaScript?",
-                            "options": [
-                                "To define a class",
-                                "To define a function",
-                                "To define an object",
-                                "To define a variable"
-                            ],
-                            "correctAnswer": "To define a class"
-                        },
-                        {
-                            "id": "1-medium-15",
-                            "question": "What is the output of `console.log([] + {})`?",
-                            "options": [
-                                "[object Object]",
-                                "{}",
-                                "[]",
-                                "Error"
-                            ],
-                            "correctAnswer": "[object Object]"
-                        },
-                        {
-                            "id": "1-medium-16",
-                            "question": "What is the purpose of the `Symbol` data type in JavaScript?",
-                            "options": [
-                                "To create unique identifiers",
-                                "To create strings",
-                                "To create numbers",
-                                "To create objects"
-                            ],
-                            "correctAnswer": "To create unique identifiers"
-                        },
-                        {
-                            "id": "1-medium-17",
-                            "question": "What is the output of `console.log(typeof function() {})`?",
-                            "options": [
-                                "function",
-                                "object",
-                                "undefined",
-                                "string"
-                            ],
-                            "correctAnswer": "function"
-                        },
-                        {
-                            "id": "1-medium-18",
-                            "question": "What is the purpose of the `Proxy` object in JavaScript?",
-                            "options": [
-                                "To define custom behavior for fundamental operations",
-                                "To create a new object",
-                                "To define a function",
-                                "To define a variable"
-                            ],
-                            "correctAnswer": "To define custom behavior for fundamental operations"
-                        },
-                        {
-                            "id": "1-medium-19",
-                            "question": "What is the output of `console.log(1 == '1')`?",
-                            "options": [
-                                "true",
-                                "false",
-                                "undefined",
-                                "Error"
-                            ],
-                            "correctAnswer": "true"
-                        },
-                        {
-                            "id": "1-medium-20",
-                            "question": "What is the purpose of the `Generator` function in JavaScript?",
-                            "options": [
-                                "To generate a sequence of values",
-                                "To generate a random number",
-                                "To generate a string",
-                                "To generate an object"
-                            ],
-                            "correctAnswer": "To generate a sequence of values"
-                        }
-                    ]
-                },
-                {
-                    "difficulty": "hard",
-                    "questions": [
-                        {
-                            "id": "1-hard-1",
-                            "question": "What is the event loop in JavaScript?",
-                            "options": [
-                                "A loop that handles events",
-                                "A loop that runs indefinitely",
-                                "A loop that handles asynchronous operations",
-                                "A loop that handles synchronous operations"
-                            ],
-                            "correctAnswer": "A loop that handles asynchronous operations"
-                        },
-                        {
-                            "id": "1-hard-2",
-                            "question": "What is the purpose of the `WeakMap` object in JavaScript?",
-                            "options": [
-                                "To store key-value pairs with weak references",
-                                "To store key-value pairs with strong references",
-                                "To store arrays",
-                                "To store functions"
-                            ],
-                            "correctAnswer": "To store key-value pairs with weak references"
-                        },
-                        {
-                            "id": "1-hard-3",
-                            "question": "What is the output of `console.log(typeof (() => {}))`?",
-                            "options": [
-                                "function",
-                                "object",
-                                "undefined",
-                                "string"
-                            ],
-                            "correctAnswer": "function"
-                        },
-                        {
-                            "id": "1-hard-4",
-                            "question": "What is the purpose of the `Reflect` object in JavaScript?",
-                            "options": [
-                                "To provide methods for interceptable JavaScript operations",
-                                "To create a new object",
-                                "To define a function",
-                                "To define a variable"
-                            ],
-                            "correctAnswer": "To provide methods for interceptable JavaScript operations"
-                        },
-                        {
-                            "id": "1-hard-5",
-                            "question": "What is the output of `console.log(1 === '1')`?",
-                            "options": [
-                                "true",
-                                "false",
-                                "undefined",
-                                "Error"
-                            ],
-                            "correctAnswer": "false"
-                        },
-                        {
-                            "id": "1-hard-6",
-                            "question": "What is the purpose of the `Intl` object in JavaScript?",
-                            "options": [
-                                "To handle internationalization and localization",
-                                "To handle numbers",
-                                "To handle strings",
-                                "To handle objects"
-                            ],
-                            "correctAnswer": "To handle internationalization and localization"
-                        },
-                        {
-                            "id": "1-hard-7",
-                            "question": "What is the output of `console.log(typeof new Date())`?",
-                            "options": [
-                                "object",
-                                "date",
-                                "undefined",
-                                "string"
-                            ],
-                            "correctAnswer": "object"
-                        },
-                        {
-                            "id": "1-hard-8",
-                            "question": "What is the purpose of the `BigInt` data type in JavaScript?",
-                            "options": [
-                                "To represent large integers",
-                                "To represent floating-point numbers",
-                                "To represent strings",
-                                "To represent objects"
-                            ],
-                            "correctAnswer": "To represent large integers"
-                        },
-                        {
-                            "id": "1-hard-9",
-                            "question": "What is the output of `console.log(typeof Symbol('foo'))`?",
-                            "options": [
-                                "symbol",
-                                "object",
-                                "undefined",
-                                "string"
-                            ],
-                            "correctAnswer": "symbol"
-                        },
-                        {
-                            "id": "1-hard-10",
-                            "question": "What is the purpose of the `async/await` syntax in JavaScript?",
-                            "options": [
-                                "To handle asynchronous operations",
-                                "To handle synchronous operations",
-                                "To create loops",
-                                "To define variables"
-                            ],
-                            "correctAnswer": "To handle asynchronous operations"
-                        },
-                        {
-                            "id": "1-hard-11",
-                            "question": "What is the output of `console.log(typeof new Map())`?",
-                            "options": [
-                                "object",
-                                "map",
-                                "undefined",
-                                "string"
-                            ],
-                            "correctAnswer": "object"
-                        },
-                        {
-                            "id": "1-hard-12",
-                            "question": "What is the purpose of the `Set` object in JavaScript?",
-                            "options": [
-                                "To store unique values",
-                                "To store key-value pairs",
-                                "To store arrays",
-                                "To store functions"
-                            ],
-                            "correctAnswer": "To store unique values"
-                        },
-                        {
-                            "id": "1-hard-13",
-                            "question": "What is the output of `console.log(typeof new Set())`?",
-                            "options": [
-                                "object",
-                                "set",
-                                "undefined",
-                                "string"
-                            ],
-                            "correctAnswer": "object"
-                        },
-                        {
-                            "id": "1-hard-14",
-                            "question": "What is the purpose of the `ArrayBuffer` object in JavaScript?",
-                            "options": [
-                                "To represent a generic, fixed-length raw binary data buffer",
-                                "To represent an array",
-                                "To represent a string",
-                                "To represent an object"
-                            ],
-                            "correctAnswer": "To represent a generic, fixed-length raw binary data buffer"
-                        },
-                        {
-                            "id": "1-hard-15",
-                            "question": "What is the output of `console.log(typeof new ArrayBuffer())`?",
-                            "options": [
-                                "object",
-                                "arraybuffer",
-                                "undefined",
-                                "string"
-                            ],
-                            "correctAnswer": "object"
-                        },
-                        {
-                            "id": "1-hard-16",
-                            "question": "What is the purpose of the `DataView` object in JavaScript?",
-                            "options": [
-                                "To provide a low-level interface for reading and writing multiple number types in a binary ArrayBuffer",
-                                "To provide a high-level interface for reading and writing multiple number types in a binary ArrayBuffer",
-                                "To provide a low-level interface for reading and writing strings",
-                                "To provide a high-level interface for reading and writing strings"
-                            ],
-                            "correctAnswer": "To provide a low-level interface for reading and writing multiple number types in a binary ArrayBuffer"
-                        },
-                        {
-                            "id": "1-hard-17",
-                            "question": "What is the output of `console.log(typeof new DataView(new ArrayBuffer()))`?",
-                            "options": [
-                                "object",
-                                "dataview",
-                                "undefined",
-                                "string"
-                            ],
-                            "correctAnswer": "object"
-                        },
-                        {
-                            "id": "1-hard-18",
-                            "question": "What is the purpose of the `SharedArrayBuffer` object in JavaScript?",
-                            "options": [
-                                "To represent a generic, fixed-length raw binary data buffer that can be used to create views on shared memory",
-                                "To represent a generic, fixed-length raw binary data buffer that can be used to create views on private memory",
-                                "To represent a generic, fixed-length raw binary data buffer that can be used to create views on global memory",
-                                "To represent a generic, fixed-length raw binary data buffer that can be used to create views on local memory"
-                            ],
-                            "correctAnswer": "To represent a generic, fixed-length raw binary data buffer that can be used to create views on shared memory"
-                        },
-                        {
-                            "id": "1-hard-19",
-                            "question": "What is the output of `console.log(typeof new SharedArrayBuffer())`?",
-                            "options": [
-                                "object",
-                                "sharedarraybuffer",
-                                "undefined",
-                                "string"
-                            ],
-                            "correctAnswer": "object"
-                        },
-                        {
-                            "id": "1-hard-20",
-                            "question": "What is the purpose of the `Atomics` object in JavaScript?",
-                            "options": [
-                                "To provide atomic operations as static methods",
-                                "To provide non-atomic operations as static methods",
-                                "To provide atomic operations as instance methods",
-                                "To provide non-atomic operations as instance methods"
-                            ],
-                            "correctAnswer": "To provide atomic operations as static methods"
-                        }
-                    ]
-                }
-            ]
+            {
+              "id": "1-easy-2",
+              "question": "Which company developed JavaScript?",
+              "options": [
+                "Microsoft",
+                "Netscape",
+                "Google",
+                "Apple"
+              ],
+              "correctAnswer": "Netscape"
+            },
+            {
+              "id": "1-easy-3",
+              "question": "What is the file extension for JavaScript files?",
+              "options": [
+                ".js",
+                ".java",
+                ".html",
+                ".css"
+              ],
+              "correctAnswer": ".js"
+            },
+            {
+              "id": "1-easy-4",
+              "question": "Which keyword is used to declare a variable in JavaScript?",
+              "options": [
+                "var",
+                "let",
+                "const",
+                "All of the above"
+              ],
+              "correctAnswer": "All of the above"
+            },
+            {
+              "id": "1-easy-5",
+              "question": "What is the output of `console.log(typeof null)`?",
+              "options": [
+                "object",
+                "null",
+                "undefined",
+                "string"
+              ],
+              "correctAnswer": "object"
+            },
+            {
+              "id": "1-easy-6",
+              "question": "Which of the following is NOT a JavaScript data type?",
+              "options": [
+                "String",
+                "Boolean",
+                "Integer",
+                "Object"
+              ],
+              "correctAnswer": "Integer"
+            },
+            {
+              "id": "1-easy-7",
+              "question": "What does `NaN` stand for?",
+              "options": [
+                "Not a Number",
+                "Not a Null",
+                "Not a Node",
+                "Not a Name"
+              ],
+              "correctAnswer": "Not a Number"
+            },
+            {
+              "id": "1-easy-8",
+              "question": "Which method is used to add an element to the end of an array?",
+              "options": [
+                "push()",
+                "pop()",
+                "shift()",
+                "unshift()"
+              ],
+              "correctAnswer": "push()"
+            },
+            {
+              "id": "1-easy-9",
+              "question": "What is the result of `2 + '2'` in JavaScript?",
+              "options": [
+                "4",
+                "22",
+                "NaN",
+                "Error"
+              ],
+              "correctAnswer": "22"
+            },
+            {
+              "id": "1-easy-10",
+              "question": "Which of the following is a JavaScript framework?",
+              "options": [
+                "React",
+                "Angular",
+                "Vue",
+                "All of the above"
+              ],
+              "correctAnswer": "All of the above"
+            },
+            {
+              "id": "1-easy-11",
+              "question": "What is the purpose of the `this` keyword in JavaScript?",
+              "options": [
+                "Refers to the current object",
+                "Refers to the parent object",
+                "Refers to the global object",
+                "Refers to the child object"
+              ],
+              "correctAnswer": "Refers to the current object"
+            },
+            {
+              "id": "1-easy-12",
+              "question": "Which function is used to parse a string to an integer?",
+              "options": [
+                "parseInt()",
+                "parseFloat()",
+                "Number()",
+                "String()"
+              ],
+              "correctAnswer": "parseInt()"
+            },
+            {
+              "id": "1-easy-13",
+              "question": "What is the output of `console.log(0 == false)`?",
+              "options": [
+                "true",
+                "false",
+                "undefined",
+                "Error"
+              ],
+              "correctAnswer": "true"
+            },
+            {
+              "id": "1-easy-14",
+              "question": "Which event occurs when a user clicks on an HTML element?",
+              "options": [
+                "onclick",
+                "onchange",
+                "onload",
+                "onmouseover"
+              ],
+              "correctAnswer": "onclick"
+            },
+            {
+              "id": "1-easy-15",
+              "question": "What is the purpose of the `addEventListener` method?",
+              "options": [
+                "To add an event handler",
+                "To remove an event handler",
+                "To create an event",
+                "To delete an event"
+              ],
+              "correctAnswer": "To add an event handler"
+            },
+            {
+              "id": "1-easy-16",
+              "question": "What is the output of `console.log([] + [])`?",
+              "options": [
+                "[]",
+                "[object Object]",
+                "''",
+                "Error"
+              ],
+              "correctAnswer": "''"
+            },
+            {
+              "id": "1-easy-17",
+              "question": "Which operator is used for strict equality in JavaScript?",
+              "options": [
+                "==",
+                "===",
+                "=",
+                "!=="
+              ],
+              "correctAnswer": "==="
+            },
+            {
+              "id": "1-easy-18",
+              "question": "What is the purpose of the `return` statement in a function?",
+              "options": [
+                "To stop the function execution",
+                "To return a value",
+                "To define a function",
+                "To call another function"
+              ],
+              "correctAnswer": "To return a value"
+            },
+            {
+              "id": "1-easy-19",
+              "question": "What is the output of `console.log(typeof [])`?",
+              "options": [
+                "object",
+                "array",
+                "undefined",
+                "string"
+              ],
+              "correctAnswer": "object"
+            },
+            {
+              "id": "1-easy-20",
+              "question": "Which method is used to convert an object to a JSON string?",
+              "options": [
+                "JSON.stringify()",
+                "JSON.parse()",
+                "toString()",
+                "toJSON()"
+              ],
+              "correctAnswer": "JSON.stringify()"
+            }
+          ]
         },
         {
-            "subject": {
-                "id": 2,
-                "name": "C#"
+          "difficulty": "medium",
+          "questions": [
+            {
+              "id": "1-medium-1",
+              "question": "What is a closure in JavaScript?",
+              "options": [
+                "A function",
+                "A scope",
+                "A loop",
+                "A variable"
+              ],
+              "correctAnswer": "A function"
             },
-            "difficultyLevels": [
-                {
-                    "difficulty": "easy",
-                    "questions": [
-                        {
-                            "id": "2-easy-1",
-                            "question": "What is C#?",
-                            "options": [
-                                "A programming language",
-                                "A type of coffee",
-                                "A car model",
-                                "A country"
-                            ],
-                            "correctAnswer": "A programming language"
-                        },
-                        {
-                            "id": "2-easy-2",
-                            "question": "Which company developed C#?",
-                            "options": [
-                                "Microsoft",
-                                "Netscape",
-                                "Google",
-                                "Apple"
-                            ],
-                            "correctAnswer": "Microsoft"
-                        },
-                        {
-                            "id": "2-easy-3",
-                            "question": "What is the file extension for C# files?",
-                            "options": [
-                                ".cs",
-                                ".java",
-                                ".cpp",
-                                ".c"
-                            ],
-                            "correctAnswer": ".cs"
-                        },
-                        {
-                            "id": "2-easy-4",
-                            "question": "Which keyword is used to declare a variable in C#?",
-                            "options": [
-                                "var",
-                                "let",
-                                "const",
-                                "All of the above"
-                            ],
-                            "correctAnswer": "var"
-                        },
-                        {
-                            "id": "2-easy-5",
-                            "question": "What is the output of `Console.WriteLine(typeof(int))`?",
-                            "options": [
-                                "System.Int32",
-                                "int",
-                                "System.Integer",
-                                "Integer"
-                            ],
-                            "correctAnswer": "System.Int32"
-                        },
-                        {
-                            "id": "2-easy-6",
-                            "question": "Which of the following is NOT a C# data type?",
-                            "options": [
-                                "String",
-                                "Boolean",
-                                "Integer",
-                                "Object"
-                            ],
-                            "correctAnswer": "Integer"
-                        },
-                        {
-                            "id": "2-easy-7",
-                            "question": "What does `LINQ` stand for?",
-                            "options": [
-                                "Language Integrated Query",
-                                "Language Independent Query",
-                                "Loop Integrated Query",
-                                "List Integrated Query"
-                            ],
-                            "correctAnswer": "Language Integrated Query"
-                        },
-                        {
-                            "id": "2-easy-8",
-                            "question": "Which method is used to add an element to the end of a list in C#?",
-                            "options": [
-                                "Add()",
-                                "Push()",
-                                "Insert()",
-                                "Append()"
-                            ],
-                            "correctAnswer": "Add()"
-                        },
-                        {
-                            "id": "2-easy-9",
-                            "question": "What is the result of `2 + '2'` in C#?",
-                            "options": [
-                                "4",
-                                "22",
-                                "Error",
-                                "NaN"
-                            ],
-                            "correctAnswer": "Error"
-                        },
-                        {
-                            "id": "2-easy-10",
-                            "question": "Which of the following is a C# framework?",
-                            "options": [
-                                ".NET",
-                                "Spring",
-                                "Django",
-                                "Laravel"
-                            ],
-                            "correctAnswer": ".NET"
-                        },
-                        {
-                            "id": "2-easy-11",
-                            "question": "What is the purpose of the `this` keyword in C#?",
-                            "options": [
-                                "Refers to the current object",
-                                "Refers to the parent object",
-                                "Refers to the global object",
-                                "Refers to the child object"
-                            ],
-                            "correctAnswer": "Refers to the current object"
-                        },
-                        {
-                            "id": "2-easy-12",
-                            "question": "Which function is used to parse a string to an integer in C#?",
-                            "options": [
-                                "int.Parse()",
-                                "Convert.ToInt32()",
-                                "Int32.Parse()",
-                                "All of the above"
-                            ],
-                            "correctAnswer": "All of the above"
-                        },
-                        {
-                            "id": "2-easy-13",
-                            "question": "What is the output of `Console.WriteLine(0 == false)`?",
-                            "options": [
-                                "true",
-                                "false",
-                                "Error",
-                                "NaN"
-                            ],
-                            "correctAnswer": "Error"
-                        },
-                        {
-                            "id": "2-easy-14",
-                            "question": "Which event occurs when a button is clicked in a Windows Forms application?",
-                            "options": [
-                                "Click",
-                                "ButtonClick",
-                                "OnClick",
-                                "ButtonPress"
-                            ],
-                            "correctAnswer": "Click"
-                        },
-                        {
-                            "id": "2-easy-15",
-                            "question": "What is the purpose of the `using` keyword in C#?",
-                            "options": [
-                                "To include namespaces",
-                                "To define a variable",
-                                "To create a loop",
-                                "To define a function"
-                            ],
-                            "correctAnswer": "To include namespaces"
-                        },
-                        {
-                            "id": "2-easy-16",
-                            "question": "What is the output of `Console.WriteLine('Hello' + 'World')`?",
-                            "options": [
-                                "HelloWorld",
-                                "Hello World",
-                                "Error",
-                                "NaN"
-                            ],
-                            "correctAnswer": "HelloWorld"
-                        },
-                        {
-                            "id": "2-easy-17",
-                            "question": "Which operator is used for strict equality in C#?",
-                            "options": [
-                                "==",
-                                "===",
-                                "=",
-                                "!=="
-                            ],
-                            "correctAnswer": "=="
-                        },
-                        {
-                            "id": "2-easy-18",
-                            "question": "What is the purpose of the `return` statement in a function?",
-                            "options": [
-                                "To stop the function execution",
-                                "To return a value",
-                                "To define a function",
-                                "To call another function"
-                            ],
-                            "correctAnswer": "To return a value"
-                        },
-                        {
-                            "id": "2-easy-19",
-                            "question": "What is the output of `Console.WriteLine(typeof(string))`?",
-                            "options": [
-                                "System.String",
-                                "string",
-                                "System.Text",
-                                "Text"
-                            ],
-                            "correctAnswer": "System.String"
-                        },
-                        {
-                            "id": "2-easy-20",
-                            "question": "Which method is used to convert an object to a JSON string in C#?",
-                            "options": [
-                                "JsonConvert.SerializeObject()",
-                                "JsonConvert.DeserializeObject()",
-                                "ToString()",
-                                "ToJson()"
-                            ],
-                            "correctAnswer": "JsonConvert.SerializeObject()"
-                        }
-                    ]
-                },
-                {
-                    "difficulty": "medium",
-                    "questions": [
-                        {
-                            "id": "2-medium-1",
-                            "question": "What is a delegate in C#?",
-                            "options": [
-                                "A type",
-                                "A method",
-                                "A class",
-                                "A namespace"
-                            ],
-                            "correctAnswer": "A type"
-                        },
-                        {
-                            "id": "2-medium-2",
-                            "question": "What is the purpose of the `async` keyword in C#?",
-                            "options": [
-                                "To define an asynchronous method",
-                                "To define a synchronous method",
-                                "To define a generator method",
-                                "To define a callback method"
-                            ],
-                            "correctAnswer": "To define an asynchronous method"
-                        },
-                        {
-                            "id": "2-medium-3",
-                            "question": "What is the output of `Console.WriteLine(1 + '1')`?",
-                            "options": [
-                                "11",
-                                "2",
-                                "50",
-                                "Error"
-                            ],
-                            "correctAnswer": "50"
-                        },
-                        {
-                            "id": "2-medium-4",
-                            "question": "What is the purpose of the `Task` object in C#?",
-                            "options": [
-                                "To handle asynchronous operations",
-                                "To handle synchronous operations",
-                                "To create loops",
-                                "To define variables"
-                            ],
-                            "correctAnswer": "To handle asynchronous operations"
-                        },
-                        {
-                            "id": "2-medium-5",
-                            "question": "What is the output of `Console.WriteLine(typeof(decimal))`?",
-                            "options": [
-                                "System.Decimal",
-                                "decimal",
-                                "System.Float",
-                                "Float"
-                            ],
-                            "correctAnswer": "System.Decimal"
-                        },
-                        {
-                            "id": "2-medium-6",
-                            "question": "What is the purpose of the `yield` keyword in C#?",
-                            "options": [
-                                "To create an iterator",
-                                "To create a loop",
-                                "To create a function",
-                                "To create a variable"
-                            ],
-                            "correctAnswer": "To create an iterator"
-                        },
-                        {
-                            "id": "2-medium-7",
-                            "question": "What is the output of `Console.WriteLine(null == null)`?",
-                            "options": [
-                                "true",
-                                "false",
-                                "Error",
-                                "NaN"
-                            ],
-                            "correctAnswer": "true"
-                        },
-                        {
-                            "id": "2-medium-8",
-                            "question": "What is the purpose of the `ref` keyword in C#?",
-                            "options": [
-                                "To pass arguments by reference",
-                                "To pass arguments by value",
-                                "To define a variable",
-                                "To define a function"
-                            ],
-                            "correctAnswer": "To pass arguments by reference"
-                        },
-                        {
-                            "id": "2-medium-9",
-                            "question": "What is the output of `Console.WriteLine(typeof(bool))`?",
-                            "options": [
-                                "System.Boolean",
-                                "bool",
-                                "System.TrueFalse",
-                                "TrueFalse"
-                            ],
-                            "correctAnswer": "System.Boolean"
-                        },
-                        {
-                            "id": "2-medium-10",
-                            "question": "What is the purpose of the `using` statement in C#?",
-                            "options": [
-                                "To define a scope for disposable objects",
-                                "To define a variable",
-                                "To define a function",
-                                "To define a loop"
-                            ],
-                            "correctAnswer": "To define a scope for disposable objects"
-                        },
-                        {
-                            "id": "2-medium-11",
-                            "question": "What is the output of `Console.WriteLine(0.1 + 0.2 == 0.3)`?",
-                            "options": [
-                                "true",
-                                "false",
-                                "Error",
-                                "NaN"
-                            ],
-                            "correctAnswer": "false"
-                        },
-                        {
-                            "id": "2-medium-12",
-                            "question": "What is the purpose of the `out` keyword in C#?",
-                            "options": [
-                                "To pass arguments by reference",
-                                "To pass arguments by value",
-                                "To define a variable",
-                                "To define a function"
-                            ],
-                            "correctAnswer": "To pass arguments by reference"
-                        },
-                        {
-                            "id": "2-medium-13",
-                            "question": "What is the output of `Console.WriteLine(typeof(char))`?",
-                            "options": [
-                                "System.Char",
-                                "char",
-                                "System.Character",
-                                "Character"
-                            ],
-                            "correctAnswer": "System.Char"
-                        },
-                        {
-                            "id": "2-medium-14",
-                            "question": "What is the purpose of the `is` keyword in C#?",
-                            "options": [
-                                "To check the type of an object",
-                                "To define a variable",
-                                "To define a function",
-                                "To define a loop"
-                            ],
-                            "correctAnswer": "To check the type of an object"
-                        },
-                        {
-                            "id": "2-medium-15",
-                            "question": "What is the output of `Console.WriteLine('Hello' == 'Hello')`?",
-                            "options": [
-                                "true",
-                                "false",
-                                "Error",
-                                "NaN"
-                            ],
-                            "correctAnswer": "true"
-                        },
-                        {
-                            "id": "2-medium-16",
-                            "question": "What is the purpose of the `as` keyword in C#?",
-                            "options": [
-                                "To perform type casting",
-                                "To define a variable",
-                                "To define a function",
-                                "To define a loop"
-                            ],
-                            "correctAnswer": "To perform type casting"
-                        },
-                        {
-                            "id": "2-medium-17",
-                            "question": "What is the output of `Console.WriteLine(typeof(double))`?",
-                            "options": [
-                                "System.Double",
-                                "double",
-                                "System.Float",
-                                "Float"
-                            ],
-                            "correctAnswer": "System.Double"
-                        },
-                        {
-                            "id": "2-medium-18",
-                            "question": "What is the purpose of the `params` keyword in C#?",
-                            "options": [
-                                "To pass a variable number of arguments",
-                                "To define a variable",
-                                "To define a function",
-                                "To define a loop"
-                            ],
-                            "correctAnswer": "To pass a variable number of arguments"
-                        },
-                        {
-                            "id": "2-medium-19",
-                            "question": "What is the output of `Console.WriteLine(typeof(long))`?",
-                            "options": [
-                                "System.Int64",
-                                "long",
-                                "System.Integer",
-                                "Integer"
-                            ],
-                            "correctAnswer": "System.Int64"
-                        },
-                        {
-                            "id": "2-medium-20",
-                            "question": "What is the purpose of the `readonly` keyword in C#?",
-                            "options": [
-                                "To define a constant",
-                                "To define a variable",
-                                "To define a function",
-                                "To define a loop"
-                            ],
-                            "correctAnswer": "To define a constant"
-                        }
-                    ]
-                },
-                {
-                    "difficulty": "hard",
-                    "questions": [
-                        {
-                            "id": "2-hard-1",
-                            "question": "What is the purpose of the `volatile` keyword in C#?",
-                            "options": [
-                                "To indicate that a field can be modified by multiple threads",
-                                "To define a variable",
-                                "To define a function",
-                                "To define a loop"
-                            ],
-                            "correctAnswer": "To indicate that a field can be modified by multiple threads"
-                        },
-                        {
-                            "id": "2-hard-2",
-                            "question": "What is the output of `Console.WriteLine(typeof(ulong))`?",
-                            "options": [
-                                "System.UInt64",
-                                "ulong",
-                                "System.Integer",
-                                "Integer"
-                            ],
-                            "correctAnswer": "System.UInt64"
-                        },
-                        {
-                            "id": "2-hard-3",
-                            "question": "What is the purpose of the `unsafe` keyword in C#?",
-                            "options": [
-                                "To define unsafe code",
-                                "To define a variable",
-                                "To define a function",
-                                "To define a loop"
-                            ],
-                            "correctAnswer": "To define unsafe code"
-                        },
-                        {
-                            "id": "2-hard-4",
-                            "question": "What is the output of `Console.WriteLine(typeof(short))`?",
-                            "options": [
-                                "System.Int16",
-                                "short",
-                                "System.Integer",
-                                "Integer"
-                            ],
-                            "correctAnswer": "System.Int16"
-                        },
-                        {
-                            "id": "2-hard-5",
-                            "question": "What is the purpose of the `fixed` keyword in C#?",
-                            "options": [
-                                "To pin an object in memory",
-                                "To define a variable",
-                                "To define a function",
-                                "To define a loop"
-                            ],
-                            "correctAnswer": "To pin an object in memory"
-                        },
-                        {
-                            "id": "2-hard-6",
-                            "question": "What is the output of `Console.WriteLine(typeof(ushort))`?",
-                            "options": [
-                                "System.UInt16",
-                                "ushort",
-                                "System.Integer",
-                                "Integer"
-                            ],
-                            "correctAnswer": "System.UInt16"
-                        },
-                        {
-                            "id": "2-hard-7",
-                            "question": "What is the purpose of the `stackalloc` keyword in C#?",
-                            "options": [
-                                "To allocate memory on the stack",
-                                "To define a variable",
-                                "To define a function",
-                                "To define a loop"
-                            ],
-                            "correctAnswer": "To allocate memory on the stack"
-                        },
-                        {
-                            "id": "2-hard-8",
-                            "question": "What is the output of `Console.WriteLine(typeof(byte))`?",
-                            "options": [
-                                "System.Byte",
-                                "byte",
-                                "System.Integer",
-                                "Integer"
-                            ],
-                            "correctAnswer": "System.Byte"
-                        },
-                        {
-                            "id": "2-hard-9",
-                            "question": "What is the purpose of the `nameof` operator in C#?",
-                            "options": [
-                                "To get the name of a variable, type, or member",
-                                "To define a variable",
-                                "To define a function",
-                                "To define a loop"
-                            ],
-                            "correctAnswer": "To get the name of a variable, type, or member"
-                        },
-                        {
-                            "id": "2-hard-10",
-                            "question": "What is the output of `Console.WriteLine(typeof(sbyte))`?",
-                            "options": [
-                                "System.SByte",
-                                "sbyte",
-                                "System.Integer",
-                                "Integer"
-                            ],
-                            "correctAnswer": "System.SByte"
-                        },
-                        {
-                            "id": "2-hard-11",
-                            "question": "What is the purpose of the `checked` keyword in C#?",
-                            "options": [
-                                "To enable overflow checking",
-                                "To define a variable",
-                                "To define a function",
-                                "To define a loop"
-                            ],
-                            "correctAnswer": "To enable overflow checking"
-                        },
-                        {
-                            "id": "2-hard-12",
-                            "question": "What is the output of `Console.WriteLine(typeof(float))`?",
-                            "options": [
-                                "System.Single",
-                                "float",
-                                "System.Double",
-                                "Double"
-                            ],
-                            "correctAnswer": "System.Single"
-                        },
-                        {
-                            "id": "2-hard-13",
-                            "question": "What is the purpose of the `unchecked` keyword in C#?",
-                            "options": [
-                                "To disable overflow checking",
-                                "To define a variable",
-                                "To define a function",
-                                "To define a loop"
-                            ],
-                            "correctAnswer": "To disable overflow checking"
-                        },
-                        {
-                            "id": "2-hard-14",
-                            "question": "What is the output of `Console.WriteLine(typeof(decimal))`?",
-                            "options": [
-                                "System.Decimal",
-                                "decimal",
-                                "System.Float",
-                                "Float"
-                            ],
-                            "correctAnswer": "System.Decimal"
-                        },
-                        {
-                            "id": "2-hard-15",
-                            "question": "What is the purpose of the `lock` keyword in C#?",
-                            "options": [
-                                "To ensure thread safety",
-                                "To define a variable",
-                                "To define a function",
-                                "To define a loop"
-                            ],
-                            "correctAnswer": "To ensure thread safety"
-                        },
-                        {
-                            "id": "2-hard-16",
-                            "question": "What is the output of `Console.WriteLine(typeof(object))`?",
-                            "options": [
-                                "System.Object",
-                                "object",
-                                "System.Class",
-                                "Class"
-                            ],
-                            "correctAnswer": "System.Object"
-                        },
-                        {
-                            "id": "2-hard-17",
-                            "question": "What is the purpose of the `sizeof` operator in C#?",
-                            "options": [
-                                "To get the size of a type",
-                                "To define a variable",
-                                "To define a function",
-                                "To define a loop"
-                            ],
-                            "correctAnswer": "To get the size of a type"
-                        },
-                        {
-                            "id": "2-hard-18",
-                            "question": "What is the output of `Console.WriteLine(typeof(nint))`?",
-                            "options": [
-                                "System.IntPtr",
-                                "nint",
-                                "System.Integer",
-                                "Integer"
-                            ],
-                            "correctAnswer": "System.IntPtr"
-                        },
-                        {
-                            "id": "2-hard-19",
-                            "question": "What is the purpose of the `typeof` operator in C#?",
-                            "options": [
-                                "To get the type of an object",
-                                "To define a variable",
-                                "To define a function",
-                                "To define a loop"
-                            ],
-                            "correctAnswer": "To get the type of an object"
-                        },
-                        {
-                            "id": "2-hard-20",
-                            "question": "What is the output of `Console.WriteLine(typeof(nuint))`?",
-                            "options": [
-                                "System.UIntPtr",
-                                "nuint",
-                                "System.Integer",
-                                "Integer"
-                            ],
-                            "correctAnswer": "System.UIntPtr"
-                        }
-                    ]
-                }
-            ]
+            {
+              "id": "1-medium-2",
+              "question": "What is the purpose of the `bind` method?",
+              "options": [
+                "To bind a function to an object",
+                "To create a new function",
+                "To call a function",
+                "To delete a function"
+              ],
+              "correctAnswer": "To bind a function to an object"
+            },
+            {
+              "id": "1-medium-3",
+              "question": "What is the output of `console.log(1 + '1' - 1)`?",
+              "options": [
+                "10",
+                "11",
+                "0",
+                "NaN"
+              ],
+              "correctAnswer": "10"
+            },
+            {
+              "id": "1-medium-4",
+              "question": "What is the purpose of the `Promise` object in JavaScript?",
+              "options": [
+                "To handle asynchronous operations",
+                "To handle synchronous operations",
+                "To create loops",
+                "To define variables"
+              ],
+              "correctAnswer": "To handle asynchronous operations"
+            },
+            {
+              "id": "1-medium-5",
+              "question": "What is the output of `console.log(typeof NaN)`?",
+              "options": [
+                "number",
+                "NaN",
+                "undefined",
+                "string"
+              ],
+              "correctAnswer": "number"
+            },
+            {
+              "id": "1-medium-6",
+              "question": "What is the purpose of the `map` method in JavaScript?",
+              "options": [
+                "To transform elements of an array",
+                "To filter elements of an array",
+                "To reduce elements of an array",
+                "To sort elements of an array"
+              ],
+              "correctAnswer": "To transform elements of an array"
+            },
+            {
+              "id": "1-medium-7",
+              "question": "What is the output of `console.log([] == ![])`?",
+              "options": [
+                "true",
+                "false",
+                "undefined",
+                "Error"
+              ],
+              "correctAnswer": "true"
+            },
+            {
+              "id": "1-medium-8",
+              "question": "What is the purpose of the `async` keyword in JavaScript?",
+              "options": [
+                "To define an asynchronous function",
+                "To define a synchronous function",
+                "To define a generator function",
+                "To define a callback function"
+              ],
+              "correctAnswer": "To define an asynchronous function"
+            },
+            {
+              "id": "1-medium-9",
+              "question": "What is the output of `console.log(typeof undefined)`?",
+              "options": [
+                "undefined",
+                "null",
+                "object",
+                "string"
+              ],
+              "correctAnswer": "undefined"
+            },
+            {
+              "id": "1-medium-10",
+              "question": "What is the purpose of the `fetch` API in JavaScript?",
+              "options": [
+                "To make HTTP requests",
+                "To manipulate the DOM",
+                "To handle events",
+                "To create animations"
+              ],
+              "correctAnswer": "To make HTTP requests"
+            },
+            {
+              "id": "1-medium-11",
+              "question": "What is the output of `console.log(0.1 + 0.2 === 0.3)`?",
+              "options": [
+                "true",
+                "false",
+                "undefined",
+                "Error"
+              ],
+              "correctAnswer": "false"
+            },
+            {
+              "id": "1-medium-12",
+              "question": "What is the purpose of the `reduce` method in JavaScript?",
+              "options": [
+                "To reduce an array to a single value",
+                "To filter elements of an array",
+                "To transform elements of an array",
+                "To sort elements of an array"
+              ],
+              "correctAnswer": "To reduce an array to a single value"
+            },
+            {
+              "id": "1-medium-13",
+              "question": "What is the output of `console.log(typeof null)`?",
+              "options": [
+                "object",
+                "null",
+                "undefined",
+                "string"
+              ],
+              "correctAnswer": "object"
+            },
+            {
+              "id": "1-medium-14",
+              "question": "What is the purpose of the `class` keyword in JavaScript?",
+              "options": [
+                "To define a class",
+                "To define a function",
+                "To define an object",
+                "To define a variable"
+              ],
+              "correctAnswer": "To define a class"
+            },
+            {
+              "id": "1-medium-15",
+              "question": "What is the output of `console.log([] + {})`?",
+              "options": [
+                "[object Object]",
+                "{}",
+                "[]",
+                "Error"
+              ],
+              "correctAnswer": "[object Object]"
+            },
+            {
+              "id": "1-medium-16",
+              "question": "What is the purpose of the `Symbol` data type in JavaScript?",
+              "options": [
+                "To create unique identifiers",
+                "To create strings",
+                "To create numbers",
+                "To create objects"
+              ],
+              "correctAnswer": "To create unique identifiers"
+            },
+            {
+              "id": "1-medium-17",
+              "question": "What is the output of `console.log(typeof function() {})`?",
+              "options": [
+                "function",
+                "object",
+                "undefined",
+                "string"
+              ],
+              "correctAnswer": "function"
+            },
+            {
+              "id": "1-medium-18",
+              "question": "What is the purpose of the `Proxy` object in JavaScript?",
+              "options": [
+                "To define custom behavior for fundamental operations",
+                "To create a new object",
+                "To define a function",
+                "To define a variable"
+              ],
+              "correctAnswer": "To define custom behavior for fundamental operations"
+            },
+            {
+              "id": "1-medium-19",
+              "question": "What is the output of `console.log(1 == '1')`?",
+              "options": [
+                "true",
+                "false",
+                "undefined",
+                "Error"
+              ],
+              "correctAnswer": "true"
+            },
+            {
+              "id": "1-medium-20",
+              "question": "What is the purpose of the `Generator` function in JavaScript?",
+              "options": [
+                "To generate a sequence of values",
+                "To generate a random number",
+                "To generate a string",
+                "To generate an object"
+              ],
+              "correctAnswer": "To generate a sequence of values"
+            }
+          ]
         },
         {
-            "subject": {
-                "id": 3,
-                "name": "TypeScript"
+          "difficulty": "hard",
+          "questions": [
+            {
+              "id": "1-hard-1",
+              "question": "What is the event loop in JavaScript?",
+              "options": [
+                "A loop that handles events",
+                "A loop that runs indefinitely",
+                "A loop that handles asynchronous operations",
+                "A loop that handles synchronous operations"
+              ],
+              "correctAnswer": "A loop that handles asynchronous operations"
             },
-            "difficultyLevels": [
-                {
-                    "difficulty": "easy",
-                    "questions": [
-                        {
-                            "id": "3-easy-1",
-                            "question": "What is TypeScript?",
-                            "options": [
-                                "A programming language",
-                                "A type of coffee",
-                                "A car model",
-                                "A country"
-                            ],
-                            "correctAnswer": "A programming language"
-                        },
-                        {
-                            "id": "3-easy-2",
-                            "question": "Which company developed TypeScript?",
-                            "options": [
-                                "Microsoft",
-                                "Netscape",
-                                "Google",
-                                "Apple"
-                            ],
-                            "correctAnswer": "Microsoft"
-                        },
-                        {
-                            "id": "3-easy-3",
-                            "question": "What is the file extension for TypeScript files?",
-                            "options": [
-                                ".ts",
-                                ".js",
-                                ".html",
-                                ".css"
-                            ],
-                            "correctAnswer": ".ts"
-                        },
-                        {
-                            "id": "3-easy-4",
-                            "question": "Which keyword is used to declare a variable in TypeScript?",
-                            "options": [
-                                "var",
-                                "let",
-                                "const",
-                                "All of the above"
-                            ],
-                            "correctAnswer": "All of the above"
-                        },
-                        {
-                            "id": "3-easy-5",
-                            "question": "What is the output of `console.log(typeof null)` in TypeScript?",
-                            "options": [
-                                "object",
-                                "null",
-                                "undefined",
-                                "string"
-                            ],
-                            "correctAnswer": "object"
-                        },
-                        {
-                            "id": "3-easy-6",
-                            "question": "Which of the following is NOT a TypeScript data type?",
-                            "options": [
-                                "String",
-                                "Boolean",
-                                "Integer",
-                                "Object"
-                            ],
-                            "correctAnswer": "Integer"
-                        },
-                        {
-                            "id": "3-easy-7",
-                            "question": "What does `NaN` stand for in TypeScript?",
-                            "options": [
-                                "Not a Number",
-                                "Not a Null",
-                                "Not a Node",
-                                "Not a Name"
-                            ],
-                            "correctAnswer": "Not a Number"
-                        },
-                        {
-                            "id": "3-easy-8",
-                            "question": "Which method is used to add an element to the end of an array in TypeScript?",
-                            "options": [
-                                "push()",
-                                "pop()",
-                                "shift()",
-                                "unshift()"
-                            ],
-                            "correctAnswer": "push()"
-                        },
-                        {
-                            "id": "3-easy-9",
-                            "question": "What is the result of `2 + '2'` in TypeScript?",
-                            "options": [
-                                "4",
-                                "22",
-                                "NaN",
-                                "Error"
-                            ],
-                            "correctAnswer": "22"
-                        },
-                        {
-                            "id": "3-easy-10",
-                            "question": "Which of the following is a TypeScript framework?",
-                            "options": [
-                                "Angular",
-                                "React",
-                                "Vue",
-                                "All of the above"
-                            ],
-                            "correctAnswer": "All of the above"
-                        },
-                        {
-                            "id": "3-easy-11",
-                            "question": "What is the purpose of the `this` keyword in TypeScript?",
-                            "options": [
-                                "Refers to the current object",
-                                "Refers to the parent object",
-                                "Refers to the global object",
-                                "Refers to the child object"
-                            ],
-                            "correctAnswer": "Refers to the current object"
-                        },
-                        {
-                            "id": "3-easy-12",
-                            "question": "Which function is used to parse a string to an integer in TypeScript?",
-                            "options": [
-                                "parseInt()",
-                                "parseFloat()",
-                                "Number()",
-                                "String()"
-                            ],
-                            "correctAnswer": "parseInt()"
-                        },
-                        {
-                            "id": "3-easy-13",
-                            "question": "What is the output of `console.log(0 == false)` in TypeScript?",
-                            "options": [
-                                "true",
-                                "false",
-                                "undefined",
-                                "Error"
-                            ],
-                            "correctAnswer": "true"
-                        },
-                        {
-                            "id": "3-easy-14",
-                            "question": "Which event occurs when a user clicks on an HTML element in TypeScript?",
-                            "options": [
-                                "onclick",
-                                "onchange",
-                                "onload",
-                                "onmouseover"
-                            ],
-                            "correctAnswer": "onclick"
-                        },
-                        {
-                            "id": "3-easy-15",
-                            "question": "What is the purpose of the `addEventListener` method in TypeScript?",
-                            "options": [
-                                "To add an event handler",
-                                "To remove an event handler",
-                                "To create an event",
-                                "To delete an event"
-                            ],
-                            "correctAnswer": "To add an event handler"
-                        },
-                        {
-                            "id": "3-easy-16",
-                            "question": "What is the output of `console.log([] + [])` in TypeScript?",
-                            "options": [
-                                "[]",
-                                "[object Object]",
-                                "''",
-                                "Error"
-                            ],
-                            "correctAnswer": "''"
-                        },
-                        {
-                            "id": "3-easy-17",
-                            "question": "Which operator is used for strict equality in TypeScript?",
-                            "options": [
-                                "==",
-                                "===",
-                                "=",
-                                "!=="
-                            ],
-                            "correctAnswer": "==="
-                        },
-                        {
-                            "id": "3-easy-18",
-                            "question": "What is the purpose of the `return` statement in a function in TypeScript?",
-                            "options": [
-                                "To stop the function execution",
-                                "To return a value",
-                                "To define a function",
-                                "To call another function"
-                            ],
-                            "correctAnswer": "To return a value"
-                        },
-                        {
-                            "id": "3-easy-19",
-                            "question": "What is the output of `console.log(typeof [])` in TypeScript?",
-                            "options": [
-                                "object",
-                                "array",
-                                "undefined",
-                                "string"
-                            ],
-                            "correctAnswer": "object"
-                        },
-                        {
-                            "id": "3-easy-20",
-                            "question": "Which method is used to convert an object to a JSON string in TypeScript?",
-                            "options": [
-                                "JSON.stringify()",
-                                "JSON.parse()",
-                                "toString()",
-                                "toJSON()"
-                            ],
-                            "correctAnswer": "JSON.stringify()"
-                        }
-                    ]
-                },
-                {
-                    "difficulty": "medium",
-                    "questions": [
-                        {
-                            "id": "3-medium-1",
-                            "question": "What is a decorator in TypeScript?",
-                            "options": [
-                                "A function",
-                                "A class",
-                                "A method",
-                                "A namespace"
-                            ],
-                            "correctAnswer": "A function"
-                        },
-                        {
-                            "id": "3-medium-2",
-                            "question": "What is the purpose of the `interface` keyword in TypeScript?",
-                            "options": [
-                                "To define a contract for objects",
-                                "To define a class",
-                                "To define a function",
-                                "To define a variable"
-                            ],
-                            "correctAnswer": "To define a contract for objects"
-                        },
-                        {
-                            "id": "3-medium-3",
-                            "question": "What is the output of `console.log(1 + '1' - 1)` in TypeScript?",
-                            "options": [
-                                "10",
-                                "11",
-                                "0",
-                                "NaN"
-                            ],
-                            "correctAnswer": "10"
-                        },
-                        {
-                            "id": "3-medium-4",
-                            "question": "What is the purpose of the `type` keyword in TypeScript?",
-                            "options": [
-                                "To define a custom type",
-                                "To define a class",
-                                "To define a function",
-                                "To define a variable"
-                            ],
-                            "correctAnswer": "To define a custom type"
-                        },
-                        {
-                            "id": "3-medium-5",
-                            "question": "What is the output of `console.log(typeof NaN)` in TypeScript?",
-                            "options": [
-                                "number",
-                                "NaN",
-                                "undefined",
-                                "string"
-                            ],
-                            "correctAnswer": "number"
-                        },
-                        {
-                            "id": "3-medium-6",
-                            "question": "What is the purpose of the `namespace` keyword in TypeScript?",
-                            "options": [
-                                "To organize code into modules",
-                                "To define a class",
-                                "To define a function",
-                                "To define a variable"
-                            ],
-                            "correctAnswer": "To organize code into modules"
-                        },
-                        {
-                            "id": "3-medium-7",
-                            "question": "What is the output of `console.log([] == ![])` in TypeScript?",
-                            "options": [
-                                "true",
-                                "false",
-                                "undefined",
-                                "Error"
-                            ],
-                            "correctAnswer": "true"
-                        },
-                        {
-                            "id": "3-medium-8",
-                            "question": "What is the purpose of the `readonly` keyword in TypeScript?",
-                            "options": [
-                                "To make a property immutable",
-                                "To define a class",
-                                "To define a function",
-                                "To define a variable"
-                            ],
-                            "correctAnswer": "To make a property immutable"
-                        },
-                        {
-                            "id": "3-medium-9",
-                            "question": "What is the output of `console.log(typeof undefined)` in TypeScript?",
-                            "options": [
-                                "undefined",
-                                "null",
-                                "object",
-                                "string"
-                            ],
-                            "correctAnswer": "undefined"
-                        },
-                        {
-                            "id": "3-medium-10",
-                            "question": "What is the purpose of the `enum` keyword in TypeScript?",
-                            "options": [
-                                "To define a set of named constants",
-                                "To define a class",
-                                "To define a function",
-                                "To define a variable"
-                            ],
-                            "correctAnswer": "To define a set of named constants"
-                        },
-                        {
-                            "id": "3-medium-11",
-                            "question": "What is the output of `console.log(0.1 + 0.2 === 0.3)` in TypeScript?",
-                            "options": [
-                                "true",
-                                "false",
-                                "undefined",
-                                "Error"
-                            ],
-                            "correctAnswer": "false"
-                        },
-                        {
-                            "id": "3-medium-12",
-                            "question": "What is the purpose of the `abstract` keyword in TypeScript?",
-                            "options": [
-                                "To define an abstract class or method",
-                                "To define a class",
-                                "To define a function",
-                                "To define a variable"
-                            ],
-                            "correctAnswer": "To define an abstract class or method"
-                        },
-                        {
-                            "id": "3-medium-13",
-                            "question": "What is the output of `console.log(typeof null)` in TypeScript?",
-                            "options": [
-                                "object",
-                                "null",
-                                "undefined",
-                                "string"
-                            ],
-                            "correctAnswer": "object"
-                        },
-                        {
-                            "id": "3-medium-14",
-                            "question": "What is the purpose of the `as` keyword in TypeScript?",
-                            "options": [
-                                "To perform type assertion",
-                                "To define a class",
-                                "To define a function",
-                                "To define a variable"
-                            ],
-                            "correctAnswer": "To perform type assertion"
-                        },
-                        {
-                            "id": "3-medium-15",
-                            "question": "What is the output of `console.log([] + {})` in TypeScript?",
-                            "options": [
-                                "[object Object]",
-                                "{}",
-                                "[]",
-                                "Error"
-                            ],
-                            "correctAnswer": "[object Object]"
-                        },
-                        {
-                            "id": "3-medium-16",
-                            "question": "What is the purpose of the `keyof` operator in TypeScript?",
-                            "options": [
-                                "To get the keys of an object type",
-                                "To define a class",
-                                "To define a function",
-                                "To define a variable"
-                            ],
-                            "correctAnswer": "To get the keys of an object type"
-                        },
-                        {
-                            "id": "3-medium-17",
-                            "question": "What is the output of `console.log(typeof function() {})` in TypeScript?",
-                            "options": [
-                                "function",
-                                "object",
-                                "undefined",
-                                "string"
-                            ],
-                            "correctAnswer": "function"
-                        },
-                        {
-                            "id": "3-medium-18",
-                            "question": "What is the purpose of the `infer` keyword in TypeScript?",
-                            "options": [
-                                "To infer types in conditional types",
-                                "To define a class",
-                                "To define a function",
-                                "To define a variable"
-                            ],
-                            "correctAnswer": "To infer types in conditional types"
-                        },
-                        {
-                            "id": "3-medium-19",
-                            "question": "What is the output of `console.log(1 == '1')` in TypeScript?",
-                            "options": [
-                                "true",
-                                "false",
-                                "undefined",
-                                "Error"
-                            ],
-                            "correctAnswer": "true"
-                        },
-                        {
-                            "id": "3-medium-20",
-                            "question": "What is the purpose of the `never` type in TypeScript?",
-                            "options": [
-                                "To represent values that never occur",
-                                "To define a class",
-                                "To define a function",
-                                "To define a variable"
-                            ],
-                            "correctAnswer": "To represent values that never occur"
-                        }
-                    ]
-                },
-                {
-                    "difficulty": "hard",
-                    "questions": [
-                        {
-                            "id": "3-hard-1",
-                            "question": "What is the purpose of the `mapped types` feature in TypeScript?",
-                            "options": [
-                                "To create new types based on existing ones",
-                                "To define a class",
-                                "To define a function",
-                                "To define a variable"
-                            ],
-                            "correctAnswer": "To create new types based on existing ones"
-                        },
-                        {
-                            "id": "3-hard-2",
-                            "question": "What is the output of `console.log(typeof (() => {}))` in TypeScript?",
-                            "options": [
-                                "function",
-                                "object",
-                                "undefined",
-                                "string"
-                            ],
-                            "correctAnswer": "function"
-                        },
-                        {
-                            "id": "3-hard-3",
-                            "question": "What is the purpose of the `conditional types` feature in TypeScript?",
-                            "options": [
-                                "To define types based on conditions",
-                                "To define a class",
-                                "To define a function",
-                                "To define a variable"
-                            ],
-                            "correctAnswer": "To define types based on conditions"
-                        },
-                        {
-                            "id": "3-hard-4",
-                            "question": "What is the output of `console.log(1 === '1')` in TypeScript?",
-                            "options": [
-                                "true",
-                                "false",
-                                "undefined",
-                                "Error"
-                            ],
-                            "correctAnswer": "false"
-                        },
-                        {
-                            "id": "3-hard-5",
-                            "question": "What is the purpose of the `utility types` feature in TypeScript?",
-                            "options": [
-                                "To provide common type transformations",
-                                "To define a class",
-                                "To define a function",
-                                "To define a variable"
-                            ],
-                            "correctAnswer": "To provide common type transformations"
-                        },
-                        {
-                            "id": "3-hard-6",
-                            "question": "What is the output of `console.log(typeof new Date())` in TypeScript?",
-                            "options": [
-                                "object",
-                                "date",
-                                "undefined",
-                                "string"
-                            ],
-                            "correctAnswer": "object"
-                        },
-                        {
-                            "id": "3-hard-7",
-                            "question": "What is the purpose of the `decorator factories` feature in TypeScript?",
-                            "options": [
-                                "To create decorators with parameters",
-                                "To define a class",
-                                "To define a function",
-                                "To define a variable"
-                            ],
-                            "correctAnswer": "To create decorators with parameters"
-                        },
-                        {
-                            "id": "3-hard-8",
-                            "question": "What is the output of `console.log(typeof Symbol('foo'))` in TypeScript?",
-                            "options": [
-                                "symbol",
-                                "object",
-                                "undefined",
-                                "string"
-                            ],
-                            "correctAnswer": "symbol"
-                        },
-                        {
-                            "id": "3-hard-9",
-                            "question": "What is the purpose of the `async/await` syntax in TypeScript?",
-                            "options": [
-                                "To handle asynchronous operations",
-                                "To handle synchronous operations",
-                                "To create loops",
-                                "To define variables"
-                            ],
-                            "correctAnswer": "To handle asynchronous operations"
-                        },
-                        {
-                            "id": "3-hard-10",
-                            "question": "What is the output of `console.log(typeof new Map())` in TypeScript?",
-                            "options": [
-                                "object",
-                                "map",
-                                "undefined",
-                                "string"
-                            ],
-                            "correctAnswer": "object"
-                        },
-                        {
-                            "id": "3-hard-11",
-                            "question": "What is the purpose of the `Set` object in TypeScript?",
-                            "options": [
-                                "To store unique values",
-                                "To store key-value pairs",
-                                "To store arrays",
-                                "To store functions"
-                            ],
-                            "correctAnswer": "To store unique values"
-                        },
-                        {
-                            "id": "3-hard-12",
-                            "question": "What is the output of `console.log(typeof new Set())` in TypeScript?",
-                            "options": [
-                                "object",
-                                "set",
-                                "undefined",
-                                "string"
-                            ],
-                            "correctAnswer": "object"
-                        },
-                        {
-                            "id": "3-hard-13",
-                            "question": "What is the purpose of the `ArrayBuffer` object in TypeScript?",
-                            "options": [
-                                "To represent a generic, fixed-length raw binary data buffer",
-                                "To represent an array",
-                                "To represent a string",
-                                "To represent an object"
-                            ],
-                            "correctAnswer": "To represent a generic, fixed-length raw binary data buffer"
-                        },
-                        {
-                            "id": "3-hard-14",
-                            "question": "What is the output of `console.log(typeof new ArrayBuffer())` in TypeScript?",
-                            "options": [
-                                "object",
-                                "arraybuffer",
-                                "undefined",
-                                "string"
-                            ],
-                            "correctAnswer": "object"
-                        },
-                        {
-                            "id": "3-hard-15",
-                            "question": "What is the purpose of the `DataView` object in TypeScript?",
-                            "options": [
-                                "To provide a low-level interface for reading and writing multiple number types in a binary ArrayBuffer",
-                                "To provide a high-level interface for reading and writing multiple number types in a binary ArrayBuffer",
-                                "To provide a low-level interface for reading and writing strings",
-                                "To provide a high-level interface for reading and writing strings"
-                            ],
-                            "correctAnswer": "To provide a low-level interface for reading and writing multiple number types in a binary ArrayBuffer"
-                        },
-                        {
-                            "id": "3-hard-16",
-                            "question": "What is the output of `console.log(typeof new DataView(new ArrayBuffer()))` in TypeScript?",
-                            "options": [
-                                "object",
-                                "dataview",
-                                "undefined",
-                                "string"
-                            ],
-                            "correctAnswer": "object"
-                        },
-                        {
-                            "id": "3-hard-17",
-                            "question": "What is the purpose of the `SharedArrayBuffer` object in TypeScript?",
-                            "options": [
-                                "To represent a generic, fixed-length raw binary data buffer that can be used to create views on shared memory",
-                                "To represent a generic, fixed-length raw binary data buffer that can be used to create views on private memory",
-                                "To represent a generic, fixed-length raw binary data buffer that can be used to create views on global memory",
-                                "To represent a generic, fixed-length raw binary data buffer that can be used to create views on local memory"
-                            ],
-                            "correctAnswer": "To represent a generic, fixed-length raw binary data buffer that can be used to create views on shared memory"
-                        },
-                        {
-                            "id": "3-hard-18",
-                            "question": "What is the output of `console.log(typeof new SharedArrayBuffer())` in TypeScript?",
-                            "options": [
-                                "object",
-                                "sharedarraybuffer",
-                                "undefined",
-                                "string"
-                            ],
-                            "correctAnswer": "object"
-                        },
-                        {
-                            "id": "3-hard-19",
-                            "question": "What is the purpose of the `Atomics` object in TypeScript?",
-                            "options": [
-                                "To provide atomic operations as static methods",
-                                "To provide non-atomic operations as static methods",
-                                "To provide atomic operations as instance methods",
-                                "To provide non-atomic operations as instance methods"
-                            ],
-                            "correctAnswer": "To provide atomic operations as static methods"
-                        },
-                        {
-                            "id": "3-hard-20",
-                            "question": "What is the output of `console.log(typeof Atomics)` in TypeScript?",
-                            "options": [
-                                "object",
-                                "atomics",
-                                "undefined",
-                                "string"
-                            ],
-                            "correctAnswer": "object"
-                        }
-                    ]
-                }
-            ]
+            {
+              "id": "1-hard-2",
+              "question": "What is the purpose of the `WeakMap` object in JavaScript?",
+              "options": [
+                "To store key-value pairs with weak references",
+                "To store key-value pairs with strong references",
+                "To store arrays",
+                "To store functions"
+              ],
+              "correctAnswer": "To store key-value pairs with weak references"
+            },
+            {
+              "id": "1-hard-3",
+              "question": "What is the output of `console.log(typeof (() => {}))`?",
+              "options": [
+                "function",
+                "object",
+                "undefined",
+                "string"
+              ],
+              "correctAnswer": "function"
+            },
+            {
+              "id": "1-hard-4",
+              "question": "What is the purpose of the `Reflect` object in JavaScript?",
+              "options": [
+                "To provide methods for interceptable JavaScript operations",
+                "To create a new object",
+                "To define a function",
+                "To define a variable"
+              ],
+              "correctAnswer": "To provide methods for interceptable JavaScript operations"
+            },
+            {
+              "id": "1-hard-5",
+              "question": "What is the output of `console.log(1 === '1')`?",
+              "options": [
+                "true",
+                "false",
+                "undefined",
+                "Error"
+              ],
+              "correctAnswer": "false"
+            },
+            {
+              "id": "1-hard-6",
+              "question": "What is the purpose of the `Intl` object in JavaScript?",
+              "options": [
+                "To handle internationalization and localization",
+                "To handle numbers",
+                "To handle strings",
+                "To handle objects"
+              ],
+              "correctAnswer": "To handle internationalization and localization"
+            },
+            {
+              "id": "1-hard-7",
+              "question": "What is the output of `console.log(typeof new Date())`?",
+              "options": [
+                "object",
+                "date",
+                "undefined",
+                "string"
+              ],
+              "correctAnswer": "object"
+            },
+            {
+              "id": "1-hard-8",
+              "question": "What is the purpose of the `BigInt` data type in JavaScript?",
+              "options": [
+                "To represent large integers",
+                "To represent floating-point numbers",
+                "To represent strings",
+                "To represent objects"
+              ],
+              "correctAnswer": "To represent large integers"
+            },
+            {
+              "id": "1-hard-9",
+              "question": "What is the output of `console.log(typeof Symbol('foo'))`?",
+              "options": [
+                "symbol",
+                "object",
+                "undefined",
+                "string"
+              ],
+              "correctAnswer": "symbol"
+            },
+            {
+              "id": "1-hard-10",
+              "question": "What is the purpose of the `async/await` syntax in JavaScript?",
+              "options": [
+                "To handle asynchronous operations",
+                "To handle synchronous operations",
+                "To create loops",
+                "To define variables"
+              ],
+              "correctAnswer": "To handle asynchronous operations"
+            },
+            {
+              "id": "1-hard-11",
+              "question": "What is the output of `console.log(typeof new Map())`?",
+              "options": [
+                "object",
+                "map",
+                "undefined",
+                "string"
+              ],
+              "correctAnswer": "object"
+            },
+            {
+              "id": "1-hard-12",
+              "question": "What is the purpose of the `Set` object in JavaScript?",
+              "options": [
+                "To store unique values",
+                "To store key-value pairs",
+                "To store arrays",
+                "To store functions"
+              ],
+              "correctAnswer": "To store unique values"
+            },
+            {
+              "id": "1-hard-13",
+              "question": "What is the output of `console.log(typeof new Set())`?",
+              "options": [
+                "object",
+                "set",
+                "undefined",
+                "string"
+              ],
+              "correctAnswer": "object"
+            },
+            {
+              "id": "1-hard-14",
+              "question": "What is the purpose of the `ArrayBuffer` object in JavaScript?",
+              "options": [
+                "To represent a generic, fixed-length raw binary data buffer",
+                "To represent an array",
+                "To represent a string",
+                "To represent an object"
+              ],
+              "correctAnswer": "To represent a generic, fixed-length raw binary data buffer"
+            },
+            {
+              "id": "1-hard-15",
+              "question": "What is the output of `console.log(typeof new ArrayBuffer())`?",
+              "options": [
+                "object",
+                "arraybuffer",
+                "undefined",
+                "string"
+              ],
+              "correctAnswer": "object"
+            },
+            {
+              "id": "1-hard-16",
+              "question": "What is the purpose of the `DataView` object in JavaScript?",
+              "options": [
+                "To provide a low-level interface for reading and writing multiple number types in a binary ArrayBuffer",
+                "To provide a high-level interface for reading and writing multiple number types in a binary ArrayBuffer",
+                "To provide a low-level interface for reading and writing strings",
+                "To provide a high-level interface for reading and writing strings"
+              ],
+              "correctAnswer": "To provide a low-level interface for reading and writing multiple number types in a binary ArrayBuffer"
+            },
+            {
+              "id": "1-hard-17",
+              "question": "What is the output of `console.log(typeof new DataView(new ArrayBuffer()))`?",
+              "options": [
+                "object",
+                "dataview",
+                "undefined",
+                "string"
+              ],
+              "correctAnswer": "object"
+            },
+            {
+              "id": "1-hard-18",
+              "question": "What is the purpose of the `SharedArrayBuffer` object in JavaScript?",
+              "options": [
+                "To represent a generic, fixed-length raw binary data buffer that can be used to create views on shared memory",
+                "To represent a generic, fixed-length raw binary data buffer that can be used to create views on private memory",
+                "To represent a generic, fixed-length raw binary data buffer that can be used to create views on global memory",
+                "To represent a generic, fixed-length raw binary data buffer that can be used to create views on local memory"
+              ],
+              "correctAnswer": "To represent a generic, fixed-length raw binary data buffer that can be used to create views on shared memory"
+            },
+            {
+              "id": "1-hard-19",
+              "question": "What is the output of `console.log(typeof new SharedArrayBuffer())`?",
+              "options": [
+                "object",
+                "sharedarraybuffer",
+                "undefined",
+                "string"
+              ],
+              "correctAnswer": "object"
+            },
+            {
+              "id": "1-hard-20",
+              "question": "What is the purpose of the `Atomics` object in JavaScript?",
+              "options": [
+                "To provide atomic operations as static methods",
+                "To provide non-atomic operations as static methods",
+                "To provide atomic operations as instance methods",
+                "To provide non-atomic operations as instance methods"
+              ],
+              "correctAnswer": "To provide atomic operations as static methods"
+            }
+          ]
         }
-    ]
-
+      ],
+      "id": "a948"
+    },
+    {
+      "subject": {
+        "id": 2,
+        "name": "C#"
+      },
+      "difficultyLevels": [
+        {
+          "difficulty": "easy",
+          "questions": [
+            {
+              "id": "2-easy-1",
+              "question": "What is C#?",
+              "options": [
+                "A programming language",
+                "A type of coffee",
+                "A car model",
+                "A country"
+              ],
+              "correctAnswer": "A programming language"
+            },
+            {
+              "id": "2-easy-2",
+              "question": "Which company developed C#?",
+              "options": [
+                "Microsoft",
+                "Netscape",
+                "Google",
+                "Apple"
+              ],
+              "correctAnswer": "Microsoft"
+            },
+            {
+              "id": "2-easy-3",
+              "question": "What is the file extension for C# files?",
+              "options": [
+                ".cs",
+                ".java",
+                ".cpp",
+                ".c"
+              ],
+              "correctAnswer": ".cs"
+            },
+            {
+              "id": "2-easy-4",
+              "question": "Which keyword is used to declare a variable in C#?",
+              "options": [
+                "var",
+                "let",
+                "const",
+                "All of the above"
+              ],
+              "correctAnswer": "var"
+            },
+            {
+              "id": "2-easy-5",
+              "question": "What is the output of `Console.WriteLine(typeof(int))`?",
+              "options": [
+                "System.Int32",
+                "int",
+                "System.Integer",
+                "Integer"
+              ],
+              "correctAnswer": "System.Int32"
+            },
+            {
+              "id": "2-easy-6",
+              "question": "Which of the following is NOT a C# data type?",
+              "options": [
+                "String",
+                "Boolean",
+                "Integer",
+                "Object"
+              ],
+              "correctAnswer": "Integer"
+            },
+            {
+              "id": "2-easy-7",
+              "question": "What does `LINQ` stand for?",
+              "options": [
+                "Language Integrated Query",
+                "Language Independent Query",
+                "Loop Integrated Query",
+                "List Integrated Query"
+              ],
+              "correctAnswer": "Language Integrated Query"
+            },
+            {
+              "id": "2-easy-8",
+              "question": "Which method is used to add an element to the end of a list in C#?",
+              "options": [
+                "Add()",
+                "Push()",
+                "Insert()",
+                "Append()"
+              ],
+              "correctAnswer": "Add()"
+            },
+            {
+              "id": "2-easy-9",
+              "question": "What is the result of `2 + '2'` in C#?",
+              "options": [
+                "4",
+                "22",
+                "Error",
+                "NaN"
+              ],
+              "correctAnswer": "Error"
+            },
+            {
+              "id": "2-easy-10",
+              "question": "Which of the following is a C# framework?",
+              "options": [
+                ".NET",
+                "Spring",
+                "Django",
+                "Laravel"
+              ],
+              "correctAnswer": ".NET"
+            },
+            {
+              "id": "2-easy-11",
+              "question": "What is the purpose of the `this` keyword in C#?",
+              "options": [
+                "Refers to the current object",
+                "Refers to the parent object",
+                "Refers to the global object",
+                "Refers to the child object"
+              ],
+              "correctAnswer": "Refers to the current object"
+            },
+            {
+              "id": "2-easy-12",
+              "question": "Which function is used to parse a string to an integer in C#?",
+              "options": [
+                "int.Parse()",
+                "Convert.ToInt32()",
+                "Int32.Parse()",
+                "All of the above"
+              ],
+              "correctAnswer": "All of the above"
+            },
+            {
+              "id": "2-easy-13",
+              "question": "What is the output of `Console.WriteLine(0 == false)`?",
+              "options": [
+                "true",
+                "false",
+                "Error",
+                "NaN"
+              ],
+              "correctAnswer": "Error"
+            },
+            {
+              "id": "2-easy-14",
+              "question": "Which event occurs when a button is clicked in a Windows Forms application?",
+              "options": [
+                "Click",
+                "ButtonClick",
+                "OnClick",
+                "ButtonPress"
+              ],
+              "correctAnswer": "Click"
+            },
+            {
+              "id": "2-easy-15",
+              "question": "What is the purpose of the `using` keyword in C#?",
+              "options": [
+                "To include namespaces",
+                "To define a variable",
+                "To create a loop",
+                "To define a function"
+              ],
+              "correctAnswer": "To include namespaces"
+            },
+            {
+              "id": "2-easy-16",
+              "question": "What is the output of `Console.WriteLine('Hello' + 'World')`?",
+              "options": [
+                "HelloWorld",
+                "Hello World",
+                "Error",
+                "NaN"
+              ],
+              "correctAnswer": "HelloWorld"
+            },
+            {
+              "id": "2-easy-17",
+              "question": "Which operator is used for strict equality in C#?",
+              "options": [
+                "==",
+                "===",
+                "=",
+                "!=="
+              ],
+              "correctAnswer": "=="
+            },
+            {
+              "id": "2-easy-18",
+              "question": "What is the purpose of the `return` statement in a function?",
+              "options": [
+                "To stop the function execution",
+                "To return a value",
+                "To define a function",
+                "To call another function"
+              ],
+              "correctAnswer": "To return a value"
+            },
+            {
+              "id": "2-easy-19",
+              "question": "What is the output of `Console.WriteLine(typeof(string))`?",
+              "options": [
+                "System.String",
+                "string",
+                "System.Text",
+                "Text"
+              ],
+              "correctAnswer": "System.String"
+            },
+            {
+              "id": "2-easy-20",
+              "question": "Which method is used to convert an object to a JSON string in C#?",
+              "options": [
+                "JsonConvert.SerializeObject()",
+                "JsonConvert.DeserializeObject()",
+                "ToString()",
+                "ToJson()"
+              ],
+              "correctAnswer": "JsonConvert.SerializeObject()"
+            }
+          ]
+        },
+        {
+          "difficulty": "medium",
+          "questions": [
+            {
+              "id": "2-medium-1",
+              "question": "What is a delegate in C#?",
+              "options": [
+                "A type",
+                "A method",
+                "A class",
+                "A namespace"
+              ],
+              "correctAnswer": "A type"
+            },
+            {
+              "id": "2-medium-2",
+              "question": "What is the purpose of the `async` keyword in C#?",
+              "options": [
+                "To define an asynchronous method",
+                "To define a synchronous method",
+                "To define a generator method",
+                "To define a callback method"
+              ],
+              "correctAnswer": "To define an asynchronous method"
+            },
+            {
+              "id": "2-medium-3",
+              "question": "What is the output of `Console.WriteLine(1 + '1')`?",
+              "options": [
+                "11",
+                "2",
+                "50",
+                "Error"
+              ],
+              "correctAnswer": "50"
+            },
+            {
+              "id": "2-medium-4",
+              "question": "What is the purpose of the `Task` object in C#?",
+              "options": [
+                "To handle asynchronous operations",
+                "To handle synchronous operations",
+                "To create loops",
+                "To define variables"
+              ],
+              "correctAnswer": "To handle asynchronous operations"
+            },
+            {
+              "id": "2-medium-5",
+              "question": "What is the output of `Console.WriteLine(typeof(decimal))`?",
+              "options": [
+                "System.Decimal",
+                "decimal",
+                "System.Float",
+                "Float"
+              ],
+              "correctAnswer": "System.Decimal"
+            },
+            {
+              "id": "2-medium-6",
+              "question": "What is the purpose of the `yield` keyword in C#?",
+              "options": [
+                "To create an iterator",
+                "To create a loop",
+                "To create a function",
+                "To create a variable"
+              ],
+              "correctAnswer": "To create an iterator"
+            },
+            {
+              "id": "2-medium-7",
+              "question": "What is the output of `Console.WriteLine(null == null)`?",
+              "options": [
+                "true",
+                "false",
+                "Error",
+                "NaN"
+              ],
+              "correctAnswer": "true"
+            },
+            {
+              "id": "2-medium-8",
+              "question": "What is the purpose of the `ref` keyword in C#?",
+              "options": [
+                "To pass arguments by reference",
+                "To pass arguments by value",
+                "To define a variable",
+                "To define a function"
+              ],
+              "correctAnswer": "To pass arguments by reference"
+            },
+            {
+              "id": "2-medium-9",
+              "question": "What is the output of `Console.WriteLine(typeof(bool))`?",
+              "options": [
+                "System.Boolean",
+                "bool",
+                "System.TrueFalse",
+                "TrueFalse"
+              ],
+              "correctAnswer": "System.Boolean"
+            },
+            {
+              "id": "2-medium-10",
+              "question": "What is the purpose of the `using` statement in C#?",
+              "options": [
+                "To define a scope for disposable objects",
+                "To define a variable",
+                "To define a function",
+                "To define a loop"
+              ],
+              "correctAnswer": "To define a scope for disposable objects"
+            },
+            {
+              "id": "2-medium-11",
+              "question": "What is the output of `Console.WriteLine(0.1 + 0.2 == 0.3)`?",
+              "options": [
+                "true",
+                "false",
+                "Error",
+                "NaN"
+              ],
+              "correctAnswer": "false"
+            },
+            {
+              "id": "2-medium-12",
+              "question": "What is the purpose of the `out` keyword in C#?",
+              "options": [
+                "To pass arguments by reference",
+                "To pass arguments by value",
+                "To define a variable",
+                "To define a function"
+              ],
+              "correctAnswer": "To pass arguments by reference"
+            },
+            {
+              "id": "2-medium-13",
+              "question": "What is the output of `Console.WriteLine(typeof(char))`?",
+              "options": [
+                "System.Char",
+                "char",
+                "System.Character",
+                "Character"
+              ],
+              "correctAnswer": "System.Char"
+            },
+            {
+              "id": "2-medium-14",
+              "question": "What is the purpose of the `is` keyword in C#?",
+              "options": [
+                "To check the type of an object",
+                "To define a variable",
+                "To define a function",
+                "To define a loop"
+              ],
+              "correctAnswer": "To check the type of an object"
+            },
+            {
+              "id": "2-medium-15",
+              "question": "What is the output of `Console.WriteLine('Hello' == 'Hello')`?",
+              "options": [
+                "true",
+                "false",
+                "Error",
+                "NaN"
+              ],
+              "correctAnswer": "true"
+            },
+            {
+              "id": "2-medium-16",
+              "question": "What is the purpose of the `as` keyword in C#?",
+              "options": [
+                "To perform type casting",
+                "To define a variable",
+                "To define a function",
+                "To define a loop"
+              ],
+              "correctAnswer": "To perform type casting"
+            },
+            {
+              "id": "2-medium-17",
+              "question": "What is the output of `Console.WriteLine(typeof(double))`?",
+              "options": [
+                "System.Double",
+                "double",
+                "System.Float",
+                "Float"
+              ],
+              "correctAnswer": "System.Double"
+            },
+            {
+              "id": "2-medium-18",
+              "question": "What is the purpose of the `params` keyword in C#?",
+              "options": [
+                "To pass a variable number of arguments",
+                "To define a variable",
+                "To define a function",
+                "To define a loop"
+              ],
+              "correctAnswer": "To pass a variable number of arguments"
+            },
+            {
+              "id": "2-medium-19",
+              "question": "What is the output of `Console.WriteLine(typeof(long))`?",
+              "options": [
+                "System.Int64",
+                "long",
+                "System.Integer",
+                "Integer"
+              ],
+              "correctAnswer": "System.Int64"
+            },
+            {
+              "id": "2-medium-20",
+              "question": "What is the purpose of the `readonly` keyword in C#?",
+              "options": [
+                "To define a constant",
+                "To define a variable",
+                "To define a function",
+                "To define a loop"
+              ],
+              "correctAnswer": "To define a constant"
+            }
+          ]
+        },
+        {
+          "difficulty": "hard",
+          "questions": [
+            {
+              "id": "2-hard-1",
+              "question": "What is the purpose of the `volatile` keyword in C#?",
+              "options": [
+                "To indicate that a field can be modified by multiple threads",
+                "To define a variable",
+                "To define a function",
+                "To define a loop"
+              ],
+              "correctAnswer": "To indicate that a field can be modified by multiple threads"
+            },
+            {
+              "id": "2-hard-2",
+              "question": "What is the output of `Console.WriteLine(typeof(ulong))`?",
+              "options": [
+                "System.UInt64",
+                "ulong",
+                "System.Integer",
+                "Integer"
+              ],
+              "correctAnswer": "System.UInt64"
+            },
+            {
+              "id": "2-hard-3",
+              "question": "What is the purpose of the `unsafe` keyword in C#?",
+              "options": [
+                "To define unsafe code",
+                "To define a variable",
+                "To define a function",
+                "To define a loop"
+              ],
+              "correctAnswer": "To define unsafe code"
+            },
+            {
+              "id": "2-hard-4",
+              "question": "What is the output of `Console.WriteLine(typeof(short))`?",
+              "options": [
+                "System.Int16",
+                "short",
+                "System.Integer",
+                "Integer"
+              ],
+              "correctAnswer": "System.Int16"
+            },
+            {
+              "id": "2-hard-5",
+              "question": "What is the purpose of the `fixed` keyword in C#?",
+              "options": [
+                "To pin an object in memory",
+                "To define a variable",
+                "To define a function",
+                "To define a loop"
+              ],
+              "correctAnswer": "To pin an object in memory"
+            },
+            {
+              "id": "2-hard-6",
+              "question": "What is the output of `Console.WriteLine(typeof(ushort))`?",
+              "options": [
+                "System.UInt16",
+                "ushort",
+                "System.Integer",
+                "Integer"
+              ],
+              "correctAnswer": "System.UInt16"
+            },
+            {
+              "id": "2-hard-7",
+              "question": "What is the purpose of the `stackalloc` keyword in C#?",
+              "options": [
+                "To allocate memory on the stack",
+                "To define a variable",
+                "To define a function",
+                "To define a loop"
+              ],
+              "correctAnswer": "To allocate memory on the stack"
+            },
+            {
+              "id": "2-hard-8",
+              "question": "What is the output of `Console.WriteLine(typeof(byte))`?",
+              "options": [
+                "System.Byte",
+                "byte",
+                "System.Integer",
+                "Integer"
+              ],
+              "correctAnswer": "System.Byte"
+            },
+            {
+              "id": "2-hard-9",
+              "question": "What is the purpose of the `nameof` operator in C#?",
+              "options": [
+                "To get the name of a variable, type, or member",
+                "To define a variable",
+                "To define a function",
+                "To define a loop"
+              ],
+              "correctAnswer": "To get the name of a variable, type, or member"
+            },
+            {
+              "id": "2-hard-10",
+              "question": "What is the output of `Console.WriteLine(typeof(sbyte))`?",
+              "options": [
+                "System.SByte",
+                "sbyte",
+                "System.Integer",
+                "Integer"
+              ],
+              "correctAnswer": "System.SByte"
+            },
+            {
+              "id": "2-hard-11",
+              "question": "What is the purpose of the `checked` keyword in C#?",
+              "options": [
+                "To enable overflow checking",
+                "To define a variable",
+                "To define a function",
+                "To define a loop"
+              ],
+              "correctAnswer": "To enable overflow checking"
+            },
+            {
+              "id": "2-hard-12",
+              "question": "What is the output of `Console.WriteLine(typeof(float))`?",
+              "options": [
+                "System.Single",
+                "float",
+                "System.Double",
+                "Double"
+              ],
+              "correctAnswer": "System.Single"
+            },
+            {
+              "id": "2-hard-13",
+              "question": "What is the purpose of the `unchecked` keyword in C#?",
+              "options": [
+                "To disable overflow checking",
+                "To define a variable",
+                "To define a function",
+                "To define a loop"
+              ],
+              "correctAnswer": "To disable overflow checking"
+            },
+            {
+              "id": "2-hard-14",
+              "question": "What is the output of `Console.WriteLine(typeof(decimal))`?",
+              "options": [
+                "System.Decimal",
+                "decimal",
+                "System.Float",
+                "Float"
+              ],
+              "correctAnswer": "System.Decimal"
+            },
+            {
+              "id": "2-hard-15",
+              "question": "What is the purpose of the `lock` keyword in C#?",
+              "options": [
+                "To ensure thread safety",
+                "To define a variable",
+                "To define a function",
+                "To define a loop"
+              ],
+              "correctAnswer": "To ensure thread safety"
+            },
+            {
+              "id": "2-hard-16",
+              "question": "What is the output of `Console.WriteLine(typeof(object))`?",
+              "options": [
+                "System.Object",
+                "object",
+                "System.Class",
+                "Class"
+              ],
+              "correctAnswer": "System.Object"
+            },
+            {
+              "id": "2-hard-17",
+              "question": "What is the purpose of the `sizeof` operator in C#?",
+              "options": [
+                "To get the size of a type",
+                "To define a variable",
+                "To define a function",
+                "To define a loop"
+              ],
+              "correctAnswer": "To get the size of a type"
+            },
+            {
+              "id": "2-hard-18",
+              "question": "What is the output of `Console.WriteLine(typeof(nint))`?",
+              "options": [
+                "System.IntPtr",
+                "nint",
+                "System.Integer",
+                "Integer"
+              ],
+              "correctAnswer": "System.IntPtr"
+            },
+            {
+              "id": "2-hard-19",
+              "question": "What is the purpose of the `typeof` operator in C#?",
+              "options": [
+                "To get the type of an object",
+                "To define a variable",
+                "To define a function",
+                "To define a loop"
+              ],
+              "correctAnswer": "To get the type of an object"
+            },
+            {
+              "id": "2-hard-20",
+              "question": "What is the output of `Console.WriteLine(typeof(nuint))`?",
+              "options": [
+                "System.UIntPtr",
+                "nuint",
+                "System.Integer",
+                "Integer"
+              ],
+              "correctAnswer": "System.UIntPtr"
+            }
+          ]
+        }
+      ],
+      "id": "9eb7"
+    },
+    {
+      "subject": {
+        "id": 3,
+        "name": "TypeScript"
+      },
+      "difficultyLevels": [
+        {
+          "difficulty": "easy",
+          "questions": [
+            {
+              "id": "3-easy-1",
+              "question": "What is TypeScript?",
+              "options": [
+                "A programming language",
+                "A type of coffee",
+                "A car model",
+                "A country"
+              ],
+              "correctAnswer": "A programming language"
+            },
+            {
+              "id": "3-easy-2",
+              "question": "Which company developed TypeScript?",
+              "options": [
+                "Microsoft",
+                "Netscape",
+                "Google",
+                "Apple"
+              ],
+              "correctAnswer": "Microsoft"
+            },
+            {
+              "id": "3-easy-3",
+              "question": "What is the file extension for TypeScript files?",
+              "options": [
+                ".ts",
+                ".js",
+                ".html",
+                ".css"
+              ],
+              "correctAnswer": ".ts"
+            },
+            {
+              "id": "3-easy-4",
+              "question": "Which keyword is used to declare a variable in TypeScript?",
+              "options": [
+                "var",
+                "let",
+                "const",
+                "All of the above"
+              ],
+              "correctAnswer": "All of the above"
+            },
+            {
+              "id": "3-easy-5",
+              "question": "What is the output of `console.log(typeof null)` in TypeScript?",
+              "options": [
+                "object",
+                "null",
+                "undefined",
+                "string"
+              ],
+              "correctAnswer": "object"
+            },
+            {
+              "id": "3-easy-6",
+              "question": "Which of the following is NOT a TypeScript data type?",
+              "options": [
+                "String",
+                "Boolean",
+                "Integer",
+                "Object"
+              ],
+              "correctAnswer": "Integer"
+            },
+            {
+              "id": "3-easy-7",
+              "question": "What does `NaN` stand for in TypeScript?",
+              "options": [
+                "Not a Number",
+                "Not a Null",
+                "Not a Node",
+                "Not a Name"
+              ],
+              "correctAnswer": "Not a Number"
+            },
+            {
+              "id": "3-easy-8",
+              "question": "Which method is used to add an element to the end of an array in TypeScript?",
+              "options": [
+                "push()",
+                "pop()",
+                "shift()",
+                "unshift()"
+              ],
+              "correctAnswer": "push()"
+            },
+            {
+              "id": "3-easy-9",
+              "question": "What is the result of `2 + '2'` in TypeScript?",
+              "options": [
+                "4",
+                "22",
+                "NaN",
+                "Error"
+              ],
+              "correctAnswer": "22"
+            },
+            {
+              "id": "3-easy-10",
+              "question": "Which of the following is a TypeScript framework?",
+              "options": [
+                "Angular",
+                "React",
+                "Vue",
+                "All of the above"
+              ],
+              "correctAnswer": "All of the above"
+            },
+            {
+              "id": "3-easy-11",
+              "question": "What is the purpose of the `this` keyword in TypeScript?",
+              "options": [
+                "Refers to the current object",
+                "Refers to the parent object",
+                "Refers to the global object",
+                "Refers to the child object"
+              ],
+              "correctAnswer": "Refers to the current object"
+            },
+            {
+              "id": "3-easy-12",
+              "question": "Which function is used to parse a string to an integer in TypeScript?",
+              "options": [
+                "parseInt()",
+                "parseFloat()",
+                "Number()",
+                "String()"
+              ],
+              "correctAnswer": "parseInt()"
+            },
+            {
+              "id": "3-easy-13",
+              "question": "What is the output of `console.log(0 == false)` in TypeScript?",
+              "options": [
+                "true",
+                "false",
+                "undefined",
+                "Error"
+              ],
+              "correctAnswer": "true"
+            },
+            {
+              "id": "3-easy-14",
+              "question": "Which event occurs when a user clicks on an HTML element in TypeScript?",
+              "options": [
+                "onclick",
+                "onchange",
+                "onload",
+                "onmouseover"
+              ],
+              "correctAnswer": "onclick"
+            },
+            {
+              "id": "3-easy-15",
+              "question": "What is the purpose of the `addEventListener` method in TypeScript?",
+              "options": [
+                "To add an event handler",
+                "To remove an event handler",
+                "To create an event",
+                "To delete an event"
+              ],
+              "correctAnswer": "To add an event handler"
+            },
+            {
+              "id": "3-easy-16",
+              "question": "What is the output of `console.log([] + [])` in TypeScript?",
+              "options": [
+                "[]",
+                "[object Object]",
+                "''",
+                "Error"
+              ],
+              "correctAnswer": "''"
+            },
+            {
+              "id": "3-easy-17",
+              "question": "Which operator is used for strict equality in TypeScript?",
+              "options": [
+                "==",
+                "===",
+                "=",
+                "!=="
+              ],
+              "correctAnswer": "==="
+            },
+            {
+              "id": "3-easy-18",
+              "question": "What is the purpose of the `return` statement in a function in TypeScript?",
+              "options": [
+                "To stop the function execution",
+                "To return a value",
+                "To define a function",
+                "To call another function"
+              ],
+              "correctAnswer": "To return a value"
+            },
+            {
+              "id": "3-easy-19",
+              "question": "What is the output of `console.log(typeof [])` in TypeScript?",
+              "options": [
+                "object",
+                "array",
+                "undefined",
+                "string"
+              ],
+              "correctAnswer": "object"
+            },
+            {
+              "id": "3-easy-20",
+              "question": "Which method is used to convert an object to a JSON string in TypeScript?",
+              "options": [
+                "JSON.stringify()",
+                "JSON.parse()",
+                "toString()",
+                "toJSON()"
+              ],
+              "correctAnswer": "JSON.stringify()"
+            }
+          ]
+        },
+        {
+          "difficulty": "medium",
+          "questions": [
+            {
+              "id": "3-medium-1",
+              "question": "What is a decorator in TypeScript?",
+              "options": [
+                "A function",
+                "A class",
+                "A method",
+                "A namespace"
+              ],
+              "correctAnswer": "A function"
+            },
+            {
+              "id": "3-medium-2",
+              "question": "What is the purpose of the `interface` keyword in TypeScript?",
+              "options": [
+                "To define a contract for objects",
+                "To define a class",
+                "To define a function",
+                "To define a variable"
+              ],
+              "correctAnswer": "To define a contract for objects"
+            },
+            {
+              "id": "3-medium-3",
+              "question": "What is the output of `console.log(1 + '1' - 1)` in TypeScript?",
+              "options": [
+                "10",
+                "11",
+                "0",
+                "NaN"
+              ],
+              "correctAnswer": "10"
+            },
+            {
+              "id": "3-medium-4",
+              "question": "What is the purpose of the `type` keyword in TypeScript?",
+              "options": [
+                "To define a custom type",
+                "To define a class",
+                "To define a function",
+                "To define a variable"
+              ],
+              "correctAnswer": "To define a custom type"
+            },
+            {
+              "id": "3-medium-5",
+              "question": "What is the output of `console.log(typeof NaN)` in TypeScript?",
+              "options": [
+                "number",
+                "NaN",
+                "undefined",
+                "string"
+              ],
+              "correctAnswer": "number"
+            },
+            {
+              "id": "3-medium-6",
+              "question": "What is the purpose of the `namespace` keyword in TypeScript?",
+              "options": [
+                "To organize code into modules",
+                "To define a class",
+                "To define a function",
+                "To define a variable"
+              ],
+              "correctAnswer": "To organize code into modules"
+            },
+            {
+              "id": "3-medium-7",
+              "question": "What is the output of `console.log([] == ![])` in TypeScript?",
+              "options": [
+                "true",
+                "false",
+                "undefined",
+                "Error"
+              ],
+              "correctAnswer": "true"
+            },
+            {
+              "id": "3-medium-8",
+              "question": "What is the purpose of the `readonly` keyword in TypeScript?",
+              "options": [
+                "To make a property immutable",
+                "To define a class",
+                "To define a function",
+                "To define a variable"
+              ],
+              "correctAnswer": "To make a property immutable"
+            },
+            {
+              "id": "3-medium-9",
+              "question": "What is the output of `console.log(typeof undefined)` in TypeScript?",
+              "options": [
+                "undefined",
+                "null",
+                "object",
+                "string"
+              ],
+              "correctAnswer": "undefined"
+            },
+            {
+              "id": "3-medium-10",
+              "question": "What is the purpose of the `enum` keyword in TypeScript?",
+              "options": [
+                "To define a set of named constants",
+                "To define a class",
+                "To define a function",
+                "To define a variable"
+              ],
+              "correctAnswer": "To define a set of named constants"
+            },
+            {
+              "id": "3-medium-11",
+              "question": "What is the output of `console.log(0.1 + 0.2 === 0.3)` in TypeScript?",
+              "options": [
+                "true",
+                "false",
+                "undefined",
+                "Error"
+              ],
+              "correctAnswer": "false"
+            },
+            {
+              "id": "3-medium-12",
+              "question": "What is the purpose of the `abstract` keyword in TypeScript?",
+              "options": [
+                "To define an abstract class or method",
+                "To define a class",
+                "To define a function",
+                "To define a variable"
+              ],
+              "correctAnswer": "To define an abstract class or method"
+            },
+            {
+              "id": "3-medium-13",
+              "question": "What is the output of `console.log(typeof null)` in TypeScript?",
+              "options": [
+                "object",
+                "null",
+                "undefined",
+                "string"
+              ],
+              "correctAnswer": "object"
+            },
+            {
+              "id": "3-medium-14",
+              "question": "What is the purpose of the `as` keyword in TypeScript?",
+              "options": [
+                "To perform type assertion",
+                "To define a class",
+                "To define a function",
+                "To define a variable"
+              ],
+              "correctAnswer": "To perform type assertion"
+            },
+            {
+              "id": "3-medium-15",
+              "question": "What is the output of `console.log([] + {})` in TypeScript?",
+              "options": [
+                "[object Object]",
+                "{}",
+                "[]",
+                "Error"
+              ],
+              "correctAnswer": "[object Object]"
+            },
+            {
+              "id": "3-medium-16",
+              "question": "What is the purpose of the `keyof` operator in TypeScript?",
+              "options": [
+                "To get the keys of an object type",
+                "To define a class",
+                "To define a function",
+                "To define a variable"
+              ],
+              "correctAnswer": "To get the keys of an object type"
+            },
+            {
+              "id": "3-medium-17",
+              "question": "What is the output of `console.log(typeof function() {})` in TypeScript?",
+              "options": [
+                "function",
+                "object",
+                "undefined",
+                "string"
+              ],
+              "correctAnswer": "function"
+            },
+            {
+              "id": "3-medium-18",
+              "question": "What is the purpose of the `infer` keyword in TypeScript?",
+              "options": [
+                "To infer types in conditional types",
+                "To define a class",
+                "To define a function",
+                "To define a variable"
+              ],
+              "correctAnswer": "To infer types in conditional types"
+            },
+            {
+              "id": "3-medium-19",
+              "question": "What is the output of `console.log(1 == '1')` in TypeScript?",
+              "options": [
+                "true",
+                "false",
+                "undefined",
+                "Error"
+              ],
+              "correctAnswer": "true"
+            },
+            {
+              "id": "3-medium-20",
+              "question": "What is the purpose of the `never` type in TypeScript?",
+              "options": [
+                "To represent values that never occur",
+                "To define a class",
+                "To define a function",
+                "To define a variable"
+              ],
+              "correctAnswer": "To represent values that never occur"
+            }
+          ]
+        },
+        {
+          "difficulty": "hard",
+          "questions": [
+            {
+              "id": "3-hard-1",
+              "question": "What is the purpose of the `mapped types` feature in TypeScript?",
+              "options": [
+                "To create new types based on existing ones",
+                "To define a class",
+                "To define a function",
+                "To define a variable"
+              ],
+              "correctAnswer": "To create new types based on existing ones"
+            },
+            {
+              "id": "3-hard-2",
+              "question": "What is the output of `console.log(typeof (() => {}))` in TypeScript?",
+              "options": [
+                "function",
+                "object",
+                "undefined",
+                "string"
+              ],
+              "correctAnswer": "function"
+            },
+            {
+              "id": "3-hard-3",
+              "question": "What is the purpose of the `conditional types` feature in TypeScript?",
+              "options": [
+                "To define types based on conditions",
+                "To define a class",
+                "To define a function",
+                "To define a variable"
+              ],
+              "correctAnswer": "To define types based on conditions"
+            },
+            {
+              "id": "3-hard-4",
+              "question": "What is the output of `console.log(1 === '1')` in TypeScript?",
+              "options": [
+                "true",
+                "false",
+                "undefined",
+                "Error"
+              ],
+              "correctAnswer": "false"
+            },
+            {
+              "id": "3-hard-5",
+              "question": "What is the purpose of the `utility types` feature in TypeScript?",
+              "options": [
+                "To provide common type transformations",
+                "To define a class",
+                "To define a function",
+                "To define a variable"
+              ],
+              "correctAnswer": "To provide common type transformations"
+            },
+            {
+              "id": "3-hard-6",
+              "question": "What is the output of `console.log(typeof new Date())` in TypeScript?",
+              "options": [
+                "object",
+                "date",
+                "undefined",
+                "string"
+              ],
+              "correctAnswer": "object"
+            },
+            {
+              "id": "3-hard-7",
+              "question": "What is the purpose of the `decorator factories` feature in TypeScript?",
+              "options": [
+                "To create decorators with parameters",
+                "To define a class",
+                "To define a function",
+                "To define a variable"
+              ],
+              "correctAnswer": "To create decorators with parameters"
+            },
+            {
+              "id": "3-hard-8",
+              "question": "What is the output of `console.log(typeof Symbol('foo'))` in TypeScript?",
+              "options": [
+                "symbol",
+                "object",
+                "undefined",
+                "string"
+              ],
+              "correctAnswer": "symbol"
+            },
+            {
+              "id": "3-hard-9",
+              "question": "What is the purpose of the `async/await` syntax in TypeScript?",
+              "options": [
+                "To handle asynchronous operations",
+                "To handle synchronous operations",
+                "To create loops",
+                "To define variables"
+              ],
+              "correctAnswer": "To handle asynchronous operations"
+            },
+            {
+              "id": "3-hard-10",
+              "question": "What is the output of `console.log(typeof new Map())` in TypeScript?",
+              "options": [
+                "object",
+                "map",
+                "undefined",
+                "string"
+              ],
+              "correctAnswer": "object"
+            },
+            {
+              "id": "3-hard-11",
+              "question": "What is the purpose of the `Set` object in TypeScript?",
+              "options": [
+                "To store unique values",
+                "To store key-value pairs",
+                "To store arrays",
+                "To store functions"
+              ],
+              "correctAnswer": "To store unique values"
+            },
+            {
+              "id": "3-hard-12",
+              "question": "What is the output of `console.log(typeof new Set())` in TypeScript?",
+              "options": [
+                "object",
+                "set",
+                "undefined",
+                "string"
+              ],
+              "correctAnswer": "object"
+            },
+            {
+              "id": "3-hard-13",
+              "question": "What is the purpose of the `ArrayBuffer` object in TypeScript?",
+              "options": [
+                "To represent a generic, fixed-length raw binary data buffer",
+                "To represent an array",
+                "To represent a string",
+                "To represent an object"
+              ],
+              "correctAnswer": "To represent a generic, fixed-length raw binary data buffer"
+            },
+            {
+              "id": "3-hard-14",
+              "question": "What is the output of `console.log(typeof new ArrayBuffer())` in TypeScript?",
+              "options": [
+                "object",
+                "arraybuffer",
+                "undefined",
+                "string"
+              ],
+              "correctAnswer": "object"
+            },
+            {
+              "id": "3-hard-15",
+              "question": "What is the purpose of the `DataView` object in TypeScript?",
+              "options": [
+                "To provide a low-level interface for reading and writing multiple number types in a binary ArrayBuffer",
+                "To provide a high-level interface for reading and writing multiple number types in a binary ArrayBuffer",
+                "To provide a low-level interface for reading and writing strings",
+                "To provide a high-level interface for reading and writing strings"
+              ],
+              "correctAnswer": "To provide a low-level interface for reading and writing multiple number types in a binary ArrayBuffer"
+            },
+            {
+              "id": "3-hard-16",
+              "question": "What is the output of `console.log(typeof new DataView(new ArrayBuffer()))` in TypeScript?",
+              "options": [
+                "object",
+                "dataview",
+                "undefined",
+                "string"
+              ],
+              "correctAnswer": "object"
+            },
+            {
+              "id": "3-hard-17",
+              "question": "What is the purpose of the `SharedArrayBuffer` object in TypeScript?",
+              "options": [
+                "To represent a generic, fixed-length raw binary data buffer that can be used to create views on shared memory",
+                "To represent a generic, fixed-length raw binary data buffer that can be used to create views on private memory",
+                "To represent a generic, fixed-length raw binary data buffer that can be used to create views on global memory",
+                "To represent a generic, fixed-length raw binary data buffer that can be used to create views on local memory"
+              ],
+              "correctAnswer": "To represent a generic, fixed-length raw binary data buffer that can be used to create views on shared memory"
+            },
+            {
+              "id": "3-hard-18",
+              "question": "What is the output of `console.log(typeof new SharedArrayBuffer())` in TypeScript?",
+              "options": [
+                "object",
+                "sharedarraybuffer",
+                "undefined",
+                "string"
+              ],
+              "correctAnswer": "object"
+            },
+            {
+              "id": "3-hard-19",
+              "question": "What is the purpose of the `Atomics` object in TypeScript?",
+              "options": [
+                "To provide atomic operations as static methods",
+                "To provide non-atomic operations as static methods",
+                "To provide atomic operations as instance methods",
+                "To provide non-atomic operations as instance methods"
+              ],
+              "correctAnswer": "To provide atomic operations as static methods"
+            },
+            {
+              "id": "3-hard-20",
+              "question": "What is the output of `console.log(typeof Atomics)` in TypeScript?",
+              "options": [
+                "object",
+                "atomics",
+                "undefined",
+                "string"
+              ],
+              "correctAnswer": "object"
+            }
+          ]
+        }
+      ],
+      "id": "348b"
+    }
+  ]
 }
