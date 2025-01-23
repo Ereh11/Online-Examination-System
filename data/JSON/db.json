@@ -1,4 +1,11 @@
 {
+    "users": [
+        {
+        "name": "Yasmin Ayed",
+        "email": "yasminayed@gmail.com",
+        "password": "123456"
+        }
+    ],
     "subjects": [
         {
             "subject": {
@@ -2050,4 +2057,5 @@
             ]
         }
     ]
+
 }

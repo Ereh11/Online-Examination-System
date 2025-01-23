@@ -1,6 +1,9 @@
+//imports needed for this script
+import {recievedData} from '../services/signupHandle.js';
 // DOM elements
 const signUP = document.getElementById("signupForm");
 const emailInput = document.getElementById("email");
+const usernameInput = document.getElementById("fullName");
 const passwordInput = document.getElementById("password");
 const confirmPasswordInput = document.getElementById("confirmPassword");
 
@@ -10,6 +13,8 @@ signUP.addEventListener("submit", function (event) {
   if (!form.checkValidity()) {
     event.preventDefault();
     event.stopPropagation();
+  } else {
+    recievedData(usernameInput.value, emailInput.value, passwordInput.value);
   }
   form.classList.add("was-validated");
 });
