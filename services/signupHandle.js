@@ -10,7 +10,7 @@ const urlUsers = "http://localhost:3000/users";
  * @param {string} password
  * @returns {User Object}
  */
-function creatUser(username, email, password) {
+export function creatUser(username, email, password) {
   const user = new User(username, email, password);
   return user;
 }
