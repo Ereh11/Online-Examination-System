@@ -1,5 +1,6 @@
-//imports needed for this script
-import {recievedData} from '../services/signupHandle.js';
+// Imports needed for this script
+import { recievedData } from "../services/signupHandle.js";
+
 // DOM elements
 const signUP = document.getElementById("signupForm");
 const emailInput = document.getElementById("email");
@@ -8,14 +9,21 @@ const passwordInput = document.getElementById("password");
 const confirmPasswordInput = document.getElementById("confirmPassword");
 
 // Event listeners
-signUP.addEventListener("submit", function (event) {
-  const form = event.target;
+signUP.addEventListener("submit", async function (e) {
+  const form = e.target;
+  e.preventDefault(); // Prevent default form submission
+
   if (!form.checkValidity()) {
-    event.preventDefault();
-    event.stopPropagation();
-  } else {
-    recievedData(usernameInput.value, emailInput.value, passwordInput.value);
+    form.classList.add("was-validated");
+    return; // Stop further processing if the form is invalid
   }
+
+  try {
+    await recievedData(usernameInput.value, emailInput.value, passwordInput.value);
+  } catch (error) {
+    console.error("Error in signup process:", error);
+  }
+
   form.classList.add("was-validated");
 });
 
@@ -39,7 +47,7 @@ emailInput.addEventListener("input", function () {
   }
 });
 
-//Functions
+// Functions
 /**
  * Validates the password and confirm password inputs.
  */

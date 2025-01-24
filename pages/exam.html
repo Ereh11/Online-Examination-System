@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exam Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="../css/variables.css">
+    <link rel="stylesheet" href="../css/exam.css">
+</head>
+<body>
+    <section class="timer" id="timer">05:00</section>
+    
+    <section class="question-navigator">
+        <div class="question-number" data-question="1">1</div>
+        <div class="question-number" data-question="2">2</div>
+        <div class="question-number" data-question="3">3</div>
+        <div class="question-number" data-question="4">4</div>
+        <div class="question-number" data-question="5">5</div>
+        <div class="question-number" data-question="6">6</div>
+        <div class="question-number" data-question="7">7</div>
+        <div class="question-number" data-question="8">8</div>
+        <div class="question-number" data-question="9">9</div>
+        <div class="question-number" data-question="10">10</div>
+    </section>
+    <section class="exam-container">
+        <div class="question-header">
+            <h2 id="questionTitle">Question 1</h2>
+            <i class="fas fa-flag flag-icon"></i>
+        </div>
+        <div class="options">
+            <div class="option" data-option="A">Option A</div>
+            <div class="option" data-option="B">Option B</div>
+            <div class="option" data-option="C">Option C</div>
+            <div class="option" data-option="D">Option D</div>
+        </div>
+        <div class="navigation">
+            <i class="fas fa-chevron-left nav-icon" id="prevQuestion"></i>
+            <i class="fas fa-chevron-right nav-icon" id="nextQuestion"></i>
+        </div>
+    </section>
+
+    <script src="../scripts/exam.js"></script>
+</body>
+</html>
