@@ -1,5 +1,5 @@
 import { Exam } from "../models/exam.js";
-import { Question } from "./question";
+import { Question } from "../models/question.js";
 let urlQuestions = "http://localhost:3001";
 /**
  * Take examTopic, examDifficulty, examDuration and create an exam object
@@ -13,7 +13,7 @@ export async function createExam(Topic, Difficulty, Duration, QuestionsNumber) {
   const exam = new Exam(Topic, Difficulty, Duration, QuestionsNumber);
   urlQuestions += checkReturn(Topic, Difficulty);
 
-  const questions = await getQuestions(urlQuestions, exam.QuestionsNumber);
+  const questions = await getQuestions(urlQuestions, exam.questionsNumber);
   questions.forEach((question) => {
     exam.Questions.push(
       new Question(question.question, question.options, question.correctAnswer)

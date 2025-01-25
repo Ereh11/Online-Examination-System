@@ -1,3 +1,4 @@
+import {createExam} from "../services/examHandle.js";
 const timerDisplay = document.getElementById("timer");
 const questionNumbers = document.querySelectorAll(".question-number");
 const flagIcon = document.querySelector(".flag-icon");
@@ -67,3 +68,12 @@ nextButton.addEventListener("click", () => {
 document
   .querySelector('.question-number[data-question="1"]')
   .classList.add("active");
+
+const topic = localStorage.getItem("examTopic");
+const difficulty = localStorage.getItem("examDifficulty");
+
+
+async function getExam(){
+  return await createExam(topic, difficulty, 5, 10);
+}
+const exam = await getExam();

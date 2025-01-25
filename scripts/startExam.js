@@ -43,9 +43,13 @@ function Event(event, button) {
  * @param {*} e span that is clicked by the user.
  * @returns {void}
  */
-let examTopicOption, examSubjectOption;
+let examTopicOption = null, examSubjectOption = null;
 function checkOptions(e) {
   e.name == "examTopic"
     ? (examTopicOption = e.value)
     : (examSubjectOption = e.value);
+    if(examSubjectOption != null)
+      localStorage.setItem("examDifficulty", examSubjectOption);
+    if(examTopicOption != null)
+      localStorage.setItem("examTopic", examTopicOption);
 }
