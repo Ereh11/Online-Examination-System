@@ -1,8 +1,10 @@
-class Exam
+export class Exam
 {
-    constructor(subject, score)
+    constructor(topic, difficulty, time, questionsNumber)
     {
-        this.subject = subject;
-        this.score = score;
+        this.topic = topic;
+        this.difficulty = difficulty;
+        this.time = time;
+        this.questionsNumber = questionsNumber;
     }
 }
