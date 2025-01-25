@@ -1,77 +1,83 @@
-import { Exam } from '../models/exam.js';
-let urlQuestions = 'http://localhost:3001';
+import { Exam } from "../models/exam.js";
+import { Question } from "./question";
+let urlQuestions = "http://localhost:3001";
 /**
  * Take examTopic, examDifficulty, examDuration and create an exam object
- * @param {string} examTopic 
- * @param {string} examDifficulty 
- * @param {Number} examDuration 
+ * @param {string} examTopic
+ * @param {string} examDifficulty
+ * @param {Number} examDuration
  * @param {Number} examQuestionsNumber
  * @returns {Exam} exam object
  */
-async function createExam(Topic, Difficulty, Duration, QuestionsNumber) {
-    const exam = new Exam(Topic, Difficulty, Duration, QuestionsNumber);
-    urlQuestions += checkReturn(Topic, Difficulty);
+export async function createExam(Topic, Difficulty, Duration, QuestionsNumber) {
+  const exam = new Exam(Topic, Difficulty, Duration, QuestionsNumber);
+  urlQuestions += checkReturn(Topic, Difficulty);
 
-    const questions = await getQuestions(urlQuestions, exam.QuestionsNumber);
+  const questions = await getQuestions(urlQuestions, exam.QuestionsNumber);
+  questions.forEach((question) => {
+    exam.Questions.push(
+      new Question(question.question, question.options, question.correctAnswer)
+    );
+  });
+
+  return exam;
 }
 
 /**
  * Fetch questions from the Database and return a list of questions based on the number of questions required
- * @param {string} urlQuestions 
- * @param {Number} QuestionsNumber 
+ * @param {string} urlQuestions
+ * @param {Number} QuestionsNumber
  * @returns {Array} selectedQuestions
  */
 async function getQuestions(urlQuestions, QuestionsNumber) {
-    try{
-        const response = await fetch(urlQuestions);
-        if(!response.ok) {
-            throw new Error('Failed to fetch questions');
-        }
-        
-        const questions = await response.json();
+  try {
+    const response = await fetch(urlQuestions);
+    if (!response.ok) {
+      throw new Error("Failed to fetch questions");
+    }
 
-        const shuffledQuestions = questions.sort(() => Math.random() - 0.5);
-        const selectedQuestions = shuffledQuestions.slice(0, QuestionsNumber);
-        
-        return selectedQuestions;
-    }
-    catch(error) {
-        console.error('Error fetching questions:', error);
-    }
+    const questions = await response.json();
+
+    const shuffledQuestions = questions.sort(() => Math.random() - 0.5);
+    const selectedQuestions = shuffledQuestions.slice(0, QuestionsNumber);
+
+    return selectedQuestions;
+  } catch (error) {
+    console.error("Error fetching questions:", error);
+  }
 }
 
 /**
  * Return the path based on the Topic and Difficulty
- * @param {String} Topic 
- * @param {String} Difficulty 
+ * @param {String} Topic
+ * @param {String} Difficulty
  * @returns string path
  */
-function checkReturn(Topic, Difficulty)
-{
-    let path = '';
-    switch(Topic){
-        case "JavaScript":
-            path = '/javascript';
-            break;
-        case "C#":
-            path = '/Csharp';
-            break;
-        case "TypeScript":
-            path = '/TypeScript';
-            break;
-    }
+function checkReturn(Topic, Difficulty) {
+  let path = "";
+  switch (Topic) {
+    case "JavaScript":
+      path = "/javascript";
+      break;
+    case "C#":
+      path = "/Csharp";
+      break;
+    case "TypeScript":
+      path = "/TypeScript";
+      break;
+  }
 
-    switch(Difficulty){
-        case "easy":
-            path += '-easy';
-            break;
-        case "medium":
-            path += '-medium';
-            break;
-        case "hard":
-            path += '-hard';
-            break;
-    }
-    
-    return path;
+  switch (Difficulty) {
+    case "easy":
+      path += "-easy";
+      break;
+    case "medium":
+      path += "-medium";
+      break;
+    case "hard":
+      path += "-hard";
+      break;
+  }
+
+  return path;
 }

@@ -30,13 +30,11 @@ function updateTimer() {
 
 updateTimer();
 
-
-
-
-
 flagIcon.addEventListener("click", () => {
   flagIcon.classList.toggle("active");
-  const currentQuestionNumber = document.querySelector(`.question-number[data-question="${currentQuestion}"]`);
+  const currentQuestionNumber = document.querySelector(
+    `.question-number[data-question="${currentQuestion}"]`
+  );
   currentQuestionNumber.classList.toggle("active");
 });
 

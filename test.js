@@ -13,7 +13,9 @@ async function createExam(Topic, Difficulty, Duration, QuestionsNumber) {
     urlQuestions += checkReturn(Topic, Difficulty);
 
     const questions = await getQuestions(urlQuestions, exam.QuestionsNumber);
-    console.log(questions);
+    questions.forEach(question => {
+        console.log(question.question, question.options, question.correctAnswer);
+    });
 }
 
 /**
