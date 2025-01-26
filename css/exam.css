@@ -76,7 +76,8 @@ body {
   display: flex;
   align-items: center;
   gap: 15px;
-  margin-bottom: 20px;
+  /* margin-bottom: 10px; */
+  padding-top: 15px;
 }
 .flag-icon {
   cursor: pointer;
@@ -99,3 +100,4 @@ body {
 .option:hover {
   background-color: #f0f0f0;
 }
+

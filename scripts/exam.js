@@ -46,8 +46,9 @@ questionDOM = createQuestionElement(exam);
 // At first, display the first question
 divQuestionHeader.innerHTML = questionDOM[0].questionHeader;
 let indx = 0;
+divQuestionOptions.innerHTML = "";
 questionDOM[0].options.forEach((option) => {
-  divQuestionOptions.children[indx++].innerHTML = option;
+  divQuestionOptions.innerHTML += option;
 });
 
 function updateTimer() {
@@ -83,8 +84,9 @@ flagIcon.addEventListener("click", () => {
 function updateQuestion(questionNum) {
   divQuestionHeader.innerHTML = questionDOM[questionNum - 1].questionHeader;
   let indx = 0;
+  divQuestionOptions.innerHTML = "";
   questionDOM[questionNum - 1].options.forEach((option) => {
-    divQuestionOptions.children[indx++].innerHTML = option;
+    divQuestionOptions.innerHTML += option;
   });
 
   document
