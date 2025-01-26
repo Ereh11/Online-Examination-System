@@ -115,10 +115,6 @@ body {
   cursor: pointer;
 }
 
-.option:hover {
-  background-color: #f0f0f0;
-}
-
 .submit-btn {
   margin-top: 8rem;
   text-align: right;
@@ -187,5 +183,9 @@ body {
 
 #cancelSubmit {
   background-color: #f44336;
+  color: white;
+}
+.option-clicked {
+  background-color: #4caf50;
   color: white;
 }

@@ -31,12 +31,14 @@ const exam = await getExam();
 
 function createQuestionElement(exam) {
   const questionsElements = [];
+  let cnt = 0;
   exam.Questions.forEach((element) => {
-    const questionHeader = `<h2 id="questionTitle">${element.question}</h2>`;
+    const questionHeader = `<h2 id="questionTitle" class="${cnt++}">${element.question}</h2>`;
     let options = [];
     for (let i = 0; i < 4; i++) {
       options.push(
-        `<button class="option" data-option="${String.fromCharCode(i + 65)}">${element.option[i]
+        `<button class="option" data-option="${String.fromCharCode(i + 65)}">${
+          element.option[i]
         }</button>`
       );
     }
@@ -136,4 +138,21 @@ confirmSubmit.addEventListener("click", () => {
 });
 cancelSubmit.addEventListener("click", () => {
   confirmationModal.style.display = "none";
+});
+
+divQuestionOptions.addEventListener("click", (e) => {
+  if (e.target.tagName === "BUTTON") {
+    const parentDiv = e.target.parentElement;
+    const NumberOfQuestion = parentDiv.previousElementSibling.children[0].classList[0];
+    
+    for (let i = 0; i < parentDiv.children.length; i++) {
+      if (parentDiv.children[i].classList.contains("option-clicked")) {
+        parentDiv.children[i].classList.remove("option-clicked");
+      }
+    }
+    e.target.classList.add("option-clicked");
+    for (let i = 0; i < parentDiv.children.length; i++) {
+      questionDOM[NumberOfQuestion].options[i] = parentDiv.children[i].outerHTML;
+    }
+  }
 });
