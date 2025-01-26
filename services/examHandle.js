@@ -1,6 +1,6 @@
 import { Exam } from "../models/exam.js";
 import { Question } from "../models/question.js";
-let urlQuestions = "http://localhost:3001";
+let urlQuestions = "http://localhost:3000";
 /**
  * Take examTopic, examDifficulty, examDuration and create an exam object
  * @param {string} examTopic

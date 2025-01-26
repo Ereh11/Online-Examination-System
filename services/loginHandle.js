@@ -1,7 +1,6 @@
 import { creatUser } from "./signupHandle.js";
 
-const urlUsers = "http://localhost:3001/users";
-
+const urlUsers = "http://localhost:3000/users";
 /**
  * Recieve data from the login form and check if user identity in the database
  * @param {string} email 
@@ -12,7 +11,6 @@ export async function recievedData(email, password) {
     const user = creatUser("", email, password);
     const userCheck = await checkIdentity(user);
     if (userCheck) {
-        window.history.replaceState({}, null, "/");
         window.location.href = "../pages/startExam.html";
     } else {
         try {
@@ -32,6 +30,7 @@ export async function recievedData(email, password) {
 async function checkIdentity(userdata) { 
     try {
         const response = await fetch(urlUsers);
+        alert(response);
         if (!response.ok) {
             throw new Error(`HTTP error! status: ${response.status}`);
         }

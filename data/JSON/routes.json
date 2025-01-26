@@ -1,3 +1,0 @@
-{
-    "/subjects/:id/difficultyLevels/:difficulty": "/subjects/:id/difficultyLevels?difficulty=:difficulty"
-}

@@ -7,6 +7,10 @@ const questionTitle = document.getElementById("questionTitle");
 const prevButton = document.getElementById("prevQuestion");
 const nextButton = document.getElementById("nextQuestion");
 const divQuestion = document.getElementsByClassName("exam-container")[0];
+const submitbtn = document.getElementById("submitBtn");
+const confirmationModal = document.getElementById("confirmationModal");
+const confirmSubmit = document.getElementById("confirmSubmit");
+const cancelSubmit = document.getElementById("cancelSubmit");
 const divQuestionHeader = divQuestion.children[0];
 const divQuestionOptions = divQuestion.children[1];
 
@@ -32,8 +36,7 @@ function createQuestionElement(exam) {
     let options = [];
     for (let i = 0; i < 4; i++) {
       options.push(
-        `<button class="option" data-option="${String.fromCharCode(i + 65)}">${
-          element.option[i]
+        `<button class="option" data-option="${String.fromCharCode(i + 65)}">${element.option[i]
         }</button>`
       );
     }
@@ -100,6 +103,12 @@ function updateQuestion(questionNum) {
   document
     .querySelector(`.question-number[data-question="${currentQuestion}"]`)
     .classList.add("active");
+
+  if (questionNum == 10) {
+    submitbtn.classList.remove("hidden");
+  } else {
+    submitbtn.classList.add("hidden");
+  }
 }
 
 prevButton.addEventListener("click", () => {
@@ -117,3 +126,14 @@ nextButton.addEventListener("click", () => {
 document
   .querySelector('.question-number[data-question="1"]')
   .classList.add("active");
+
+submitBtn.addEventListener("click", () => {
+  confirmationModal.style.display = "flex";
+});
+confirmSubmit.addEventListener("click", () => {
+  confirmationModal.style.display = "none";
+  alert("Exam submitted successfully!");
+});
+cancelSubmit.addEventListener("click", () => {
+  confirmationModal.style.display = "none";
+});
