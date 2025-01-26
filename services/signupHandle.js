@@ -1,6 +1,6 @@
 import { User } from "../models/user.js";
 
-const urlUsers = "http://localhost:3000/users";
+const urlUsers = "http://localhost:3001/users";
 
 /**
  * Create a new user object
