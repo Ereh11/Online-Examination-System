@@ -32,9 +32,9 @@ function createQuestionElement(exam) {
     let options = [];
     for (let i = 0; i < 4; i++) {
       options.push(
-        `<div class="option" data-option="${String.fromCharCode(i + 65)}">${
+        `<button class="option" data-option="${String.fromCharCode(i + 65)}">${
           element.option[i]
-        }</div>`
+        }</button>`
       );
     }
     questionsElements.push({ questionHeader, options });

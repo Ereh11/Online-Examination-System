@@ -92,6 +92,7 @@ body {
   gap: 15px;
 }
 .option {
+  text-align: left;
   border: 1px solid #ddd;
   padding: 10px;
   border-radius: 5px;
