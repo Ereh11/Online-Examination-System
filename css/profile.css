@@ -1,0 +1,88 @@
+/* General styles */
+.container {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Profile container styles */
+.profile-container {
+    background: linear-gradient(to right, #1e3b72d8, #2c3e50a1);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 800px;
+    width: 90%;
+    box-sizing: border-box;
+}
+
+/* User info styles */
+.user-info p {
+    font-size: 1.1rem;
+    color: #333;
+    margin: 10px 0;
+}
+
+/* Table styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 15px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+th {
+    background-color: #4e8eca;
+    color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .profile-container {
+        width: 95%;
+        padding: 20px;
+    }
+
+    .user-info p {
+        font-size: 1rem;
+    }
+
+    th, td {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .profile-container {
+        width: 100%;
+        padding: 15px;
+        border-radius: 0;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .user-info p {
+        font-size: 0.9rem;
+    }
+
+    table {
+        font-size: 0.9rem;
+    }
+
+    th, td {
+        padding: 8px;
+    }
+}
