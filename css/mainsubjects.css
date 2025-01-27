@@ -16,6 +16,7 @@ body {
 .side-background {
   height: 100%;
   width: 40%;
+  position: relative;
 }
 .main-container {
   width: 60%;
@@ -28,6 +29,10 @@ body {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  z-index: -1;
+  position: absolute;
+ 
+  
 }
 .container-examTopic,
 .container-examDifficulty {
@@ -71,4 +76,72 @@ button:hover {
     background-color: rgb(81, 224, 62);
     color: white;
     transform: scale(1.1);
+}
+
+/* sidebar style */
+
+.sidebar{
+  width: 40%;
+  height: 100vh;
+  background-color: rgba(10, 10, 10, 0.349);
+  backdrop-filter: blur(10px);
+    position: absolute;
+  z-index: 1;
+  display: flex;
+  /* justify-content: center; */
+  flex-direction: column;
+  align-items: center;
+  visibility: hidden;
+
+}
+
+.info , .logout{
+width: 80%;
+height: 10%;
+margin: 10px 0 10px 0;
+background-color: rgba(49, 93, 189, 0.63);
+text-align: center;
+display: flex;
+justify-content: center;
+align-items: center;
+cursor: pointer;
+}
+.info:hover{
+  background-color: rgb(49, 93, 189);
+}
+.logout{
+  background-color: rgba(156, 19, 19, 0.87);
+  width: 50%;
+  height: 5%;
+  border-radius: 10px;
+
+}
+.logout:hover{
+  background-color: rgb(156, 19, 19);
+
+}
+.close{
+  width: 80%;
+  display: flex;
+  justify-content: flex-end;
+  margin: 5%;
+  font-size: 20px;
+}
+i{
+  cursor: pointer;
+}
+.list{
+  position: absolute;
+  z-index: 100;
+  width: 8%;
+  height: 8%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #2c3e50;
+  font-size: 28px;
+  font-weight: bold;
+  border: 2px solid #2c3e50;
+  border-radius: 10px;
+  margin:10px 0 0 10px;
 }
