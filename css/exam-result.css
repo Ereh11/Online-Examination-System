@@ -43,8 +43,8 @@ button:hover {
     }
 }
 img{
-    width: 80%;
-    height: 80%;
+    width: 65%;
+    height: 65%;
     object-fit: cover;
     border-radius: 50%;
 }
