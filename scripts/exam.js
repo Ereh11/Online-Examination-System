@@ -1,4 +1,5 @@
 import { createExam } from "../services/examHandle.js";
+import { addResult } from "../services/resultExamHandle.js";
 // DOM elements for the exam page
 const timerDisplay = document.getElementById("timer");
 const questionNumbers = document.querySelectorAll(".question-number");
@@ -19,6 +20,7 @@ let currentQuestion = 1;
 let questionDOM = [];
 const topic = localStorage.getItem("examTopic");
 const difficulty = localStorage.getItem("examDifficulty");
+const userEmail = localStorage.getItem("email");
 
 /**
  * Call the createExam function and return the exam object
@@ -93,7 +95,7 @@ flagIcon.addEventListener("click", () => {
  */
 function updateQuestion(questionNum) {
   divQuestionHeader.innerHTML = questionDOM[questionNum - 1].questionHeader;
-  let indx = 0;
+
   divQuestionOptions.innerHTML = "";
   questionDOM[questionNum - 1].options.forEach((option) => {
     divQuestionOptions.innerHTML += option;
@@ -141,7 +143,8 @@ submitBtn.addEventListener("click", () => {
 confirmSubmit.addEventListener("click", () => {
   confirmationModal.style.display = "none";
   const correctAnswers = correctExam();
-  console.log(correctAnswers);
+  const result = (correctAnswers / 10) * 100;
+  addResult({email: userEmail, examName: topic, score: result});
   window.location.href = `../pages/exam-result.html?examresult=${correctAnswers}`;
 });
 // Event listener for the cancel button in confirmation modal
