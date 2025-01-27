@@ -33,12 +33,14 @@ function createQuestionElement(exam) {
   const questionsElements = [];
   let cnt = 0;
   exam.Questions.forEach((element) => {
-    const questionHeader = `<h2 id="questionTitle" class="${cnt++}">${element.question
-      }</h2>`;
+    const questionHeader = `<h2 id="questionTitle" class="${cnt++}">${
+      element.question
+    }</h2>`;
     let options = [];
     for (let i = 0; i < 4; i++) {
       options.push(
-        `<button class="option" data-option="${String.fromCharCode(i + 65)}">${element.option[i]
+        `<button class="option" data-option="${String.fromCharCode(i + 65)}">${
+          element.option[i]
         }</button>`
       );
     }
@@ -161,15 +163,29 @@ divQuestionOptions.addEventListener("click", (e) => {
   }
 });
 
+/**
+ * Count the correct answers in the exam
+ * @returns {number} correctAnswers
+ */
 function correctExam() {
   let correctAnswers = 0;
+  // Loop through the questions
   for (let i = 0; i < 10; i++) {
     const question = exam.Questions[i];
     const userOptions = questionDOM[i].options;
-
+    // Check if the user has clicked on the correct answer
     for (let i = 0; i < 4; i++) {
       userOptions[i].split("=").forEach((element) => {
-        if (element.includes("option-clicked")) correctAnswers++;
+        if (element.includes("option-clicked")) {
+          const parser = new DOMParser();
+          const doc = parser.parseFromString(userOptions[i], "text/html");
+          const button = doc.querySelector("button");
+          const textContent = button.textContent;
+          console.log(textContent);
+          if (textContent === question.answer) {
+            correctAnswers++;
+          }
+        }
       });
     }
   }
