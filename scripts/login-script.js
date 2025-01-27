@@ -18,6 +18,7 @@ loginForm.addEventListener("submit", async function (event) {
     }
     
     try {
+        localStorage.setItem("username", user.username);
         const success = await recievedData(emailInput.value, passwordInput.value);
         if (!success) {
             // Show error message
