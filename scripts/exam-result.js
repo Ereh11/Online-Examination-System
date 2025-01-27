@@ -1,7 +1,7 @@
 // Example of getting the grade dynamically (can be retrieved from URL or API)
 const queryParams = new URLSearchParams(window.location.search);
 let score = queryParams.get("examresult") || 0; // Default to 'F' if not provided
-score = (parseInt(score) / 10) * 100; // Convert to percentage
+score = parseInt(score); // Convert to percentage
 const grade = makeGrade(score);
 
 // Display the grade on the page
@@ -34,7 +34,6 @@ if (grade === "F") {
  * @returns {String} grade A, B, C, D, or F
  */
 function makeGrade(score) {
-    console.log(score);
     if (score >= 80) {
         return "A";
     } else if (score >= 70) {

@@ -1,5 +1,5 @@
+import { addResult, getResults } from "../services/resultExamHandle.js";
 import { createExam } from "../services/examHandle.js";
-import { addResult } from "../services/resultExamHandle.js";
 // DOM elements for the exam page
 const timerDisplay = document.getElementById("timer");
 const questionNumbers = document.querySelectorAll(".question-number");
@@ -143,8 +143,7 @@ submitBtn.addEventListener("click", () => {
 confirmSubmit.addEventListener("click", () => {
   confirmationModal.style.display = "none";
   const correctAnswers = correctExam();
-  const result = (correctAnswers / 10) * 100;
-  addResult({email: userEmail, examName: topic, score: result});
+  addResult({email: userEmail, examName: topic, score: correctAnswers});
   window.location.href = `../pages/exam-result.html?examresult=${correctAnswers}`;
 });
 // Event listener for the cancel button in confirmation modal
@@ -197,5 +196,7 @@ function correctExam() {
       });
     }
   }
-  return correctAnswers;
+  return correctAnswers * 10;
 }
+
+getResults(userEmail);
