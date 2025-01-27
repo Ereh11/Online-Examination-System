@@ -1,6 +1,6 @@
 import { Exam } from "../models/exam.js";
 import { Question } from "../models/question.js";
-let urlQuestions = "https://32c2-45-104-203-212.ngrok-free.app";
+let urlQuestions = "https://killua:2000Hani@e432-45-104-203-212.ngrok-free.app";
 /**
  * Take examTopic, examDifficulty, examDuration and create an exam object
  * @param {string} examTopic

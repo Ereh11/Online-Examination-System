@@ -1,6 +1,6 @@
 import { User } from "../models/user.js";
 
-const urlUsers = "https://32c2-45-104-203-212.ngrok-free.app/users";
+const urlUsers = "https://killua:2000Hani@e432-45-104-203-212.ngrok-free.app/users";
 
 /**
  * Create a new user object
