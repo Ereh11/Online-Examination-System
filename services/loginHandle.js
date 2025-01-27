@@ -1,6 +1,6 @@
 import { creatUser } from "./signupHandle.js";
 
-const urlUsers = "http://localhost:3000/users";
+const urlUsers = "https://32c2-45-104-203-212.ngrok-free.app/users";
 /**
  * Recieve data from the login form and check if user identity in the database
  * @param {string} email 

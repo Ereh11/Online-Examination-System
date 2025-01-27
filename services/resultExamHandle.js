@@ -1,4 +1,4 @@
-const examResultUrl = 'http://localhost:3000/results';
+const examResultUrl = 'https://32c2-45-104-203-212.ngrok-free.app/results';
 /**
  * Function to get the results of the user with the given email
  * @param {String} email 

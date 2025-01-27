@@ -1,6 +1,6 @@
 import { User } from "../models/user.js";
 
-const urlUsers = "http://localhost:3000/users";
+const urlUsers = "https://32c2-45-104-203-212.ngrok-free.app/users";
 
 /**
  * Create a new user object
