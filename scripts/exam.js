@@ -28,7 +28,7 @@ async function getExam() {
   return await createExam(topic, difficulty, 5, 10);
 }
 const exam = await getExam();
-
+// Create the question elements for the exam page
 function createQuestionElement(exam) {
   const questionsElements = [];
   let cnt = 0;
@@ -57,7 +57,7 @@ divQuestionOptions.innerHTML = "";
 questionDOM[0].options.forEach((option) => {
   divQuestionOptions.innerHTML += option;
 });
-
+// Update Timer of the exam
 function updateTimer() {
   const minutes = Math.floor(totalSeconds / 60);
   const seconds = totalSeconds % 60;
@@ -79,7 +79,7 @@ function updateTimer() {
   }
 }
 updateTimer();
-
+// Event listener for the flag icon
 flagIcon.addEventListener("click", () => {
   flagIcon.classList.toggle("active");
   const currentQuestionNumber = document.querySelector(
@@ -87,7 +87,10 @@ flagIcon.addEventListener("click", () => {
   );
   currentQuestionNumber.classList.toggle("active");
 });
-
+/**
+ * Update the question header and options based on the question number passed as an argument.
+ * @param {Number} questionNum 
+ */
 function updateQuestion(questionNum) {
   divQuestionHeader.innerHTML = questionDOM[questionNum - 1].questionHeader;
   let indx = 0;
@@ -114,36 +117,38 @@ function updateQuestion(questionNum) {
     submitbtn.classList.add("hidden");
   }
 }
-
+// Event listener for the previous button
 prevButton.addEventListener("click", () => {
   if (currentQuestion > 1) {
     updateQuestion(currentQuestion - 1);
   }
 });
-
+// Event listener for the next button
 nextButton.addEventListener("click", () => {
   if (currentQuestion < 10) {
     updateQuestion(currentQuestion + 1);
   }
 });
-
+// Set the first question number to active
 document
   .querySelector('.question-number[data-question="1"]')
   .classList.add("active");
-
+// Event listener for the submit button
 submitBtn.addEventListener("click", () => {
   confirmationModal.style.display = "flex";
 });
+// Event listener for the confirm button in confirmation modal
 confirmSubmit.addEventListener("click", () => {
   confirmationModal.style.display = "none";
   const correctAnswers = correctExam();
-
-  alert(`Exam submitted successfully! ${correctAnswers}`);
+  console.log(correctAnswers);
+  window.location.href = `../pages/exam-result.html?examresult=${correctAnswers}`;
 });
+// Event listener for the cancel button in confirmation modal
 cancelSubmit.addEventListener("click", () => {
   confirmationModal.style.display = "none";
 });
-
+// Event listener for the question numbers
 divQuestionOptions.addEventListener("click", (e) => {
   if (e.target.tagName === "BUTTON") {
     const parentDiv = e.target.parentElement;
@@ -181,7 +186,7 @@ function correctExam() {
           const doc = parser.parseFromString(userOptions[i], "text/html");
           const button = doc.querySelector("button");
           const textContent = button.textContent;
-          console.log(textContent);
+
           if (textContent === question.answer) {
             correctAnswers++;
           }
