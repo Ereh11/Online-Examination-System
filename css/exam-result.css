@@ -1,52 +1,25 @@
-/* General body styling */
+/* Custom CSS for additional styling */
 body {
-    font-family: Arial, sans-serif;
+    font-family: var(--main-font);
     background: linear-gradient(to right, #1e3c72, #2c3e50);
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
     color: #ffffff;
-    text-align: center;
 }
 
-/* Result container */
 .result-container {
-    background: rgba(255, 255, 255, 0.1);
-    padding: 40px;
-    border-radius: 15px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
     max-width: 500px;
-    width: 90%;
+    width: 100%;
 }
 
-/* Grade box styling */
 .grade-box {
     font-size: 1.8rem;
     font-weight: bold;
-    margin: 20px 0;
-    padding: 20px;
-    background: rgba(255, 255, 255, 0.2);
-    border-radius: 10px;
 }
 
-/* Status text */
 .status {
-    font-weight: bold;
     color: #ffeb3b;
 }
 
-/* Button styling */
 button {
-    background: #ffeb3b;
-    color: #333;
-    padding: 15px 30px;
-    border: none;
-    border-radius: 5px;
-    font-size: 1rem;
-    cursor: pointer;
     transition: background 0.3s;
 }
 
@@ -55,9 +28,9 @@ button:hover {
 }
 
 /* Responsive adjustments */
-@media (max-width: 600px) {
+@media (max-width: 768px) {
     .result-container {
-        padding: 30px;
+        padding: 20px;
     }
 
     .grade-box {
@@ -68,4 +41,10 @@ button:hover {
         font-size: 0.9rem;
         padding: 12px 25px;
     }
+}
+img{
+    width: 80%;
+    height: 80%;
+    object-fit: cover;
+    border-radius: 50%;
 }
