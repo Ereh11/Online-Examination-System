@@ -1,75 +1,57 @@
-import { Exam } from '../models/exam.js';
-let urlQuestions = 'http://localhost:3001';
-/**
- * Take examTopic, examDifficulty, examDuration and create an exam object
- * @param {string} examTopic 
- * @param {string} examDifficulty 
- * @param {Number} examDuration 
- * @param {Number} examQuestionsNumber
- * @returns {Exam} exam object
- */
-async function createExam(Topic, Difficulty, Duration, QuestionsNumber) {
-    const exam = new Exam(Topic, Difficulty, Duration, QuestionsNumber);
-    urlQuestions += checkReturn(Topic, Difficulty);
+// In login-script.js
+import { recievedData } from "../services/loginHandle.js";
 
-    const questions = await getQuestions(urlQuestions, exam.QuestionsNumber);
-    questions.forEach(question => {
-        console.log(question.question, question.options, question.correctAnswer);
-    });
+
+
+// When you need to show an error
+showError("Invalid email or password. Please try again.");
+
+// For server errors
+try {
+  
+  // DOM Selectors
+  const loginForm = document.getElementById("loginForm");
+  const emailInput = document.getElementById("email");
+  const passwordInput = document.getElementById("password");
+  
+  // Event Listeners
+  loginForm.addEventListener("submit", function (event) {
+    if (!loginForm.checkValidity()) {
+      event.preventDefault();
+      event.stopPropagation();
+    }
+    else{
+      recievedData(emailInput.value, passwordInput.value);
+    }
+    loginForm.classList.add("was-validated");
+  });
+  
+  //need edit
+  emailInput.addEventListener("input", function () {
+    if(emailInput.value != "") {
+      emailInput.classList.remove("is-invalid");
+      emailInput.classList.add("is-valid");
+    }
+    else {
+      emailInput.classList.remove("is-valid");
+      emailInput.classList.add("is-invalid");
+    }
+  });
+  //need edit
+  passwordInput.addEventListener("input", function () {
+    if(passwordInput.value != "") {
+      passwordInput.classList.remove("is-invalid");
+      passwordInput.classList.add("is-valid");
+    } else {
+      passwordInput.classList.remove("is-valid");
+      passwordInput.classList.add("is-invalid");
+    }
+  });
+  
+} catch (error) {
+  showError("Service unavailable. Please try again later.");
+  localStorage.setItem('lastLoginError', JSON.stringify({
+    message: error.message,
+    timestamp: new Date().toISOString()
+  }));
 }
-
-/**
- * Fetch questions from the Database and return a list of questions based on the number of questions required
- * @param {string} urlQuestions 
- * @param {Number} QuestionsNumber 
- * @returns {Array} selectedQuestions
- */
-async function getQuestions(urlQuestions, QuestionsNumber) {
-    try{
-        const response = await fetch(urlQuestions);
-        if(!response.ok) {
-            throw new Error('Failed to fetch questions');
-        }
-        
-        const questions = await response.json();
-
-        const shuffledQuestions = questions.sort(() => Math.random() - 0.5);
-        const selectedQuestions = shuffledQuestions.slice(0, QuestionsNumber);
-        
-        return selectedQuestions;
-    }
-    catch(error) {
-        console.error('Error fetching questions:', error);
-    }
-}
-
-function checkReturn(Topic, Difficulty)
-{
-    let path = '';
-    switch(Topic){
-        case "JavaScript":
-            path = '/javascript';
-            break;
-        case "C#":
-            path = '/Csharp';
-            break;
-        case "TypeScript":
-            path = '/TypeScript';
-            break;
-    }
-
-    switch(Difficulty){
-        case "easy":
-            path += '-easy';
-            break;
-        case "medium":
-            path += '-medium';
-            break;
-        case "hard":
-            path += '-hard';
-            break;
-    }
-    
-    return path;
-}
-createExam('JavaScript', 'easy', 10, 5);

@@ -22,6 +22,10 @@
             <div class="col-lg-6 p-5">
                 <h2 class="fw-bold text-center text-primary">Login</h2>
                 <form id="loginForm" novalidate>
+                    <div id="loginError" class="alert alert-danger d-none mb-3" role="alert">
+                        Invalid email or password. Please try again.
+                    </div>
+
                     <div class="mb-3">
                         <label for="email" class="form-label fw-semibold">Email</label>
                         <input type="email" id="email" class="form-control" placeholder="Enter your email" required />
@@ -31,9 +35,7 @@
                         <label for="password" class="form-label fw-semibold">Password</label>
                         <input type="password" id="password" class="form-control" placeholder="Enter your password"
                             required minlength="6" />
-                        <div class="invalid-feedback">
-                            Password must be entered.
-                        </div>
+                        <div class="invalid-feedback">Password must be at least 6 characters.</div>
                     </div>
                     <button type="submit" class="btn btn-primary w-100">Login</button>
                 </form>

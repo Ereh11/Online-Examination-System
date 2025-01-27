@@ -14,7 +14,7 @@ export async function recievedData(email, password) {
         window.location.href = "../pages/startExam.html";
     } else {
         try {
-            window.location.href = "../pages/completeRegister.html";
+ 
         } catch (error) {
             console.error("Error sending user to database:", error);
         }
@@ -30,7 +30,6 @@ export async function recievedData(email, password) {
 async function checkIdentity(userdata) { 
     try {
         const response = await fetch(urlUsers);
-        alert(response);
         if (!response.ok) {
             throw new Error(`HTTP error! status: ${response.status}`);
         }
