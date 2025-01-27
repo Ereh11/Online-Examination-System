@@ -18,9 +18,18 @@ loginForm.addEventListener("submit", async function (event) {
     }
     
     try {
-        localStorage.setItem("username", user.username);
         const success = await recievedData(emailInput.value, passwordInput.value);
-        if (!success) {
+        if(success) {
+            loginError.textContent = "Correct login, welcome!";
+            loginError.classList.remove("alert-danger", "d-none");
+            loginError.classList.add("alert-success");
+
+            // Redirect after a short delay to show the success message
+            setTimeout(() => {
+                window.location.href = "../pages/startExam.html";
+            }, 1000); // Redirect after 1 second
+        }
+        else {
             // Show error message
             loginError.classList.remove("d-none");
             
