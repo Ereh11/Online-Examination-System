@@ -22,7 +22,7 @@ logout.addEventListener("click", function() {
 });
 
 info.addEventListener("click", function() {
-    window.location.href = "../pages/userprofile.html"
+    window.location.href = "../pages/user-profile.html"
 });
 
 
