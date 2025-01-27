@@ -4,7 +4,7 @@ import { createExam } from "../services/examHandle.js";
 const timerDisplay = document.getElementById("timer");
 const questionNumbers = document.querySelectorAll(".question-number");
 const flagIcon = document.querySelector(".flag-icon");
-const questionTitle = document.getElementById("questionTitle");
+// const questionTitle = document.getElementById("questionTitle");
 const prevButton = document.getElementById("prevQuestion");
 const nextButton = document.getElementById("nextQuestion");
 const divQuestion = document.getElementsByClassName("exam-container")[0];
@@ -12,12 +12,15 @@ const submitbtn = document.getElementById("submitBtn");
 const confirmationModal = document.getElementById("confirmationModal");
 const confirmSubmit = document.getElementById("confirmSubmit");
 const cancelSubmit = document.getElementById("cancelSubmit");
+const divQuestionNumbers =
+  document.getElementsByClassName("question-navigator")[0];
 const divQuestionHeader = divQuestion.children[0];
 const divQuestionOptions = divQuestion.children[1];
 
 let totalSeconds = 5 * 60;
 let currentQuestion = 1;
 let questionDOM = [];
+let flaggedQuestions = {}; // Object to track flagged questions
 const topic = localStorage.getItem("examTopic");
 const difficulty = localStorage.getItem("examDifficulty");
 const userEmail = localStorage.getItem("email");
@@ -30,14 +33,14 @@ async function getExam() {
   return await createExam(topic, difficulty, 5, 10);
 }
 const exam = await getExam();
-// Create the question elements for the exam page
+// Create the question elements for the exam page for first time only
 function createQuestionElement(exam) {
   const questionsElements = [];
   let cnt = 0;
   exam.Questions.forEach((element) => {
-    const questionHeader = `<h2 id="questionTitle" class="${cnt++}">${
-      element.question
-    }</h2>`;
+    const questionNumber = cnt++;
+    const questionHeader = element.question;
+
     let options = [];
     for (let i = 0; i < 4; i++) {
       options.push(
@@ -46,15 +49,18 @@ function createQuestionElement(exam) {
         }</button>`
       );
     }
-    questionsElements.push({ questionHeader, options });
+    questionsElements.push({ questionHeader, options, questionNumber });
   });
   return questionsElements;
 }
 questionDOM = createQuestionElement(exam);
 
 // At first, display the first question
-divQuestionHeader.innerHTML = questionDOM[0].questionHeader;
-let indx = 0;
+divQuestionHeader.children[0].innerText = questionDOM[0].questionHeader;
+let classList = Array.from(divQuestionHeader.children[0].classList);
+classList[1] = questionDOM[0].questionNumber;
+divQuestionHeader.children[0].classList = classList.join(" ");
+
 divQuestionOptions.innerHTML = "";
 questionDOM[0].options.forEach((option) => {
   divQuestionOptions.innerHTML += option;
@@ -77,48 +83,89 @@ function updateTimer() {
     totalSeconds--;
     setTimeout(updateTimer, 1000);
   } else {
-    alert("Time is up!");
+    const correctAnswers = correctExam();
+    addResult({ email: userEmail, examName: topic, score: correctAnswers });
+    window.location.href = `../pages/exam-result.html?examresult=${correctAnswers}`;
   }
 }
 updateTimer();
 // Event listener for the flag icon
 flagIcon.addEventListener("click", () => {
-  flagIcon.classList.toggle("active");
+  console.log(flagIcon);
+  // console.log("flag icon clicked");
+  // Toggle the flagged state for the current question
+  flaggedQuestions[currentQuestion] = !flaggedQuestions[currentQuestion];
+
+  // Update the flag icon's appearance
+  if (flaggedQuestions[currentQuestion]) {
+    flagIcon.classList.add("flagged"); // Add the 'flagged' class to turn the icon orange
+  } else {
+    flagIcon.classList.remove("flagged"); // Remove the 'flagged' class to revert to the default color
+  }
+
+  // Update the question number div's background for the current question
   const currentQuestionNumber = document.querySelector(
     `.question-number[data-question="${currentQuestion}"]`
   );
-  currentQuestionNumber.classList.toggle("active");
+
+  if (flaggedQuestions[currentQuestion]) {
+    currentQuestionNumber.classList.add("flagged");
+  } else {
+    currentQuestionNumber.classList.remove("flagged");
+  }
 });
 /**
  * Update the question header and options based on the question number passed as an argument.
- * @param {Number} questionNum 
+ * @param {Number} questionNum
  */
 function updateQuestion(questionNum) {
-  divQuestionHeader.innerHTML = questionDOM[questionNum - 1].questionHeader;
-
+  // Update the question header and options
+  divQuestionHeader.children[0].innerText =
+    questionDOM[questionNum - 1].questionHeader;
+  let classList = Array.from(divQuestionHeader.children[0].classList);
+  classList[1] = questionDOM[questionNum - 1].questionNumber;
+  divQuestionHeader.children[0].classList = classList.join(" ");
   divQuestionOptions.innerHTML = "";
   questionDOM[questionNum - 1].options.forEach((option) => {
     divQuestionOptions.innerHTML += option;
   });
-
+  // Remove the active class from the previous question number
   document
     .querySelector(`.question-number[data-question="${currentQuestion}"]`)
     .classList.remove("active");
 
+  // Update the current question
   currentQuestion = questionNum;
 
-  questionTitle.textContent = `Question ${currentQuestion}`;
-
+  // Add the active class to the new question number
   document
     .querySelector(`.question-number[data-question="${currentQuestion}"]`)
     .classList.add("active");
 
+  // Show/hide the submit button based on the question number
   if (questionNum == 10) {
     submitbtn.classList.remove("hidden");
   } else {
     submitbtn.classList.add("hidden");
   }
+
+  // Update the flag icon and question number div based on the flagged state
+  if (flaggedQuestions[currentQuestion]) {
+    flagIcon.classList.add("flagged"); // Add the 'flagged' class to turn the icon orange
+  } else {
+    flagIcon.classList.remove("flagged"); // Remove the 'flagged' class to revert to the default color
+  }
+
+  const currentQuestionNumber = document.querySelector(
+    `.question-number[data-question="${currentQuestion}"]`
+  );
+  if (flaggedQuestions[currentQuestion]) {
+    currentQuestionNumber.classList.add("flagged");
+  } else {
+    currentQuestionNumber.classList.remove("flagged");
+  }
 }
+
 // Event listener for the previous button
 prevButton.addEventListener("click", () => {
   if (currentQuestion > 1) {
@@ -143,7 +190,7 @@ submitBtn.addEventListener("click", () => {
 confirmSubmit.addEventListener("click", () => {
   confirmationModal.style.display = "none";
   const correctAnswers = correctExam();
-  addResult({email: userEmail, examName: topic, score: correctAnswers});
+  addResult({ email: userEmail, examName: topic, score: correctAnswers });
   window.location.href = `../pages/exam-result.html?examresult=${correctAnswers}`;
 });
 // Event listener for the cancel button in confirmation modal
@@ -152,10 +199,14 @@ cancelSubmit.addEventListener("click", () => {
 });
 // Event listener for the question numbers
 divQuestionOptions.addEventListener("click", (e) => {
+  const parentDiv = e.target.parentElement;
+ 
   if (e.target.tagName === "BUTTON") {
-    const parentDiv = e.target.parentElement;
-    const NumberOfQuestion =
-      parentDiv.previousElementSibling.children[0].classList[0];
+    const classList = Array.from(
+      e.target.parentElement.previousElementSibling.children[0].classList
+    );
+
+    const NumberOfQuestion = classList[1];
 
     for (let i = 0; i < parentDiv.children.length; i++) {
       if (parentDiv.children[i].classList.contains("option-clicked")) {
@@ -200,3 +251,8 @@ function correctExam() {
 }
 
 getResults(userEmail);
+
+divQuestionNumbers.addEventListener("click", (e) => {
+  const value = e.target.innerText;
+  updateQuestion(parseInt(value));
+});
