@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,9 +9,10 @@
     <link rel="stylesheet" href="../css/variables.css">
     <link rel="stylesheet" href="../css/exam.css">
 </head>
+
 <body>
     <section class="timer" id="timer">05:00</section>
-    
+
     <section class="question-navigator">
         <div class="question-number" data-question="1">1</div>
         <div class="question-number" data-question="2">2</div>
@@ -29,17 +31,28 @@
             <i class="fas fa-flag flag-icon"></i>
         </div>
         <div class="options">
-            <div class="option" data-option="A">Option A</div>
-            <div class="option" data-option="B">Option B</div>
-            <div class="option" data-option="C">Option C</div>
-            <div class="option" data-option="D">Option D</div>
+            <button class="option" data-option="A">Option A</button>
+            <button class="option" data-option="B">Option B</button>
+            <button class="option" data-option="C">Option C</button>
+            <button class="option" data-option="D">Option D</button>
         </div>
         <div class="navigation">
             <i class="fas fa-chevron-left nav-icon" id="prevQuestion"></i>
             <i class="fas fa-chevron-right nav-icon" id="nextQuestion"></i>
         </div>
+        <div class="submit-btn">
+            <button id="submitBtn" class="hidden">Submit</button>
+        </div>
     </section>
+    <div id="confirmationModal" class="modal">
+        <div class="modal-content">
+            <p>Are you sure you want to submit the exam?</p>
+            <button id="confirmSubmit">Yes, Submit</button>
+            <button id="cancelSubmit">Cancel</button>
+        </div>
+    </div>
 
-    <script src="../scripts/exam.js"></script>
+    <script type="module" src="../scripts/exam.js"></script>
 </body>
+
 </html>

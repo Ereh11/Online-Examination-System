@@ -6,6 +6,7 @@ body {
   background-color: #f4f4f4;
   font-family: var(--main-font);
 }
+
 .timer {
   position: absolute;
   top: 20px;
@@ -15,20 +16,24 @@ body {
   font-weight: bold;
   transition: color 0.5s, transform 0.5s;
 }
+
 .timer.warning {
   color: red;
   animation: blink 1s infinite alternate;
 }
+
 @keyframes blink {
   from {
     opacity: 1;
     transform: scale(1);
   }
+
   to {
     opacity: 0.5;
     transform: scale(1.1);
   }
 }
+
 .question-navigator {
   width: 250px;
   background-color: #e0e0e0;
@@ -38,6 +43,7 @@ body {
   gap: 10px;
   align-content: flex-start;
 }
+
 .question-number {
   width: 50px;
   height: 50px;
@@ -49,53 +55,137 @@ body {
   cursor: pointer;
   transition: background-color 0.3s;
 }
+
 .question-number.active {
   background-color: #4caf50;
   color: white;
 }
+
 .exam-container {
   flex-grow: 1;
   padding: 20px;
   display: flex;
   flex-direction: column;
 }
+
 .navigation {
   display: flex;
   justify-content: space-between;
   margin-top: 20px;
 }
+
 .nav-icon {
   font-size: 24px;
   cursor: pointer;
   color: #333;
 }
+
 .nav-icon:hover {
   color: #4caf50;
 }
+
 .question-header {
   display: flex;
   align-items: center;
   gap: 15px;
-  margin-bottom: 20px;
+  /* margin-bottom: 10px; */
+  padding-top: 15px;
 }
+
 .flag-icon {
   cursor: pointer;
   color: gray;
 }
+
 .flag-icon.active {
   color: red;
 }
+
 .options {
   display: flex;
   flex-direction: column;
   gap: 15px;
 }
+
 .option {
+  text-align: left;
   border: 1px solid #ddd;
   padding: 10px;
   border-radius: 5px;
   cursor: pointer;
 }
-.option:hover {
-  background-color: #f0f0f0;
+
+.submit-btn {
+  margin-top: 8rem;
+  text-align: right;
+}
+
+.submit-btn #submitBtn:hover {
+  cursor: pointer;
+  background-color: #4caf50;
+  color: white;
+}
+
+#submitBtn {
+  width: 100px;
+  margin-right: 20px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: 1px solid #4caf50;
+}
+
+.hidden {
+  display: none;
+}
+
+.modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  /* Semi-transparent background */
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  /* Ensure it's on top */
+}
+
+.modal-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.modal-content p {
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+.modal-content button {
+  padding: 10px 20px;
+  margin: 0 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+#confirmSubmit {
+  background-color: #4caf50;
+  color: white;
+}
+
+#cancelSubmit {
+  background-color: #f44336;
+  color: white;
+}
+.option-clicked {
+  background-color: #4caf50;
+  color: white;
 }

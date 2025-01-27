@@ -1,26 +1,75 @@
-import { creatUser } from "./services/signupHandle.js";
-
-const urlUsers = "http://localhost:3000/users";
-
-const user = creatUser("", "yasminayed@gmail.com", "yasminayed@gmail.com");
+import { Exam } from '../models/exam.js';
+let urlQuestions = 'http://localhost:3001';
 /**
- * Check if user already exists in the database or not
- * @param {User Object} userdata 
- * @returns {Promise<boolean>} true if user exists, false if user does not exist
+ * Take examTopic, examDifficulty, examDuration and create an exam object
+ * @param {string} examTopic 
+ * @param {string} examDifficulty 
+ * @param {Number} examDuration 
+ * @param {Number} examQuestionsNumber
+ * @returns {Exam} exam object
  */
+async function createExam(Topic, Difficulty, Duration, QuestionsNumber) {
+    const exam = new Exam(Topic, Difficulty, Duration, QuestionsNumber);
+    urlQuestions += checkReturn(Topic, Difficulty);
 
+    const questions = await getQuestions(urlQuestions, exam.QuestionsNumber);
+    questions.forEach(question => {
+        console.log(question.question, question.options, question.correctAnswer);
+    });
+}
 
-    try {
-        const response = await fetch(urlUsers);
-        if (!response.ok) {
-            throw new Error(`HTTP error! status: ${response.status}`);
+/**
+ * Fetch questions from the Database and return a list of questions based on the number of questions required
+ * @param {string} urlQuestions 
+ * @param {Number} QuestionsNumber 
+ * @returns {Array} selectedQuestions
+ */
+async function getQuestions(urlQuestions, QuestionsNumber) {
+    try{
+        const response = await fetch(urlQuestions);
+        if(!response.ok) {
+            throw new Error('Failed to fetch questions');
         }
-        const data = await response.json();
-        console.log(data);
-        //const userExists = data.some((user) => user.email === userdata.email && user.password === userdata.password);   
-       
-    } catch (error) {
-        console.error("Error fetching JSON data:", error);
-       
+        
+        const questions = await response.json();
+
+        const shuffledQuestions = questions.sort(() => Math.random() - 0.5);
+        const selectedQuestions = shuffledQuestions.slice(0, QuestionsNumber);
+        
+        return selectedQuestions;
+    }
+    catch(error) {
+        console.error('Error fetching questions:', error);
+    }
+}
+
+function checkReturn(Topic, Difficulty)
+{
+    let path = '';
+    switch(Topic){
+        case "JavaScript":
+            path = '/javascript';
+            break;
+        case "C#":
+            path = '/Csharp';
+            break;
+        case "TypeScript":
+            path = '/TypeScript';
+            break;
     }
 
+    switch(Difficulty){
+        case "easy":
+            path += '-easy';
+            break;
+        case "medium":
+            path += '-medium';
+            break;
+        case "hard":
+            path += '-hard';
+            break;
+    }
+    
+    return path;
+}
+createExam('JavaScript', 'easy', 10, 5);
