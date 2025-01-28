@@ -2191,6 +2191,18 @@
       "examName": "TypeScript",
       "score": 0,
       "id": 23
+    },
+    {
+      "email": "hanystd@gmail.com",
+      "examName": "JavaScript",
+      "score": 0,
+      "id": 24
+    },
+    {
+      "email": "hanystd@gmail.com",
+      "examName": "JavaScript",
+      "score": 10,
+      "id": 25
     }
   ]
 }
