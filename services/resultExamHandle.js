@@ -19,7 +19,7 @@ export async function getResults(email) {
         });
     }
     catch (error) {
-        console.error(error);
+        window.location.replace("../pages/error.html");
     }
     return userResults;
 }
@@ -42,6 +42,6 @@ export async function addResult(result) {
         }
     }
     catch (error) {
-        console.error(error);
+        window.location.replace("../pages/error.html");
     }
 }

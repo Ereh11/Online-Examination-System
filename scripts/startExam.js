@@ -17,7 +17,7 @@ ExamTopicBtn.addEventListener("click", function () {
 });
 
 ExamDifficultyBtn.addEventListener("click", function () {
-  window.location.href = "../pages/examInstruction.html";
+  window.location.replace("../pages/examInstruction.html");
 });
 
 /**

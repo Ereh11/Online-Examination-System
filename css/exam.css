@@ -7,7 +7,6 @@ body {
   font-family: var(--main-font);
 }
 
-
 .timer {
   position: absolute;
   top: 10px;
@@ -28,6 +27,7 @@ body {
     opacity: 1;
     transform: scale(1);
   }
+
   to {
     opacity: 0.5;
     transform: scale(1.1);
@@ -42,8 +42,8 @@ body {
   flex-wrap: wrap;
   gap: 10px;
   align-content: flex-start;
-  overflow-y: auto; 
-  height: 100%; 
+  overflow-y: auto;
+  height: 100%;
 }
 
 .question-number {
@@ -197,11 +197,11 @@ body {
 }
 
 .flag-icon.flagged {
-  color: orange; 
+  color: orange;
 }
 
 .question-number:hover {
-  background-color: #4caf50; 
+  background-color: #4caf50;
   transition: background-color 0.3s;
 }
 
@@ -229,11 +229,10 @@ body {
 @media (max-width: 768px) {
   body {
     flex-direction: column;
-    
   }
 
   .question-navigator {
-    width:auto;
+    width: auto;
     height: auto;
     order: 2;
   }

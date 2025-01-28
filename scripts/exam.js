@@ -85,7 +85,7 @@ function updateTimer() {
   } else {
     const correctAnswers = correctExam();
     addResult({ email: userEmail, examName: topic, score: correctAnswers });
-    window.location.href = `../pages/exam-result.html?examresult=${correctAnswers}`;
+    window.location.replace(`../pages/exam-result.html?examresult=${correctAnswers}`);
   }
 }
 updateTimer();
@@ -191,7 +191,7 @@ confirmSubmit.addEventListener("click", () => {
   confirmationModal.style.display = "none";
   const correctAnswers = correctExam();
   addResult({ email: userEmail, examName: topic, score: correctAnswers });
-  window.location.href = `../pages/exam-result.html?examresult=${correctAnswers}`;
+  window.location.replace(`../pages/exam-result.html?examresult=${correctAnswers}`);
 });
 // Event listener for the cancel button in confirmation modal
 cancelSubmit.addEventListener("click", () => {

@@ -17,6 +17,18 @@
       "email": "yamin@gmail.com",
       "password": "01271420102",
       "id": "BB2znsT"
+    },
+    {
+      "username": "hany",
+      "email": "killua11std@gmail.com",
+      "password": "123456",
+      "id": "N1RTpgQ"
+    },
+    {
+      "username": "Hani Saad",
+      "email": "hanysaad@gmail.com",
+      "password": "123456",
+      "id": "ixjYB7p"
     }
   ],
   "JavaScript-easy": [
@@ -2055,6 +2067,7 @@
       "id": 6
     },
     {
+<<<<<<< HEAD
       "email": "yamin@gmail.com",
       "examName": "TypeScript",
       "score": 10,
@@ -2071,6 +2084,72 @@
       "examName": "JavaScript",
       "score": 80,
       "id": 9
+=======
+      "email": "yasminayed@gmail.com",
+      "examName": "JavaScript",
+      "score": 90,
+      "id": 7
+    },
+    {
+      "email": "yasminayed@gmail.com",
+      "examName": "JavaScript",
+      "score": 70,
+      "id": 8
+    },
+    {
+      "email": "yasminayed@gmail.com",
+      "examName": "JavaScript",
+      "score": 0,
+      "id": 9
+    },
+    {
+      "email": "yasminayed@gmail.com",
+      "examName": "C#",
+      "score": 0,
+      "id": 10
+    },
+    {
+      "email": "yasminayed@gmail.com",
+      "examName": "C#",
+      "score": 0,
+      "id": 11
+    },
+    {
+      "email": "yasminayed@gmail.com",
+      "examName": "C#",
+      "score": 0,
+      "id": 12
+    },
+    {
+      "email": "yasminayed@gmail.com",
+      "examName": "C#",
+      "score": 10,
+      "id": 13
+    },
+    {
+      "email": "hanysaadstd@gmail.com",
+      "examName": "TypeScript",
+      "score": 0,
+      "id": 14
+    },
+    {
+      "email": "hanysaad@gmail.com",
+      "examName": "JavaScript",
+      "score": 10,
+      "id": 15
+    },
+    {
+      "email": "hanysaadstd@gmail.com",
+      "examName": "JavaScript",
+      "score": 10,
+      "id": 16
+    },
+    {
+      "email": "hanysaadstd@gmail.com",
+      "examName": "JavaScript",
+      "score": 0,
+      "id": 17
+>>>>>>> b730e8fcd310c6311a475643731a945662631223
     }
   ]
 }

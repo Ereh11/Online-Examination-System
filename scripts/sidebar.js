@@ -19,7 +19,7 @@ close_btn.addEventListener("click", function() {
 });
 
 logout.addEventListener("click", function() {
-    window.location.href = "../pages/login.html"
+    window.location.replace("../pages/login.html");
 });
 
 info.addEventListener("click", function() {

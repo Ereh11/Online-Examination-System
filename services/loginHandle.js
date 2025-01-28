@@ -14,11 +14,8 @@ export async function recievedData(email, password) {
         localStorage.setItem("email", email);
         return true;
     } else {
-        try {
- 
-        } catch (error) {
-            console.error("Error sending user to database:", error);
-        }
+        window.location.replace("../pages/error.html");
+        return false;
     }
 }
 
@@ -38,7 +35,7 @@ async function checkIdentity(userdata) {
         const userExists = data.some((user) => user.email === userdata.email && user.password === userdata.password);   
         return userExists;
     } catch (error) {
-        console.error("Error fetching JSON data:", error);
+        window.location.replace("../pages/error.html");
         return false;
     }
 }

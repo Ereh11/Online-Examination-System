@@ -28,7 +28,7 @@ async function checkUserExistence(email) {
     return data.some((user) => user.email === email);
   } catch (error) {
     console.error("Error fetching JSON data:", error);
-    return false;
+    window.location.replace("../pages/error.html");
   }
 }
 
@@ -44,15 +44,16 @@ export async function recievedData(username, email, password) {
   const userExists = await checkUserExistence(newUser.email);
 
   if (userExists) {
-    window.location.href = "../pages/login.html";
+    window.location.replace("../pages/login.html");
     return;
   }
 
   try {
     await sendUserToDatabase(newUser);
-    window.location.href = "../pages/completeRegister.html";
+    window.location.replace("../pages/completeRegister.html");
   } catch (error) {
     console.error("Error sending user to database:", error);
+    window.location.replace("../pages/error.html");
   }
 }
 
@@ -75,7 +76,6 @@ async function sendUserToDatabase(user) {
       throw new Error(`HTTP error! status: ${response.status}`);
     }
   } catch (error) {
-    console.error("Error sending user to database:", error);
-    throw error;
+    window.location.replace("../pages/error.html");
   }
 }

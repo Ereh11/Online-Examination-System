@@ -3,7 +3,6 @@ import {getResults} from "../services/resultExamHandle.js"
 const tbody = document.querySelector("tbody");
 const email =localStorage.getItem("email");
 const userInfoDiv = document.getElementsByClassName("user-info")[0];
-// const userNameDom = userInfoDiv.children[0];
 const emailDom = userInfoDiv.children[0];
 const resultUser =await getResults(email);
 
