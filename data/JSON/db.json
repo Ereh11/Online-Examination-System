@@ -2067,7 +2067,6 @@
       "id": 6
     },
     {
-<<<<<<< HEAD
       "email": "yamin@gmail.com",
       "examName": "TypeScript",
       "score": 10,
@@ -2078,17 +2077,6 @@
       "examName": "TypeScript",
       "score": 0,
       "id": 8
-    },
-    {
-      "email": "yamin@gmail.com",
-      "examName": "JavaScript",
-      "score": 80,
-      "id": 9
-=======
-      "email": "yasminayed@gmail.com",
-      "examName": "JavaScript",
-      "score": 90,
-      "id": 7
     },
     {
       "email": "yasminayed@gmail.com",
@@ -2149,7 +2137,6 @@
       "examName": "JavaScript",
       "score": 0,
       "id": 17
->>>>>>> b730e8fcd310c6311a475643731a945662631223
     }
   ]
 }
