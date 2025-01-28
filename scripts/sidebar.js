@@ -5,21 +5,21 @@ let close_sidebar = document.getElementById("close-sidebar");
 let logout = document.getElementsByClassName("logout")[0];
 let info = document.getElementsByClassName("info")[0];
 
-list.addEventListener("click", function() {
+list.addEventListener("click", function () {
     sidebar.style.visibility = "visible";
-    list.style.display ="none";
+    list.style.display = "none";
 });
 
-close_btn.addEventListener("click", function() {
+close_btn.addEventListener("click", function () {
     sidebar.style.visibility = "hidden";
-    list.style.display ="flex";
+    list.style.display = "flex";
 });
 
-logout.addEventListener("click", function() {
+logout.addEventListener("click", function () {
     window.location.replace("../pages/login.html");
 });
 
-info.addEventListener("click", function() {
+info.addEventListener("click", function () {
     window.location.href = "../pages/user-profile.html";
 });
 
@@ -29,7 +29,7 @@ document.addEventListener('click', (event) => {
         list.style.display = "flex";
     }
 });
-  
+
 
 
 

@@ -13,7 +13,7 @@ export async function getResults(email) {
         }
         const results = await response.json();
         results.forEach(element => {
-            if(element.email === email){
+            if (element.email === email) {
                 userResults.push(element);
             }
         });

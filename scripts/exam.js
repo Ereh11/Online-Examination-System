@@ -44,8 +44,7 @@ function createQuestionElement(exam) {
     let options = [];
     for (let i = 0; i < 4; i++) {
       options.push(
-        `<button class="option" data-option="${String.fromCharCode(i + 65)}">${
-          element.option[i]
+        `<button class="option" data-option="${String.fromCharCode(i + 65)}">${element.option[i]
         }</button>`
       );
     }
@@ -200,7 +199,7 @@ cancelSubmit.addEventListener("click", () => {
 // Event listener for the question numbers
 divQuestionOptions.addEventListener("click", (e) => {
   const parentDiv = e.target.parentElement;
- 
+
   if (e.target.tagName === "BUTTON") {
     const classList = Array.from(
       e.target.parentElement.previousElementSibling.children[0].classList

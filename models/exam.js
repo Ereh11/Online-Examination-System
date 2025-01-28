@@ -1,7 +1,5 @@
-export class Exam
-{   
-    constructor(topic, difficulty, time, questionsNumber, Questions = [])
-    {
+export class Exam {
+    constructor(topic, difficulty, time, questionsNumber, Questions = []) {
         this.topic = topic;
         this.difficulty = difficulty;
         this.time = time;

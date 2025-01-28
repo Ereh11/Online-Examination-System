@@ -42,7 +42,8 @@ button:hover {
         padding: 12px 25px;
     }
 }
-img{
+
+img {
     width: 65%;
     height: 65%;
     object-fit: cover;

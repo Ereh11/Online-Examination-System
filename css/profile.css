@@ -1,9 +1,10 @@
 body {
     font-family: var(--main-font);
-  background: var(--main-color);
-  background: var(--main-background);
+    background: var(--main-color);
+    background: var(--main-background);
 
-  }
+}
+
 .container {
     font-family: Arial, sans-serif;
     background: linear-gradient(to right, #1e3b72d8, #2c3e50a1);
@@ -41,7 +42,8 @@ table {
     margin-top: 20px;
 }
 
-th, td {
+th,
+td {
     padding: 15px;
     border: 1px solid #ddd;
     text-align: center;
@@ -63,7 +65,8 @@ th {
         font-size: 1rem;
     }
 
-    th, td {
+    th,
+    td {
         padding: 10px;
     }
 }
@@ -87,7 +90,8 @@ th {
         font-size: 0.9rem;
     }
 
-    th, td {
+    th,
+    td {
         padding: 8px;
     }
 }

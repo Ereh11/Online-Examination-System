@@ -1,19 +1,18 @@
-
-body, html {
+body,
+html {
   height: 100%;
-  /* overflow: auto; */
   margin: 0;
   padding: 0;
 }
 
 
 .container {
-  max-height: 100vh; 
-  /* overflow-y: auto;  
-  overflow-x: hidden;  */
-  padding: 1rem; 
+  max-height: 100vh;
+  padding: 1rem;
 }
-#startBtn , #CancelBtn{
+
+#startBtn,
+#CancelBtn {
   margin: 5px;
 }
 
@@ -25,19 +24,19 @@ body, html {
 
 @media (max-width: 768px) {
   .content-container {
-    font-size: 0.9rem; 
-    padding: 0.5rem; 
+    font-size: 0.9rem;
+    padding: 0.5rem;
   }
 }
 
 
 @media (max-width: 480px) {
   .content-container {
-    font-size: 0.85rem; 
+    font-size: 0.85rem;
   }
 
   .container {
-    padding: 0.5rem; 
+    padding: 0.5rem;
   }
 }
 
@@ -45,7 +44,7 @@ body, html {
 @media (min-width: 240px) {
   .instruction p {
     text-align: left;
-    font-size: 0.9rem; 
-    padding: 0.1rem; 
+    font-size: 0.9rem;
+    padding: 0.1rem;
   }
-  } 
+}

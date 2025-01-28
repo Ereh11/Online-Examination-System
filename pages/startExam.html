@@ -2,76 +2,75 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to Exam</title>
-    <link rel="stylesheet" href="../css/variables.css"/>
-    <link rel="stylesheet" href="../css/mainsubjects.css"/>
-    <link rel="stylesheet" href="../css/sidebar.css"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome to Exam</title>
+  <link rel="stylesheet" href="../css/variables.css" />
+  <link rel="stylesheet" href="../css/mainsubjects.css" />
+  <link rel="stylesheet" href="../css/sidebar.css" />
 
 
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" />
 
 </head>
 
 <body>
-      <div class="list">
-        <i class="fas fa-bars lis-style"></i>
-      </div>
-      <div class="sidebar" id="close-sidebar">
-        <div class="close"><i class="fas fa-times text-white" id="close"></i></div>
-        
-        <div class="info">
-            <i class="far fa-user user-icon"></i>
-            <span class="profile">Profile</span>
-        </div>
-        <div class="logout"> 
-            <i class="fas fa-sign-out-alt"></i>
-            <span class="log">logout</span>
-        </div>     
-       </div>
-    <div class="container d-flex justify-content-center align-items-center vh-100">
-        <div class="row shadow-lg rounded-4 overflow-hidden bg-blur signup-container">
-          <div class="col-lg-6 d-none d-lg-flex align-items-center justify-content-center text-white">
-            <!-- <div class="side-background"> -->
-              <img src="../imgs/subjectChoose.jpg" alt="Signup" class="img-fluid" />
-            <!-- </div> -->
-          </div>
-          <div class="col-lg-6 p-5">
-            <div class="container-examTopic">
-                <h2 class="fw-bold text-center p-5 text-primary">Choose Exam Topic</h2>
-                    <div class="examTopic text-white">
-                        <span><input type="radio" value="JavaScript" name="examTopic">Java Script</span>
-                        <span><input type="radio" value="TypeScript" name="examTopic">Type Script</span>
-                        <span><input type="radio" value="C#" name="examTopic">C#</input></span>
-                    </div>
-                    <span class="cursor-point"><button class="display-nextBtn ExamTopicnextBtn btn bg-success text-white">Next</button></span>
-                </div>
-           
-            
-            
-                <div class="container-examDifficulty hidden">
-                    <h2 class="fw-bold text-center p-5 text-primary">Choose Exam Difficulty</h2>
-                    <div class="examDifficulty text-white">
-                        <span><input type="radio" value="easy" name="examDifficulty">Easy</span>
-                        <span><input type="radio" value="medium" name="examDifficulty">Medium</span>
-                        <span><input type="radio" value="hard" name="examDifficulty">Hard</span>
-                    </div>
-                    <span class="cursor-point"><button class="display-nextBtn ExamDifficultynextBtn btn bg-success text-white">Next</button></span>
-                </div>
-            </div>
-         </div>
-        </div>
+  <div class="list">
+    <i class="fas fa-bars lis-style"></i>
+  </div>
+  <div class="sidebar" id="close-sidebar">
+    <div class="close"><i class="fas fa-times text-white" id="close"></i></div>
+
+    <div class="info">
+      <i class="far fa-user user-icon"></i>
+      <span class="profile">Profile</span>
     </div>
-    <script src="../scripts/startExam.js"></script>
-    <script src="../scripts/sidebar.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <div class="logout">
+      <i class="fas fa-sign-out-alt"></i>
+      <span class="log">logout</span>
+    </div>
+  </div>
+  <div class="container d-flex justify-content-center align-items-center vh-100">
+    <div class="row shadow-lg rounded-4 overflow-hidden bg-blur signup-container">
+      <div class="col-lg-6 d-none d-lg-flex align-items-center justify-content-center text-white">
+        <!-- <div class="side-background"> -->
+        <img src="../imgs/subjectChoose.jpg" alt="Signup" class="img-fluid" />
+        <!-- </div> -->
+      </div>
+      <div class="col-lg-6 p-5">
+        <div class="container-examTopic">
+          <h2 class="fw-bold text-center p-5 text-primary">Choose Exam Topic</h2>
+          <div class="examTopic text-white">
+            <span><input type="radio" value="JavaScript" name="examTopic">Java Script</span>
+            <span><input type="radio" value="TypeScript" name="examTopic">Type Script</span>
+            <span><input type="radio" value="C#" name="examTopic">C#</input></span>
+          </div>
+          <span class="cursor-point"><button
+              class="display-nextBtn ExamTopicnextBtn btn bg-success text-white">Next</button></span>
+        </div>
+
+
+
+        <div class="container-examDifficulty hidden">
+          <h2 class="fw-bold text-center p-5 text-primary">Choose Exam Difficulty</h2>
+          <div class="examDifficulty text-white">
+            <span><input type="radio" value="easy" name="examDifficulty">Easy</span>
+            <span><input type="radio" value="medium" name="examDifficulty">Medium</span>
+            <span><input type="radio" value="hard" name="examDifficulty">Hard</span>
+          </div>
+          <span class="cursor-point"><button
+              class="display-nextBtn ExamDifficultynextBtn btn bg-success text-white">Next</button></span>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <script src="../scripts/startExam.js"></script>
+  <script src="../scripts/sidebar.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
+
 </html>

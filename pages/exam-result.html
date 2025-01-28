@@ -1,45 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exam Result</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" 
-          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" 
-          crossorigin="anonymous" 
-          referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+        crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="stylesheet" href="../css/variables.css">
     <link rel="stylesheet" href="../css/exam-result.css">
     <!-- <link rel="stylesheet" href="../css/mainsubjects.css"> -->
     <link rel="stylesheet" href="../css/sidebar.css">
 
 
-    
+
 </head>
+
 <body>
     <div class="list">
         <i class="fas fa-bars lis-style"></i>
-     </div>
+    </div>
     <div class="sidebar">
         <div class="close"><i class="fas fa-times text-white" id="close"></i></div>
-        
+
         <div class="info">
             <i class="far fa-user user-icon"></i>
             <span class="profile">Profile</span>
         </div>
-        <div class="logout"> 
+        <div class="logout">
             <i class="fas fa-sign-out-alt"></i>
             <span class="log">logout</span>
-        </div>     
+        </div>
     </div>
     <main class="container-fluid vh-100 d-flex justify-content-center align-items-center">
         <div class="row w-100">
             <!-- Side Image -->
             <div class="col-md-6 d-flex justify-content-center align-items-center">
-                <img src="../imgs/exam/success-result.jpg" 
-                     alt="exam result" 
-                     class="img-fluid rounded-3 shadow-lg">
+                <img src="../imgs/exam/success-result.jpg" alt="exam result" class="img-fluid rounded-3 shadow-lg">
             </div>
             <!-- Result Container -->
             <div class="col-md-6 d-flex justify-content-center align-items-center">
@@ -51,8 +49,7 @@
                     <div class="grade-box bg-dark bg-opacity-50 p-3 rounded-3 my-4">
                         <p class="fs-3 fw-bold">Your Grade: <span id="grade">75%</span></p>
                     </div>
-                    <button class="btn btn-warning btn-lg" 
-                            onclick="window.location.replace('../pages/startExam.html')">
+                    <button class="btn btn-warning btn-lg" onclick="window.location.replace('../pages/startExam.html')">
                         Start Over
                     </button>
                 </div>
@@ -65,4 +62,5 @@
     <script src="../scripts/sidebar.js"></script>
 
 </body>
+
 </html>

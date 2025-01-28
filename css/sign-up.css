@@ -3,24 +3,28 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
   font-family: var(--main-font);
   background: var(--main-color);
   background: var(--main-background);
 
 }
+
 .bg-primary {
   background: var(--main-background);
 }
+
 form .form-label {
   border-radius: 20px;
 }
+
 button {
   border-radius: 20px;
   font-weight: bold;
 }
+
 a {
   text-decoration: none;
   font-weight: bold;
 }
-

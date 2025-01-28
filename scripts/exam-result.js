@@ -1,6 +1,6 @@
 // Example of getting the grade dynamically (can be retrieved from URL or API)
 const queryParams = new URLSearchParams(window.location.search);
-let score = queryParams.get("examresult") || 0; 
+let score = queryParams.get("examresult") || 0;
 score = parseInt(score); // Convert to percentage
 const grade = makeGrade(score);
 
@@ -14,16 +14,16 @@ const imgResult = document.querySelector('img');
 
 if (grade === "F") {
     statusElement.textContent = "failed";
-    statusElement.classList.remove("text-warning"); 
-    statusElement.classList.add("text-danger"); 
+    statusElement.classList.remove("text-warning");
+    statusElement.classList.add("text-danger");
     headingElement.innerHTML = '<i class="fas fa-times-circle"></i> Sorry!';
     headingElement.classList.remove("text-success"); // Remove green
     headingElement.classList.add("text-danger"); // Add red
     imgResult.src = '../imgs/exam/failed-result.webp';
 } else {
     statusElement.textContent = "passed";
-    statusElement.classList.remove("text-danger"); 
-    statusElement.classList.add("text-warning"); 
+    statusElement.classList.remove("text-danger");
+    statusElement.classList.add("text-warning");
     headingElement.innerHTML = '<i class="fas fa-check-circle"></i> Congratulations!';
     imgResult.src = '../imgs/exam/success-result.jpg';
 }

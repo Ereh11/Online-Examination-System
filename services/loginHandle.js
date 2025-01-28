@@ -25,14 +25,14 @@ export async function recievedData(email, password) {
  * @returns {Promise<boolean>} true if user exists, false if user does not exist
  */
 
-async function checkIdentity(userdata) { 
+async function checkIdentity(userdata) {
     try {
         const response = await fetch(urlUsers);
         if (!response.ok) {
             throw new Error(`HTTP error! status: ${response.status}`);
         }
         const data = await response.json();
-        const userExists = data.some((user) => user.email === userdata.email && user.password === userdata.password);   
+        const userExists = data.some((user) => user.email === userdata.email && user.password === userdata.password);
         return userExists;
     } catch (error) {
         window.location.replace("../pages/error.html");
