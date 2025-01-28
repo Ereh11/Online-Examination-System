@@ -47,6 +47,12 @@
       "email": "hanystd@gmail.com",
       "password": "123456",
       "id": "mgvNcyl"
+    },
+    {
+      "username": "hayfaa",
+      "email": "hayfaa@gmail.com",
+      "password": "1966hayfaa",
+      "id": "o7PXX8h"
     }
   ],
   "JavaScript-easy": [
@@ -2202,7 +2208,18 @@
       "email": "hanystd@gmail.com",
       "examName": "JavaScript",
       "score": 10,
-      "id": 25
+      "id": 25    },
+    {
+      "email": "hayfaa@gmail.com",
+      "examName": "JavaScript",
+      "score": 90,
+      "id": 19
+    },
+    {
+      "email": "hayfaa@gmail.com",
+      "examName": "TypeScript",
+      "score": 0,
+      "id": 20
     }
   ]
 }
