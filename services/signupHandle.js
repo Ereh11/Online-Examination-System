@@ -1,31 +1,26 @@
 import { User } from "../models/user.js";
 
-const baseUrl = "https://e432-45-104-203-212.ngrok-free.app"; // Base URL without credentials
-const urlUsers = `${baseUrl}/users`; // Constructed URL for users
+const urlUsers = "http://localhost:3000/users";
 
 /**
  * Create a new user object
- * @param {string} username - The username of the user
- * @param {string} email - The email of the user
- * @param {string} password - The password of the user
- * @returns {User} - The created user object
+ * @param {string} username
+ * @param {string} email
+ * @param {string} password
+ * @returns {User Object}
  */
 export function creatUser(username, email, password) {
   return new User(username, email, password);
 }
 
 /**
- * Check if user already exists in the database
- * @param {string} email - The email of the user to check
- * @returns {Promise<boolean>} - true if user exists, false otherwise
+ * Check if user already exists in the database or not
+ * @param {string} email
+ * @returns {Promise<boolean>} true if user exists, false otherwise
  */
 async function checkUserExistence(email) {
   try {
-    const response = await fetch(urlUsers, {
-      headers: {
-        'Authorization': 'Basic ' + btoa('killua:2000Hani') // Add credentials here
-      }
-    });
+    const response = await fetch(urlUsers);
     if (!response.ok) {
       throw new Error(`HTTP error! status: ${response.status}`);
     }
@@ -39,9 +34,9 @@ async function checkUserExistence(email) {
 
 /**
  * Receive data from the signup form and create a new user
- * @param {string} username - The username of the user
- * @param {string} email - The email of the user
- * @param {string} password - The password of the user
+ * @param {string} username
+ * @param {string} email
+ * @param {string} password
  * @returns {Promise<void>}
  */
 export async function recievedData(username, email, password) {
@@ -63,7 +58,7 @@ export async function recievedData(username, email, password) {
 
 /**
  * Send the new user object to the database
- * @param {User} user - The user object to send
+ * @param {User Object} user
  * @returns {Promise<void>}
  */
 async function sendUserToDatabase(user) {
@@ -72,7 +67,6 @@ async function sendUserToDatabase(user) {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
-        'Authorization': 'Basic ' + btoa('killua:2000Hani') // Add credentials here
       },
       body: JSON.stringify(user),
     });

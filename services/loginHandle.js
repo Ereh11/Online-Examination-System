@@ -1,12 +1,11 @@
 import { creatUser } from "./signupHandle.js";
 
-const urlUsers = "https://e432-45-104-203-212.ngrok-free.app/users"; // URL without credentials
-
+const urlUsers = "http://localhost:3000/users";
 /**
- * Receive data from the login form and check if user identity exists in the database
+ * Recieve data from the login form and check if user identity in the database
  * @param {string} email 
  * @param {string} password 
- * @returns {Promise<boolean>} true if user exists and credentials match, false otherwise
+ * @returns {void}
  */
 export async function recievedData(email, password) {
     const user = creatUser("", email, password);
@@ -15,28 +14,28 @@ export async function recievedData(email, password) {
         localStorage.setItem("email", email);
         return true;
     } else {
-        console.error("User not found or credentials do not match.");
-        return false;
+        try {
+ 
+        } catch (error) {
+            console.error("Error sending user to database:", error);
+        }
     }
 }
 
 /**
- * Check if user already exists in the database and if credentials match
+ * Check if user already exists in the database or not
  * @param {User Object} userdata 
- * @returns {Promise<boolean>} true if user exists and credentials match, false otherwise
+ * @returns {Promise<boolean>} true if user exists, false if user does not exist
  */
-async function checkIdentity(userdata) {
+
+async function checkIdentity(userdata) { 
     try {
-        const response = await fetch(urlUsers, {
-            headers: {
-                'Authorization': 'Basic ' + btoa('killua:2000Hani') // Add credentials here
-            }
-        });
+        const response = await fetch(urlUsers);
         if (!response.ok) {
             throw new Error(`HTTP error! status: ${response.status}`);
         }
         const data = await response.json();
-        const userExists = data.some((user) => user.email === userdata.email && user.password === userdata.password);
+        const userExists = data.some((user) => user.email === userdata.email && user.password === userdata.password);   
         return userExists;
     } catch (error) {
         console.error("Error fetching JSON data:", error);
