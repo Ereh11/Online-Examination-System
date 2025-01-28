@@ -6,7 +6,6 @@ const emailInput = document.getElementById("email");
 const passwordInput = document.getElementById("password");
 const loginError = document.getElementById("loginError"); // Error message container
 
-window.history.replaceState(null, null, "../pages/login.html"); // Remove any other than login page from history
 // Event Listeners
 loginForm.addEventListener("submit", async function (event) {
     event.preventDefault();
