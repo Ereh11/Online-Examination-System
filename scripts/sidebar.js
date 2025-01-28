@@ -1,6 +1,7 @@
 let list = document.getElementsByClassName("list")[0];
 let sidebar = document.getElementsByClassName("sidebar")[0];
 let close_btn = document.getElementById("close");
+let close_sidebar = document.getElementById("close-sidebar");
 let logout = document.getElementsByClassName("logout")[0];
 let info = document.getElementsByClassName("info")[0];
 
@@ -24,6 +25,14 @@ logout.addEventListener("click", function() {
 info.addEventListener("click", function() {
     window.location.href = "../pages/user-profile.html"
 });
+
+document.addEventListener('click', (event) => {
+    if (!sidebar.contains(event.target) && !list.contains(event.target)) {
+        sidebar.style.visibility = "hidden";
+        list.style.display = "flex";
+    }
+});
+  
 
 
 
