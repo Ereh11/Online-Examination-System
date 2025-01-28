@@ -35,6 +35,18 @@
       "email": "banseh@gmail.com",
       "password": "01271420102",
       "id": "cpwntCq"
+    },
+    {
+      "username": "han",
+      "email": "hanysaad123@gmail.com",
+      "password": "123456",
+      "id": "jViWeej"
+    },
+    {
+      "username": "Hani Saad",
+      "email": "hanystd@gmail.com",
+      "password": "123456",
+      "id": "mgvNcyl"
     }
   ],
   "JavaScript-easy": [
@@ -2161,6 +2173,24 @@
       "examName": "JavaScript",
       "score": 0,
       "id": 20
+    },
+    {
+      "email": "hanysaadstd@gmail.com",
+      "examName": "JavaScript",
+      "score": 60,
+      "id": 21
+    },
+    {
+      "email": "hanysaadstd@gmail.com",
+      "examName": "C#",
+      "score": 60,
+      "id": 22
+    },
+    {
+      "email": "hanystd@gmail.com",
+      "examName": "TypeScript",
+      "score": 0,
+      "id": 23
     }
   ]
 }

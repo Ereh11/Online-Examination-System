@@ -17,7 +17,7 @@ const divQuestionNumbers =
 const divQuestionHeader = divQuestion.children[0];
 const divQuestionOptions = divQuestion.children[1];
 
-let totalSeconds = 5 * 60;
+let totalSeconds = 0.2 * 60;
 let currentQuestion = 1;
 let questionDOM = [];
 let flaggedQuestions = {}; // Object to track flagged questions

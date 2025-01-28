@@ -1,3 +1,3 @@
-divContent = document.getElementsByClassName('content')[0];
+pargraphContent = document.querySelector('p');
 username = localStorage.getItem('userName');
-divContent.childern[1].innerHTML = `Sorry ${username}, your time is over. Please try again.`;
+pargraphContent.innerText = `Sorry ${username}, your time is over. Please try again.`;
