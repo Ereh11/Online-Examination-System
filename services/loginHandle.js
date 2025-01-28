@@ -11,7 +11,8 @@ export async function recievedData(email, password) {
     const user = creatUser("", email, password);
     const userCheck = await checkIdentity(user);
     if (userCheck) {
-        window.location.href = "../pages/startExam.html";
+        localStorage.setItem("email", email);
+        return true;
     } else {
         try {
  
