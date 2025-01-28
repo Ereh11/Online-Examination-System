@@ -1,15 +1,16 @@
 body {
   font-family: Arial, sans-serif;
   display: flex;
-  height: 100vh;
+  height: 90vh;
   margin: 0;
   background-color: #f4f4f4;
   font-family: var(--main-font);
 }
 
+
 .timer {
   position: absolute;
-  top: 20px;
+  top: 10px;
   left: 50%;
   transform: translateX(-50%);
   font-size: 24px;
@@ -27,7 +28,6 @@ body {
     opacity: 1;
     transform: scale(1);
   }
-
   to {
     opacity: 0.5;
     transform: scale(1.1);
@@ -42,6 +42,8 @@ body {
   flex-wrap: wrap;
   gap: 10px;
   align-content: flex-start;
+  overflow-y: auto; 
+  height: 100%; 
 }
 
 .question-number {
@@ -63,7 +65,7 @@ body {
 
 .question-number.flagged {
   background-color: rgb(212, 148, 29);
-  color: white; /* Optional: Change text color for better visibility */
+  color: white;
 }
 
 .exam-container {
@@ -71,6 +73,7 @@ body {
   padding: 20px;
   display: flex;
   flex-direction: column;
+  overflow-y: auto;
 }
 
 .navigation {
@@ -117,10 +120,15 @@ body {
   padding: 10px;
   border-radius: 5px;
   cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.option:hover {
+  background-color: #f4f4f4;
 }
 
 .submit-btn {
-  margin-top: 8rem;
+  margin-top: auto;
   text-align: right;
 }
 
@@ -191,10 +199,77 @@ body {
   background-color: #4caf50;
   color: white;
 }
+
 .flag-icon.flagged {
-  color: orange; /* Orange color when flagged */
+  color: orange; 
 }
+
 .question-number:hover {
-  background-color: #4caf50; /* Change background color on hover */
+  background-color: #4caf50; 
   transition: background-color 0.3s;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .question-navigator {
+    width: 200px;
+  }
+
+  .timer {
+    font-size: 20px;
+  }
+
+  .option {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  #submitBtn {
+    width: 90px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    flex-direction: column;
+    
+  }
+
+  .question-navigator {
+    width:auto;
+    height: auto;
+    order: 2;
+  }
+
+  .exam-container {
+    order: 1;
+    padding: 15px;
+  }
+
+  .timer {
+    top: 5px;
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .question-number {
+    width: 40px;
+    height: 40px;
+  }
+
+  .option {
+    font-size: 12px;
+    padding: 6px;
+  }
+
+  #submitBtn {
+    width: 80px;
+    font-size: 12px;
+  }
+
+  .timer {
+    font-size: 16px;
+  }
 }

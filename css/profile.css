@@ -1,7 +1,12 @@
-/* General styles */
+body {
+    font-family: var(--main-font);
+  background: var(--main-color);
+  background: var(--main-background);
+
+  }
 .container {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background: linear-gradient(to right, #1e3b72d8, #2c3e50a1);
     margin: 0;
     padding: 0;
     display: flex;
@@ -10,9 +15,8 @@
     min-height: 100vh;
 }
 
-/* Profile container styles */
+
 .profile-container {
-    background: linear-gradient(to right, #1e3b72d8, #2c3e50a1);
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
@@ -20,16 +24,17 @@
     max-width: 800px;
     width: 90%;
     box-sizing: border-box;
+    backdrop-filter: blur(10px);
 }
 
-/* User info styles */
+
 .user-info p {
     font-size: 1.1rem;
     color: #333;
     margin: 10px 0;
 }
 
-/* Table styles */
+
 table {
     width: 100%;
     border-collapse: collapse;
@@ -47,7 +52,7 @@ th {
     color: white;
 }
 
-/* Responsive Design */
+
 @media (max-width: 768px) {
     .profile-container {
         width: 95%;

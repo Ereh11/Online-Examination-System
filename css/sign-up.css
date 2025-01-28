@@ -6,6 +6,8 @@
 body {
   font-family: var(--main-font);
   background: var(--main-color);
+  background: var(--main-background);
+
 }
 .bg-primary {
   background: var(--main-background);
