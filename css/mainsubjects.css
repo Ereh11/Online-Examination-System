@@ -21,7 +21,7 @@ body {
 .main-container {
   width: 60%;
   display: flex;
-  justify-content: center;
+  justify-content: center; 
   align-items: center;
   flex-direction: column;
 }
@@ -34,7 +34,7 @@ body {
 }
 .container-examTopic,
 .container-examDifficulty {
-  width: 50%;
+  width: 70%;
   margin: 0 auto;
   text-align: center;
 }
@@ -53,9 +53,9 @@ input[type="radio"] {
 .examDifficulty {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: baseline;
   gap: 10px;
-  margin-left: 100px;
+  /* margin-left: 100px; */
 }
 .display-nextBtn {
   border: none;

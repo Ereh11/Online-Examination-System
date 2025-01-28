@@ -123,10 +123,6 @@ body {
   transition: background-color 0.3s;
 }
 
-.option:hover {
-  background-color: #f4f4f4;
-}
-
 .submit-btn {
   margin-top: auto;
   text-align: right;

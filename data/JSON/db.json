@@ -2053,6 +2053,24 @@
       "examName": "TypeScript",
       "score": 10,
       "id": 6
+    },
+    {
+      "email": "yamin@gmail.com",
+      "examName": "TypeScript",
+      "score": 10,
+      "id": 7
+    },
+    {
+      "email": "yamin@gmail.com",
+      "examName": "TypeScript",
+      "score": 0,
+      "id": 8
+    },
+    {
+      "email": "yamin@gmail.com",
+      "examName": "JavaScript",
+      "score": 80,
+      "id": 9
     }
   ]
 }

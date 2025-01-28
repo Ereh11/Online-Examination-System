@@ -10,7 +10,7 @@ body {
 
 .container {
   display: flex;
-  flex-wrap: wrap; /* Ensure elements wrap on smaller screens */
+  flex-wrap: wrap; 
   height: 100%;
 }
 
@@ -39,50 +39,49 @@ img {
 
 .text-container h1 {
   font-weight: 900;
-  font-size: 2rem; /* Adjust font size for smaller screens */
+  font-size: 2rem;
 }
 
 .text-container a {
   color: #e6e8f5;
-  text-decoration: none;
 }
 
 @media (max-width: 1024px) {
   .img-container {
-    width: 50%; /* Adjust for tablets */
+    width: 50%; 
   }
   .text-container {
     width: 50%;
   }
   img {
-    width: 80%; /* Scale image down slightly */
+    width: 80%; 
   }
 }
 
 @media (max-width: 768px) {
   .container {
-    flex-direction: column; /* Stack items vertically for smaller screens */
+    flex-direction: column; 
     text-align: center;
   }
   .img-container {
-    width: 100%; /* Take full width */
+    width: 100%; 
   }
   .text-container {
-    width: 100%; /* Take full width */
+    width: 100%; 
     padding: 10px;
   }
   img {
-    width: 60%; /* Adjust image size for mobile */
-    border-radius: 10px; /* Add rounded edges for better mobile design */
+    width: 60%; 
+    border-radius: 10px; 
   }
   .text-container h1 {
-    font-size: 1.5rem; /* Smaller heading for mobile */
+    font-size: 1.5rem; 
   }
 }
 
 @media (max-width: 480px) {
   img {
-    width: 90%; /* Further scale down image */
+    width: 90%; 
   }
   .text-container h1 {
     font-size: 1.2rem;
