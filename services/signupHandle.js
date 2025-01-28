@@ -49,6 +49,7 @@ export async function recievedData(username, email, password) {
   }
 
   try {
+    localStorage.setItem("userName", newUser.username);
     await sendUserToDatabase(newUser);
     window.location.replace("../pages/completeRegister.html");
   } catch (error) {
