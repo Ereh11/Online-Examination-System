@@ -42,7 +42,7 @@ loginForm.addEventListener("submit", async function (event) {
             passwordInput.classList.remove("is-valid");
         }
     } catch (error) {
-        window.history.replace("../pages/error.html");
+        window.location.replace("../pages/error.html");
     }
 });
 

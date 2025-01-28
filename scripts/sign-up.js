@@ -21,7 +21,7 @@ signUP.addEventListener("submit", async function (e) {
   try {
     await recievedData(usernameInput.value, emailInput.value, passwordInput.value);
   } catch (error) {
-    window.history.replace("../pages/error.html");
+    window.location.replace("../pages/error.html");
   }
 
   form.classList.add("was-validated");

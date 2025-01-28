@@ -14,7 +14,7 @@ export async function recievedData(email, password) {
         localStorage.setItem("email", email);
         return true;
     } else {
-        window.history.replace("../pages/error.html");
+        window.location.replace("../pages/error.html");
         return false;
     }
 }
@@ -35,7 +35,7 @@ async function checkIdentity(userdata) {
         const userExists = data.some((user) => user.email === userdata.email && user.password === userdata.password);   
         return userExists;
     } catch (error) {
-        window.history.replace("../pages/error.html");
+        window.location.replace("../pages/error.html");
         return false;
     }
 }

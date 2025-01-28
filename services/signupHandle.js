@@ -28,7 +28,7 @@ async function checkUserExistence(email) {
     return data.some((user) => user.email === email);
   } catch (error) {
     console.error("Error fetching JSON data:", error);
-    window.history.replace("../pages/error.html");
+    window.location.replace("../pages/error.html");
   }
 }
 
@@ -53,7 +53,7 @@ export async function recievedData(username, email, password) {
     window.location.replace("../pages/completeRegister.html");
   } catch (error) {
     console.error("Error sending user to database:", error);
-    window.history.replace("../pages/error.html");
+    window.location.replace("../pages/error.html");
   }
 }
 
@@ -76,6 +76,6 @@ async function sendUserToDatabase(user) {
       throw new Error(`HTTP error! status: ${response.status}`);
     }
   } catch (error) {
-    window.history.replace("../pages/error.html");
+    window.location.replace("../pages/error.html");
   }
 }
