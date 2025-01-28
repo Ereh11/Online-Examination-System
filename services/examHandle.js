@@ -43,7 +43,7 @@ async function getQuestions(urlQuestions, QuestionsNumber) {
 
     return selectedQuestions;
   } catch (error) {
-    console.error("Error fetching questions:", error);
+    window.history.replace("../pages/error.html");
   }
 }
 

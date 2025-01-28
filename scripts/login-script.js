@@ -42,8 +42,7 @@ loginForm.addEventListener("submit", async function (event) {
             passwordInput.classList.remove("is-valid");
         }
     } catch (error) {
-        console.error("Login error:", error);
-        alert("An error occurred. Please try again later.");
+        window.history.replace("../pages/error.html");
     }
 });
 
