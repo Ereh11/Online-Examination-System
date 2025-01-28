@@ -23,11 +23,11 @@ loginForm.addEventListener("submit", async function (event) {
             loginError.textContent = "Correct login, welcome!";
             loginError.classList.remove("alert-danger", "d-none");
             loginError.classList.add("alert-success");
-
-            // Redirect after a short delay to show the success message
+            window.history.replaceState(null, null, "../pages/startExam.html");
+            window.location.href = "../pages/startExam.html";
             setTimeout(() => {
                 window.location.href = "../pages/startExam.html";
-            }, 1000); // Redirect after 1 second
+            }, 1000); 
         }
         else {
             // Show error message
