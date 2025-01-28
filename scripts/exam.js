@@ -85,7 +85,7 @@ function updateTimer() {
   } else {
     const correctAnswers = correctExam();
     addResult({ email: userEmail, examName: topic, score: correctAnswers });
-    window.location.replace(`../pages/exam-result.html?examresult=${correctAnswers}`);
+    window.location.replace(`../pages/timeover.html`);
   }
 }
 updateTimer();
