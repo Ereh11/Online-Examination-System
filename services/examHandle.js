@@ -43,7 +43,7 @@ async function getQuestions(urlQuestions, QuestionsNumber) {
 
     return selectedQuestions;
   } catch (error) {
-    window.history.replace("../pages/error.html");
+    window.location.replace("../pages/error.html");
   }
 }
 

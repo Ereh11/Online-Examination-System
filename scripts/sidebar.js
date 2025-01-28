@@ -5,9 +5,6 @@ let close_sidebar = document.getElementById("close-sidebar");
 let logout = document.getElementsByClassName("logout")[0];
 let info = document.getElementsByClassName("info")[0];
 
-
-
-
 list.addEventListener("click", function() {
     sidebar.style.visibility = "visible";
     list.style.display ="none";
@@ -23,7 +20,7 @@ logout.addEventListener("click", function() {
 });
 
 info.addEventListener("click", function() {
-    window.location.href = "../pages/user-profile.html"
+    window.location.href = "../pages/user-profile.html";
 });
 
 document.addEventListener('click', (event) => {
