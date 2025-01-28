@@ -6,40 +6,68 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Exam Instruction</title>
     <link rel="stylesheet" href="../css/variables.css" />
-    <link rel="stylesheet" href="../css/examInstruction.css" />
+    <!-- <link rel="stylesheet" href="../css/examInstruction.css" /> -->
+    <link rel="stylesheet"  href="../css/mainsubjects.css">
+    <link rel="stylesheet" href="../css/sidebar.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+
 </head>
 
 <body>
-    <div class="container">
-        <div class="side-backgroud">
-            <img src="../imgs/startExam.jpg" alt="background" />
-        </div>
-        <div class="content-container">
-            <h1>Exam Instruction</h1>
-            <div class="instruction">
-                <p>1. You have 5 minutes to complete the exam</p>
-                <p>2. The exam contains 5 questions</p>
-                <p>3. Each question contains 4 options</p>
-                <p>
-                    4. Choose the correct answer and click on the next button to go to
-                    the next question
-                </p>
-                <p>5. You can skip the question and come back to it later</p>
-                <p>6. You can review your answers before submitting the exam</p>
-                <p>
+    <div class="list">
+        <i class="fas fa-bars lis-style"></i>
+     </div>
+    <div class="sidebar">
+        <div class="close"><i class="fas fa-times" id="close"></i></div>
+        <div class="info"> Information</div>
+        <div class="logout"> Logout</div>     
+    </div>
+    <div class="container d-flex justify-content-center align-items-center vh-100">
+        <div class="row shadow-lg rounded-4 overflow-hidden bg-blur signup-container">
+          <div class="col-lg-6 d-none d-lg-flex align-items-center justify-content-center text-white">
+            <!-- <div class="side-background"> -->
+              <img src="../imgs/subjectChoose.jpg" alt="Signup" class="img-fluid" />
+            <!-- </div> -->
+          </div>
+
+            <div class="col-lg-6 p-5">
+                <div class="content-container">
+                    <h1 class="fw-bold text-center text-primary">Exam Instruction</h1>
+                   <div class="instruction text-white">
+                    <p>1. You have 5 minutes to complete the exam</p>
+                     <p>2. The exam contains 5 questions</p>
+                     <p>3. Each question contains 4 options</p>
+                     <p>
+                       4. Choose the correct answer and click on the next button to go to
+                        the next question
+                     </p>
+                      <p>5. You can skip the question and come back to it later</p>
+                      <p>6. You can review your answers before submitting the exam</p>
+                      <p>
                     7. Once you submit the exam, you will not be able to change the
                     answers
-                </p>
-                <p>8. Click on the start button to start the exam</p>
-            </div>
+                    </p>
+                     <p>8. Click on the start button to start the exam</p>
+                   </div>
 
-            <div class="btn-container">
-                <button id="startBtn">Start Exam</button>
-                <button id="CancelBtn">Cancel</button>
-            </div>
+                <div class="btn-container">
+                    <button class="btn bg-success text-white" id="startBtn">Start Exam</button>
+                     <button class="btn bg-success text-white" id="CancelBtn">Cancel</button>
+                </div>
+              </div>
         </div>
     </div>
     <script src="../scripts/examInstruction.js"></script>
+    <script src="../scripts/sidebar.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+
 </body>
 
 </html>

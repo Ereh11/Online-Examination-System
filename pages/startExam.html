@@ -7,62 +7,64 @@
     <title>Welcome to Exam</title>
     <link rel="stylesheet" href="../css/variables.css">
     <link rel="stylesheet" href="../css/mainsubjects.css">
+    <link rel="stylesheet" href="../css/sidebar.css">
+
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" />
+
 </head>
 
 <body>
-    <div class="container">
-        <div class="list">
-            <i class="fas fa-bars lis-style"></i>
-         </div>
-        <div class="sidebar">
-            <div class="close"><i class="fas fa-times" id="close"></i></div>
-            <div class="info"> Information</div>
-            <div class="logout"> Logout</div>     
-        </div>
-        <div class="side-background">
-            <img src="../imgs/subjectChoose.jpg" alt="subjectChoose">
-
-           
-            <!-- sidebar start -->
-             <!-- <div class="list">
-                <i class="fas fa-bars lis-style"></i>
-             </div>
-            <div class="sidebar">
-                <div class="close"><i class="fas fa-times" id="close"></i></div>
-                <div class="info"> Information</div>
-                <div class="logout"> Logout</div>     
-            </div> -->
-            <!-- sidebar end -->
-        </div>
-        <div class="main-container">
+    <div class="list">
+        <i class="fas fa-bars lis-style"></i>
+     </div>
+    <div class="sidebar">
+        <div class="close"><i class="fas fa-times" id="close"></i></div>
+        <div class="info"> Information</div>
+        <div class="logout"> Logout</div>     
+    </div>
+    <div class="container d-flex justify-content-center align-items-center vh-100">
+        <div class="row shadow-lg rounded-4 overflow-hidden bg-blur signup-container">
+          <div class="col-lg-6 d-none d-lg-flex align-items-center justify-content-center text-white">
+            <!-- <div class="side-background"> -->
+              <img src="../imgs/subjectChoose.jpg" alt="Signup" class="img-fluid" />
+            <!-- </div> -->
+          </div>
+          <div class="col-lg-6 p-5">
             <div class="container-examTopic">
-                <p>Choose Exam Topic</p>
-                <div class="examTopic">
-                    <span><input type="radio" value="JavaScript" name="examTopic">Java Script</input></span>
-                    <span><input type="radio" value="TypeScript" name="examTopic">Type Script</input></span>
-                    <span><input type="radio" value="C#" name="examTopic">C#</input></span>
+                <h2 class="fw-bold text-center text-primary">Choose Exam Topic</h2>
+                    <div class="examTopic text-white">
+                        <span><input type="radio" value="JavaScript" name="examTopic">Java Script</span>
+                        <span><input type="radio" value="TypeScript" name="examTopic">Type Script</span>
+                        <span><input type="radio" value="C#" name="examTopic">C#</input></span>
+                    </div>
+                    <span class="cursor-point"><button class="display-nextBtn ExamTopicnextBtn">Next</button></span>
                 </div>
-                <span class="cursor-point"><button class="display-nextBtn ExamTopicnextBtn">Next</button></span>
-            </div>
+           
             
-            <div class="container-examDifficulty hidden">
-                <p>Choose Exam Difficulty</p>
-                <div class="examDifficulty">
-                    <span><input type="radio" value="easy" name="examDifficulty">Easy</input></span>
-                    <span><input type="radio" value="medium" name="examDifficulty">Medium</input></span>
-                    <span><input type="radio" value="hard" name="examDifficulty">Hard</input></span>
+            
+                <div class="container-examDifficulty hidden">
+                    <h2 class="fw-bold text-center text-primary">Choose Exam Difficulty</h2>
+                    <div class="examDifficulty text-white">
+                        <span><input type="radio" value="easy" name="examDifficulty">Easy</span>
+                        <span><input type="radio" value="medium" name="examDifficulty">Medium</span>
+                        <span><input type="radio" value="hard" name="examDifficulty">Hard</span>
+                    </div>
+                    <span class="cursor-point"><button class="display-nextBtn ExamDifficultynextBtn">Next</button></span>
                 </div>
-                <span class="cursor-point"><button class="display-nextBtn ExamDifficultynextBtn">Next</button></span>
             </div>
+         </div>
         </div>
     </div>
     <script src="../scripts/startExam.js"></script>
     <script src="../scripts/sidebar.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>
