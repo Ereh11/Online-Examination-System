@@ -6,37 +6,38 @@ const emailInput = document.getElementById("email");
 const passwordInput = document.getElementById("password");
 const loginError = document.getElementById("loginError"); // Error message container
 
+window.history.replaceState(null, null, "../pages/login.html"); // Remove any other than login page from history
 // Event Listeners
 loginForm.addEventListener("submit", async function (event) {
     event.preventDefault();
     event.stopPropagation();
-    
+
     if (!loginForm.checkValidity()) {
         event.stopPropagation();
         loginForm.classList.add("was-validated");
         return;
     }
-    
+
     try {
         const success = await recievedData(emailInput.value, passwordInput.value);
-        if(success) {
+        if (success) {
             loginError.textContent = "Correct login, welcome!";
             loginError.classList.remove("alert-danger", "d-none");
             loginError.classList.add("alert-success");
-            window.history.replaceState(null, null, "../pages/startExam.html");
+            window.history.replaceState(null, null, "../pages/startExam.html"); // Remove login page from history
             window.location.href = "../pages/startExam.html";
             setTimeout(() => {
                 window.location.href = "../pages/startExam.html";
-            }, 1000); 
+            }, 1000);
         }
         else {
-            // Show error message
+            // Display error message
             loginError.classList.remove("d-none");
-            
+
             // Clear input fields
             emailInput.value = "";
             passwordInput.value = "";
-            
+
             // Remove validation classes
             emailInput.classList.remove("is-valid");
             passwordInput.classList.remove("is-valid");
@@ -57,7 +58,7 @@ emailInput.addEventListener("input", function () {
         emailInput.classList.add("is-invalid");
     }
 });
-
+// Input validation
 passwordInput.addEventListener("input", function () {
     if (passwordInput.value !== "") {
         passwordInput.classList.remove("is-invalid");

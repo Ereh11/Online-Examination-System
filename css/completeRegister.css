@@ -10,7 +10,7 @@ body {
 
 .container {
   display: flex;
-  flex-wrap: wrap; /* Ensure elements wrap on smaller screens */
+  flex-wrap: wrap; 
   height: 100%;
 }
 
@@ -44,7 +44,6 @@ img {
 
 .text-container a {
   color: #e6e8f5;
-  text-decoration: none;
 }
 
 @media (max-width: 1024px) {
