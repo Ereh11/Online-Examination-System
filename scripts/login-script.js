@@ -24,10 +24,9 @@ loginForm.addEventListener("submit", async function (event) {
             loginError.textContent = "Correct login, welcome!";
             loginError.classList.remove("alert-danger", "d-none");
             loginError.classList.add("alert-success");
-            window.history.replaceState(null, null, "../pages/startExam.html"); // Remove login page from history
-            window.location.href = "../pages/startExam.html";
+
             setTimeout(() => {
-                window.location.href = "../pages/startExam.html";
+                window.location.replace("../pages/startExam.html");
             }, 1000);
         }
         else {

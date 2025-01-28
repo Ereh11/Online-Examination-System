@@ -1,6 +1,6 @@
 // Example of getting the grade dynamically (can be retrieved from URL or API)
 const queryParams = new URLSearchParams(window.location.search);
-let score = queryParams.get("examresult") || 0; // Default to 'F' if not provided
+let score = queryParams.get("examresult") || 0; 
 score = parseInt(score); // Convert to percentage
 const grade = makeGrade(score);
 
@@ -14,16 +14,16 @@ const imgResult = document.querySelector('img');
 
 if (grade === "F") {
     statusElement.textContent = "failed";
-    statusElement.classList.remove("text-warning"); // Remove Bootstrap's warning color
-    statusElement.classList.add("text-danger"); // Add Bootstrap's danger color (red)
+    statusElement.classList.remove("text-warning"); 
+    statusElement.classList.add("text-danger"); 
     headingElement.innerHTML = '<i class="fas fa-times-circle"></i> Sorry!';
     headingElement.classList.remove("text-success"); // Remove green
     headingElement.classList.add("text-danger"); // Add red
     imgResult.src = '../imgs/exam/failed-result.webp';
 } else {
     statusElement.textContent = "passed";
-    statusElement.classList.remove("text-danger"); // Ensure it uses the warning color for pass
-    statusElement.classList.add("text-warning"); // Add Bootstrap's warning color (yellow)
+    statusElement.classList.remove("text-danger"); 
+    statusElement.classList.add("text-warning"); 
     headingElement.innerHTML = '<i class="fas fa-check-circle"></i> Congratulations!';
     imgResult.src = '../imgs/exam/success-result.jpg';
 }
