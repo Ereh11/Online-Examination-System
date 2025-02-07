@@ -14,7 +14,6 @@ export async function recievedData(email, password) {
         localStorage.setItem("email", email);
         return true;
     } else {
-        window.location.replace("../pages/error.html");
         return false;
     }
 }
