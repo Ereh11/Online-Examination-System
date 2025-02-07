@@ -8,4 +8,5 @@
 :root {
     --main-font: 'karla', sans-serif;
     --main-background: linear-gradient(to right, #1e3c72, #2c3e50);
+    --main-btn-background: rgb(74, 181, 60);
 }

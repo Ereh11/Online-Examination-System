@@ -5,7 +5,6 @@ html {
   padding: 0;
 }
 
-
 .container {
   max-height: 100vh;
   padding: 1rem;
@@ -20,8 +19,17 @@ html {
   font-size: 1rem;
   line-height: 1.5;
 }
-
-
+.startBtn, .cancelBtn {
+  padding: 8px 20px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  background-color: var(--main-btn-background)
+}
+.startBtn:hover, .cancelBtn:hover {
+  background-color: rgb(53, 137, 41);
+  color: white;
+}
 @media (max-width: 768px) {
   .content-container {
     font-size: 0.9rem;
@@ -29,18 +37,14 @@ html {
   }
 }
 
-
 @media (max-width: 480px) {
   .content-container {
     font-size: 0.85rem;
   }
-
   .container {
     padding: 0.5rem;
   }
 }
-
-
 @media (min-width: 240px) {
   .instruction p {
     text-align: left;

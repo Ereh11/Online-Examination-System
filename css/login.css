@@ -69,3 +69,26 @@ a {
     transform: translateX(0);
   }
 }
+
+.toggle-password {
+  color: var(--main-color);
+  position: absolute;
+  right: 30px;
+  top: 45px;
+  opacity: 0.5;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.toggle-password:hover {
+  color: var(--main-color);
+  opacity: 1;
+  color: #0056b3;
+}
+
+@media screen and (max-width: 600px) {
+  .toggle-password {
+    right: 28px;
+    top: 45px;
+  }
+}
