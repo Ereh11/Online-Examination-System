@@ -78,19 +78,20 @@ input[type="radio"] {
   display: none;
 }
 
-button {
-  padding: 10px 20px;
-  border: none;
+.btnNext {
+  padding: 8px 20px;
   border-radius: 5px;
+  border: none;
   cursor: pointer;
+  background-color: var(--main-btn-background)
 }
 
 .cursor-point {
   cursor: not-allowed;
 }
 
-button:hover {
-  background-color: rgb(81, 224, 62);
+.btnNext:hover {
+  background-color: rgb(53, 137, 41);
   color: white;
   transform: scale(1.1);
 }
@@ -202,6 +203,10 @@ button:hover {
   button {
     font-size: 12px;
     padding: 8px 10px;
+  }
+
+  .btnNext {
+    margin-top: 5px;
   }
 
 }
