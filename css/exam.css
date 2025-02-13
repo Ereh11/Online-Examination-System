@@ -11,7 +11,9 @@ body {
   position: absolute;
   top: 10px;
   left: 50%;
+  /*Center the timer*/
   transform: translateX(-50%);
+  /*Center the timer*/
   font-size: 24px;
   font-weight: bold;
   transition: color 0.5s, transform 0.5s;
@@ -204,7 +206,10 @@ body {
   background-color: #4caf50;
   transition: background-color 0.3s;
 }
-
+.hidden-left-rightBtn {
+  pointer-events: none;
+  opacity: 0.5;
+}
 /* Responsive Design */
 @media (max-width: 1024px) {
   .question-navigator {

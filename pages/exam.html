@@ -11,9 +11,10 @@
 </head>
 
 <body>
-
+    <!-- Start Timer Section -->
     <section class="timer" id="timer">05:00</section>
-
+    <!-- End Timer Section -->
+    <!-- Start Question Navigator Section -->
     <section class="question-navigator">
         <div class="question-number" data-question="1">1</div>
         <div class="question-number" data-question="2">2</div>
@@ -26,6 +27,8 @@
         <div class="question-number" data-question="9">9</div>
         <div class="question-number" data-question="10">10</div>
     </section>
+    <!-- End Question Navigator Section -->
+    <!-- Start Exam Body Section -->
     <section class="exam-container">
         <div class="question-header">
             <h2 class="questionTitle 0">Question 1</h2>
@@ -38,14 +41,15 @@
             <button class="option" data-option="D">Option D</button>
         </div>
         <div class="navigation">
-            <i class="fas fa-chevron-left nav-icon" id="prevQuestion"></i>
+            <i class="fas fa-chevron-left nav-icon hidden-left-rightBtn" id="prevQuestion"></i>
             <i class="fas fa-chevron-right nav-icon" id="nextQuestion"></i>
         </div>
         <div class="submit-btn">
             <button id="submitBtn" class="hidden">Submit</button>
         </div>
     </section>
-
+    <!-- End Exam Body Section -->
+    <!-- Start Confirmation Modal Section -->
     <section id="confirmationModal" class="modal">
         <div class="modal-content">
             <p>Are you sure you want to submit the exam?</p>
@@ -53,7 +57,7 @@
             <button id="cancelSubmit">Cancel</button>
         </div>
     </section>
-
+    <!-- End Confirmation Modal Section -->
     <script type="module" src="../scripts/exam.js"></script>
 </body>
 
