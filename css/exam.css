@@ -11,7 +11,9 @@ body {
   position: absolute;
   top: 10px;
   left: 50%;
+  /*Center the timer*/
   transform: translateX(-50%);
+  /*Center the timer*/
   font-size: 24px;
   font-weight: bold;
   transition: color 0.5s, transform 0.5s;
