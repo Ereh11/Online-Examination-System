@@ -278,10 +278,16 @@ divQuestionNumbers.addEventListener("click", (e) => {
  * @returns {void}
  */
 function updateLeftRightStatus(questionNumber){
-  if(questionNumber == 1 || questionNumber == 10){
+  if(questionNumber == 1){
     prevButton.classList.add("hidden-left-rightBtn");
   }
   else{
     prevButton.classList.remove("hidden-left-rightBtn");
+  }
+  if(questionNumber == 10){
+    nextButton.classList.add("hidden-left-rightBtn");
+  }
+  else{
+    nextButton.classList.remove("hidden-left-rightBtn");
   }
 }
