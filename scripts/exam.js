@@ -1,10 +1,9 @@
+// Purpose: To handle the exam page and its functionalities
 import { addResult, getResults } from "../services/resultExamHandle.js";
 import { createExam } from "../services/examHandle.js";
-// DOM elements for the exam page
+// DOM Selectors for the exam page
 const timerDisplay = document.getElementById("timer");
-const questionNumbers = document.querySelectorAll(".question-number");
 const flagIcon = document.querySelector(".flag-icon");
-// const questionTitle = document.getElementById("questionTitle");
 const prevButton = document.getElementById("prevQuestion");
 const nextButton = document.getElementById("nextQuestion");
 const divQuestion = document.getElementsByClassName("exam-container")[0];
@@ -16,7 +15,7 @@ const divQuestionNumbers =
   document.getElementsByClassName("question-navigator")[0];
 const divQuestionHeader = divQuestion.children[0];
 const divQuestionOptions = divQuestion.children[1];
-
+// Variables for the exam page
 let totalSeconds = 5 * 60;
 let currentQuestion = 1;
 let questionDOM = [];
@@ -32,8 +31,14 @@ const userEmail = localStorage.getItem("email");
 async function getExam() {
   return await createExam(topic, difficulty, 5, 10);
 }
-const exam = await getExam();
-// Create the question elements for the exam page for first time only
+const exam = await getExam(); // Get the exam object
+
+
+/**
+ * // Create the question elements for the exam page for first time only
+ * @param {*} exam 
+ * @returns Array of html question elements
+ */
 function createQuestionElement(exam) {
   const questionsElements = [];
   let cnt = 0;
@@ -64,7 +69,12 @@ divQuestionOptions.innerHTML = "";
 questionDOM[0].options.forEach((option) => {
   divQuestionOptions.innerHTML += option;
 });
-// Update Timer of the exam
+
+
+/**
+ * Update the timer every second
+ * @returns {void}
+ */
 function updateTimer() {
   const minutes = Math.floor(totalSeconds / 60);
   const seconds = totalSeconds % 60;
@@ -83,11 +93,12 @@ function updateTimer() {
     setTimeout(updateTimer, 1000);
   } else {
     const correctAnswers = correctExam();
-    addResult({ email: userEmail, examName: topic, score: correctAnswers });
+    addResult({ email: userEmail, examName: topic, score: correctAnswers }); // to show the result in the result page
     window.location.replace(`../pages/timeover.html`);
   }
 }
-updateTimer();
+updateTimer(); // Start the timer
+
 // Event listener for the flag icon
 flagIcon.addEventListener("click", () => {
   console.log(flagIcon);
@@ -169,13 +180,17 @@ function updateQuestion(questionNum) {
 prevButton.addEventListener("click", () => {
   if (currentQuestion > 1) {
     updateQuestion(currentQuestion - 1);
+    updateLeftRightStatus(currentQuestion - 1);
   }
+  updateLeftRightStatus(currentQuestion);
 });
 // Event listener for the next button
 nextButton.addEventListener("click", () => {
   if (currentQuestion < 10) {
     updateQuestion(currentQuestion + 1);
+    updateLeftRightStatus(currentQuestion + 1);
   }
+  updateLeftRightStatus(currentQuestion);
 });
 // Set the first question number to active
 document
@@ -255,3 +270,18 @@ divQuestionNumbers.addEventListener("click", (e) => {
   const value = e.target.innerText;
   updateQuestion(parseInt(value));
 });
+
+function updateLeftRightStatus(questionNumber){
+  if(questionNumber == 1){
+    prevButton.classList.add("hidden-left-rightBtn");
+  }
+  else{
+    prevButton.classList.remove("hidden-left-rightBtn");
+  }
+  if(questionNumber == 10){
+    nextButton.classList.add("hidden-left-rightBtn");
+  }
+  else{
+    nextButton.classList.remove("hidden-left-rightBtn");
+  }
+}
