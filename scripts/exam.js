@@ -272,17 +272,16 @@ divQuestionNumbers.addEventListener("click", (e) => {
   updateQuestion(value);
 });
 
+/**
+ * Update the left and right status of the question number Buttons
+ * @param {Number} questionNumber 
+ * @returns {void}
+ */
 function updateLeftRightStatus(questionNumber){
-  if(questionNumber == 1){
+  if(questionNumber == 1 || questionNumber == 10){
     prevButton.classList.add("hidden-left-rightBtn");
   }
   else{
     prevButton.classList.remove("hidden-left-rightBtn");
-  }
-  if(questionNumber == 10){
-    nextButton.classList.add("hidden-left-rightBtn");
-  }
-  else{
-    nextButton.classList.remove("hidden-left-rightBtn");
   }
 }
