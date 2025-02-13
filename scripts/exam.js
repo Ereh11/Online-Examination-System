@@ -267,8 +267,9 @@ function correctExam() {
 getResults(userEmail);
 
 divQuestionNumbers.addEventListener("click", (e) => {
-  const value = e.target.innerText;
-  updateQuestion(parseInt(value));
+  const value = parseInt(e.target.innerText);
+  updateLeftRightStatus(value);
+  updateQuestion(value);
 });
 
 function updateLeftRightStatus(questionNumber){
