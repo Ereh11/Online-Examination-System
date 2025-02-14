@@ -241,12 +241,10 @@ divQuestionOptions.addEventListener("click", (e) => {
  */
 function correctExam() {
   let correctAnswers = 0;
-  let NumberOfAnswers = 0;
   // Loop through the questions
   for (let i = 0; i < 10; i++) {
     const question = exam.Questions[i];
     const userOptions = questionDOM[i].options;
-    
     // Check if the user has clicked on the correct answer
     for (let i = 0; i < 4; i++) {
       userOptions[i].split("=").forEach((element) => {
@@ -255,7 +253,7 @@ function correctExam() {
           const doc = parser.parseFromString(userOptions[i], "text/html");
           const button = doc.querySelector("button");
           const textContent = button.textContent;
-          NumberOfAnswers++;
+
           if (textContent === question.answer) {
             correctAnswers++;
           }
@@ -263,7 +261,6 @@ function correctExam() {
       });
     }
   }
-  localStorage.setItem("NumberOfAnswers", NumberOfAnswers);
   return correctAnswers * 10;
 }
 
