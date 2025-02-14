@@ -3,11 +3,9 @@ html {
   height: 100%;
   margin: 0;
   padding: 0;
-}
-
-.container {
-  max-height: 100vh;
-  padding: 1rem;
+  background: var(--main-background);
+  font-family: var(--main-font);
+  color: white;
 }
 
 #startBtn,
@@ -19,17 +17,22 @@ html {
   font-size: 1rem;
   line-height: 1.5;
 }
-.startBtn, .cancelBtn {
+
+.startBtn,
+.cancelBtn {
   padding: 8px 20px;
   border-radius: 5px;
   border: none;
   cursor: pointer;
-  background-color: var(--main-btn-background)
+  background-color: var(--main-btn-background);
 }
-.startBtn:hover, .cancelBtn:hover {
+
+.startBtn:hover,
+.cancelBtn:hover {
   background-color: rgb(53, 137, 41);
   color: white;
 }
+
 @media (max-width: 768px) {
   .content-container {
     font-size: 0.9rem;
@@ -41,10 +44,12 @@ html {
   .content-container {
     font-size: 0.85rem;
   }
+
   .container {
     padding: 0.5rem;
   }
 }
+
 @media (min-width: 240px) {
   .instruction p {
     text-align: left;

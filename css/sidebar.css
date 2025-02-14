@@ -77,8 +77,7 @@ i {
   margin: 10px 0 0 10px;
 }
 
-
-@media (max-width: 768px) {
+@media (max-width: 1200px) and (min-width: 600px) {
   .sidebar {
     width: 200px;
     z-index: 100;
@@ -86,6 +85,7 @@ i {
 
   .list {
     padding: 10px 15px;
+    border: none;
   }
 
   .sidebar .info,
@@ -94,36 +94,18 @@ i {
   }
 }
 
-
-@media (max-width: 480px) {
+@media (max-width: 600px) and (min-width: 200px) {
   .sidebar {
     width: 150px;
     z-index: 100;
   }
 
   .list {
-    padding: 8px 12px;
+    border: none;
   }
 
   .sidebar .info,
   .sidebar .logout {
     font-size: 16px;
-  }
-}
-
-
-@media (min-width: 769px) {
-  .sidebar {
-    width: 250px;
-    z-index: 100;
-  }
-
-  .list {
-    padding: 15px 20px;
-  }
-
-  .sidebar .info,
-  .sidebar .logout {
-    font-size: 20px;
   }
 }

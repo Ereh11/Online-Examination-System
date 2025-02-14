@@ -1,8 +1,6 @@
 body {
     font-family: var(--main-font);
-    background: var(--main-color);
     background: var(--main-background);
-
 }
 
 .container {
@@ -16,7 +14,6 @@ body {
     min-height: 100vh;
 }
 
-
 .profile-container {
     padding: 30px;
     border-radius: 10px;
@@ -28,13 +25,11 @@ body {
     backdrop-filter: blur(10px);
 }
 
-
 .user-info p {
     font-size: 1.1rem;
     color: #333;
     margin: 10px 0;
 }
-
 
 table {
     width: 100%;
@@ -54,15 +49,10 @@ th {
     color: white;
 }
 
-
 @media (max-width: 768px) {
     .profile-container {
         width: 95%;
         padding: 20px;
-    }
-
-    .user-info p {
-        font-size: 1rem;
     }
 
     th,
@@ -83,10 +73,6 @@ th {
     }
 
     .user-info p {
-        font-size: 0.9rem;
-    }
-
-    table {
         font-size: 0.9rem;
     }
 
