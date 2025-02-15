@@ -153,11 +153,7 @@ function updateQuestion(questionNum) {
     .classList.add("active");
 
   // Show/hide the submit button based on the question number
-  if (questionNum == 10) {
-    submitbtn.classList.remove("hidden");
-  } else {
-    submitbtn.classList.add("hidden");
-  }
+ 
 
   // Update the flag icon and question number div based on the flagged state
   if (flaggedQuestions[currentQuestion]) {

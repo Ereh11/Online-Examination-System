@@ -17,6 +17,36 @@
       "email": "yamin@gmail.com",
       "password": "01271420102",
       "id": "BB2znsT"
+    },
+    {
+      "username": "Hany",
+      "email": "hany1234@gmail.com",
+      "password": "123456",
+      "id": "2lvZqoF"
+    },
+    {
+      "username": "Hani Saad",
+      "email": "j123@gmail.com",
+      "password": "123456a",
+      "id": "P_WDaJt"
+    },
+    {
+      "username": "marina",
+      "email": "marina@gmail.com",
+      "password": "123456",
+      "id": "owsQQuq"
+    },
+    {
+      "username": "Hani Saad",
+      "email": "hj@gmail.com",
+      "password": "123456",
+      "id": "e9M3atD"
+    },
+    {
+      "username": "mai",
+      "email": "mai@gmail.com",
+      "password": "123456",
+      "id": "8t3kzbD"
     }
   ],
   "JavaScript-easy": [
@@ -2047,6 +2077,84 @@
       "examName": "C#",
       "score": 50,
       "id": 5
+    },
+    {
+      "email": "hany1234@gmail.com",
+      "examName": "JavaScript",
+      "score": 0,
+      "id": 6
+    },
+    {
+      "email": "hanysaadstd@gmail.com",
+      "examName": "TypeScript",
+      "score": 0,
+      "id": 7
+    },
+    {
+      "email": "marina@gmail.com",
+      "examName": "JavaScript",
+      "score": 50,
+      "id": 8
+    },
+    {
+      "email": "marina@gmail.com",
+      "examName": "JavaScript",
+      "score": 30,
+      "id": 9
+    },
+    {
+      "email": "marina@gmail.com",
+      "examName": "JavaScript",
+      "score": 0,
+      "id": 10
+    },
+    {
+      "email": "marina@gmail.com",
+      "examName": "JavaScript",
+      "score": 0,
+      "id": 11
+    },
+    {
+      "email": "hanysaadstd@gmail.com",
+      "examName": "JavaScript",
+      "score": 0,
+      "id": 12
+    },
+    {
+      "email": "mai@gmail.com",
+      "examName": "JavaScript",
+      "score": 0,
+      "id": 13
+    },
+    {
+      "email": "mai@gmail.com",
+      "examName": "JavaScript",
+      "score": 50,
+      "id": 14
+    },
+    {
+      "email": "mai@gmail.com",
+      "examName": "C#",
+      "score": 0,
+      "id": 15
+    },
+    {
+      "email": "mai@gmail.com",
+      "examName": "C#",
+      "score": 0,
+      "id": 16
+    },
+    {
+      "email": "mai@gmail.com",
+      "examName": "TypeScript",
+      "score": 0,
+      "id": 17
+    },
+    {
+      "email": "mai@gmail.com",
+      "examName": "JavaScript",
+      "score": 20,
+      "id": 18
     }
   ]
 }
