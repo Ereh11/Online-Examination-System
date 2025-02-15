@@ -6,7 +6,8 @@ const grade = makeGrade(score);
 
 // Display the grade on the page
 document.getElementById("grade").textContent = `${score}% (${grade})`;
-
+const userData = document.getElementsByClassName("user-data")[0].children[1]; 
+userData.textContent += localStorage.getItem("userName");
 // Set pass or fail message based on grade
 const statusElement = document.querySelector('.status');
 const headingElement = document.querySelector('h1');
