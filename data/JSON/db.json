@@ -17,24 +17,6 @@
       "email": "yamin@gmail.com",
       "password": "01271420102",
       "id": "BB2znsT"
-    },
-    {
-      "username": "Hany Abdou",
-      "email": "h@gmail.com",
-      "password": "123456a",
-      "id": "W7gK_0K"
-    },
-    {
-      "username": "Hani Abdou",
-      "email": "h1@gmail.com",
-      "password": "123456a",
-      "id": "-kSdUK-"
-    },
-    {
-      "username": "Hany",
-      "email": "hany123@gmail.com",
-      "password": "123456a",
-      "id": "tNEPDWT"
     }
   ],
   "JavaScript-easy": [
@@ -2065,12 +2047,6 @@
       "examName": "C#",
       "score": 50,
       "id": 5
-    },
-    {
-      "email": "hany123@gmail.com",
-      "examName": "JavaScript",
-      "score": 0,
-      "id": 6
     }
   ]
 }
