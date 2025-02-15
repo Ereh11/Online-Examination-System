@@ -16,7 +16,7 @@ const divQuestionNumbers =
 const divQuestionHeader = divQuestion.children[0];
 const divQuestionOptions = divQuestion.children[1];
 // Variables for the exam page
-let totalSeconds = 5 * 60;
+let totalSeconds = 0.3 * 60;
 let currentQuestion = 1;
 let questionDOM = [];
 let flaggedQuestions = {}; // Object to track flagged questions
